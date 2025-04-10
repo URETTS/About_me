@@ -1,9 +1,25 @@
+import { Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import About from './pages/About';
+import Experience from './pages/Experience';
+import Travels from './pages/Travels';
+
 function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 text-gray-800">
-      <h1 className="text-3xl font-bold">Welcome to My Travel Blog</h1>
+    <div className="flex flex-col min-h-screen">
+      <Header />
+      <main className="flex-grow container mx-auto p-4">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/travels" element={<Travels />} />
+        </Routes>
+      </main>
+      <Footer />
     </div>
-  )
+  );
 }
-
-export default App
+export default App;
