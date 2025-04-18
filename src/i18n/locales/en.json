@@ -1,0 +1,19 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Me",
+    "experience": "Experience",
+    "travels": "Travels"
+  },
+  "footer": {
+     "contact": "Contact Me",
+    "support": "Support Me",
+    "phone": "Phone",
+    "telegram": "Telegram",
+    "instagram": "Instagram",
+    "donate": {
+      "revolut": "Revolut: @username",
+      "wise": "Wise (IBAN): DE** **** **** 1234",
+      "binance": "Binance: username"}
+  }
+}
