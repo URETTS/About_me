@@ -1,55 +1,65 @@
+import mold from '../../assets/images/country_prev/mold.jpg';
+import rum from '../../assets/images/country_prev/rum.jpg';
+import cro from '../../assets/images/country_prev/cro.jpg';
+import slo from '../../assets/images/country_prev/slo.jpg';
+import ge from '../../assets/images/country_prev/ge.jpg';
+import it from '../../assets/images/country_prev/it.jpg';
+import georgia from '../../assets/images/country_prev/gergia.jpg';
+import arm from '../../assets/images/country_prev/arm.jpg';
+import esp from '../../assets/images/country_prev/esp.jpg';
+import port from '../../assets/images/country_prev/port.jpg';
+
 const countries = [
   {
     id: 'moldova',
     name: 'Молдова',
-    image: '../../assets/images/country_prev/mold.jpg',
+    image: mold,
   },
   {
     id: 'romania',
     name: 'Румыния',
-    image: '../../assets/images/country_prev/rum.jpg',
+    image: rum,
   },
   {
     id: 'croatia',
     name: 'Хорватия',
-    image: '../../assets/images/country_prev/cro.jpg',
+    image: cro,
   },
   {
     id: 'slovenia',
     name: 'Словения',
-    image: '../../assets/images/country_prev/slo.jpg',
+    image: slo,
   },
   {
     id: 'germany',
     name: 'Германия',
-    image: '../../assets/images/country_prev/ge.jpg',
+    image: ge,
   },
   {
     id: 'italy',
     name: 'Италия',
-    image: '../../assets/images/country_prev/it.jpg',
+    image: it,
   },
   {
     id: 'georgia',
     name: 'Грузия',
-    image: '../../assets/images/country_prev/gergia.jpg',
+    image: georgia,
   },
   {
     id: 'armenia',
     name: 'Армения',
-    image: '../../assets/images/country_prev/arm.jpg',
+    image: arm,
   },
   {
     id: 'spain',
     name: 'Испания',
-    image: '../../assets/images/country_prev/esp.jpg',
+    image: esp,
   },
   {
     id: 'portugal',
     name: 'Португалия',
-    image: '../../assets/images/country_prev/port.jpg',
+    image: port,
   },
 ];
 
 export default countries;
-
