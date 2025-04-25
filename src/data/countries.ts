@@ -2,52 +2,52 @@ const countries = [
   {
     id: 'moldova',
     name: 'Молдова',
-    image: '/images/moldova.jpg',
+    image: '../../assets/images/country_prev/mold.jpg',
   },
   {
     id: 'romania',
     name: 'Румыния',
-    image: '/images/romania.jpg',
+    image: '../../assets/images/country_prev/rum.jpg',
   },
   {
     id: 'croatia',
     name: 'Хорватия',
-    image: '/images/croatia.jpg',
+    image: '../../assets/images/country_prev/cro.jpg',
   },
   {
     id: 'slovenia',
     name: 'Словения',
-    image: '/images/slovenia.jpg',
+    image: '../../assets/images/country_prev/slo.jpg',
   },
   {
     id: 'germany',
     name: 'Германия',
-    image: '/images/germany.jpg',
+    image: '../../assets/images/country_prev/ge.jpg',
   },
   {
     id: 'italy',
     name: 'Италия',
-    image: '/images/italy.jpg',
+    image: '../../assets/images/country_prev/it.jpg',
   },
   {
     id: 'georgia',
     name: 'Грузия',
-    image: '/images/georgia.jpg',
+    image: '../../assets/images/country_prev/gergia.jpg',
   },
   {
     id: 'armenia',
     name: 'Армения',
-    image: '/images/armenia.jpg',
+    image: '../../assets/images/country_prev/arm.jpg',
   },
   {
     id: 'spain',
     name: 'Испания',
-    image: '/images/spain.jpg',
+    image: '../../assets/images/country_prev/esp.jpg',
   },
   {
     id: 'portugal',
     name: 'Португалия',
-    image: '/images/portugal.jpg',
+    image: '../../assets/images/country_prev/port.jpg',
   },
 ];
 
