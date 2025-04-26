@@ -14,7 +14,7 @@ const Footer = () => {
           <h2 className="text-xl font-bold mb-4">{t('footer.contact')}</h2>
           <ul className="space-y-2 text-sm">
             <li>📞 Телефон: +380981120777</li>
-            <li>✉️ Email: <a href="mailto:pricolniychel@gmail.com" className="underline">pricolniychel@gmail.com</a></li>
+            <li>✉️ Email: <a href="mailto:pricolniychel@gmail.com" className="underline">yurka.b2000@gmail.com</a></li>
             <li>
               💬 Telegram: <a href="https://t.me/pricolniy_chel" target="_blank" className="underline">@pricolniy_chel</a>
             </li>
