@@ -1,14 +1,12 @@
-// http://react.local:8080
-
 import { Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Experience from './pages/Experience';
 import Travels from './pages/Travels';
 import CountryPage from './pages/CountryPage';
-
+import CityPage from './pages/CityPage';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -20,11 +18,13 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/travels" element={<Travels />} />
-            <Route path="/travels/:id" element={<CountryPage />} />
+          <Route path="/travels/:countryId" element={<CountryPage />} />
+          <Route path="/travels/:countryId/:cityId" element={<CityPage />} />
         </Routes>
       </main>
       <Footer />
     </div>
   );
 }
+
 export default App;

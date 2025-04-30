@@ -9,7 +9,7 @@ const TravelPage = () => {
         {countries.map((country) => (
           <Link
             key={country.id}
-            to={`/travel/${country.id}`}
+            to={`/travels/${country.id}`}
             className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300"
           >
             <img
