@@ -27,7 +27,11 @@ const Experience = () => {
               <div>
                 <h2 className="text-xl font-semibold">{exp.title}</h2>
                 <p className="text-indigo-600 font-medium">{exp.company}</p>
-                <p className="text-sm text-gray-500">{exp.period} · {exp.location}</p>
+               <p className="text-sm text-gray-500">
+  {typeof exp.period === 'object' ? exp.period[i18n.language] || exp.period['en'] : exp.period}
+  {' · '}
+  {typeof exp.location === 'object' ? exp.location[i18n.language] || exp.location['en'] : exp.location}
+</p>
               </div>
               <button
                 onClick={() => toggleDescription(index)}
