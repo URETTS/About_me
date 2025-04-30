@@ -5,6 +5,48 @@ import chithree from '../../assets/images/Cities/chisinau/chithree.jpg';
 import chifour from '../../assets/images/Cities/chisinau/chifour.jpg';
 import chifive from '../../assets/images/Cities/chisinau/chifive.jpg';
 
+import bychprev from '../../assets/images/Cities/bycharest/bychprev.jpg';
+
+import zagrebprev from '../../assets/images/Cities/zagreb/zagrebprev.jpg';
+
+import pulaprev from '../../assets/images/Cities/pula/pulaprev.jpg';
+
+import plitviceprev from '../../assets/images/Cities/plitvice/plitviceprev.jpg';
+
+import ljubljanaprev from '../../assets/images/Cities/ljubljana/ljubljanaprev.jpg';
+
+import munichprev from '../../assets/images/Cities/munich/munichprev.jpg';
+
+import veniceprev from '../../assets/images/Cities/venice/veniceprev.jpg';
+
+import tbilisiprev from '../../assets/images/Cities/tbilisi/tbilisiprev.jpg';
+
+ import kutaisiprev from '../../assets/images/Cities/kutaisi/kutaisiprev.jpg';
+
+ import gudauriprev from '../../assets/images/Cities/gudauri/gudauriprev.jpg';
+
+ import alazaniprev from '../../assets/images/Cities/alazani/alazaniprev.jpg';
+
+ import yerevanprev from '../../assets/images/Cities/yerevan/yerevanprev.jpg';
+
+ import malagaprev from '../../assets/images/Cities/malaga/malagaprev.jpg';
+
+ import alicanteprev  from '../../assets/images/Cities/alicante/alicanteprev.jpg';
+
+import gibraltarprev from '../../assets/images/Cities/gibraltar/gibraltarprev.jpg';
+
+import valenciaprev from '../../assets/images/Cities/valencia/valenciaprev.jpg';
+
+import sevillaprev from '../../assets/images/Cities/sevilla/sevillaprev.jpg';
+
+import sintraprev from '../../assets/images/Cities/sintra/sintraprev.jpg';
+
+import cascaisprev from '../../assets/images/Cities/cascais/cascaisprev.jpg';
+
+import lisbonprev from '../../assets/images/Cities/lisbon/lisbonprev.jpg';
+
+// import  from '../../assets/images/Cities';
+
 export interface City {
   id: string;
   name: string;
@@ -43,7 +85,7 @@ const cityData: CountryWithCities[] = [
         id: 'bucharest',
         name: 'Бухарест',
         description: '',
-        images: [
+        images: [ bychprev
         ]
       }
     ]
@@ -55,21 +97,21 @@ const cityData: CountryWithCities[] = [
         id: 'zagreb',
         name: 'Загреб',
         description: '',
-        images: [
+        images: [zagrebprev
         ]
       },
       {
         id: 'pula',
         name: 'Пула',
         description: '',
-        images: [
+        images: [pulaprev
         ]
       },
       {
         id: 'plitvice',
         name: 'Плитвицкие озёра',
         description: '',
-        images: [
+        images: [plitviceprev
         ]
       }
     ]
@@ -81,7 +123,7 @@ const cityData: CountryWithCities[] = [
         id: 'ljubljana',
         name: 'Любляна',
         description: '',
-        images: [
+        images: [ljubljanaprev
           
         ]
       }
@@ -94,7 +136,7 @@ const cityData: CountryWithCities[] = [
         id: 'munich',
         name: 'Мюнхен',
         description: '',
-        images: [
+        images: [munichprev
           
         ]
       }
@@ -107,7 +149,7 @@ const cityData: CountryWithCities[] = [
         id: 'venice',
         name: 'Венеция',
         description: '',
-        images: [
+        images: [veniceprev
           
         ]
       }
@@ -120,7 +162,7 @@ const cityData: CountryWithCities[] = [
         id: 'tbilisi',
         name: 'Тбилиси',
         description: '',
-        images: [
+        images: [tbilisiprev
           
         ]
       },
@@ -128,7 +170,7 @@ const cityData: CountryWithCities[] = [
         id: 'kutaisi',
         name: 'Кутаиси',
         description: '',
-        images: [
+        images: [kutaisiprev
           
         ]
       },
@@ -136,7 +178,7 @@ const cityData: CountryWithCities[] = [
         id: 'gudauri',
         name: 'Гудаури',
         description: '',
-        images: [
+        images: [ gudauriprev
           
         ]
       },
@@ -144,7 +186,7 @@ const cityData: CountryWithCities[] = [
         id: 'alazani',
         name: 'Алазанская долина',
         description: '',
-        images: [
+        images: [ alazaniprev
           
         ]
       }
@@ -157,7 +199,7 @@ const cityData: CountryWithCities[] = [
         id: 'yerevan',
         name: 'Ереван',
         description: '',
-        images: [
+        images: [yerevanprev
           
         ]
       }
@@ -170,7 +212,7 @@ const cityData: CountryWithCities[] = [
         id: 'malaga',
         name: 'Малага',
         description: '',
-        images: [
+        images: [malagaprev
          
         ]
       },
@@ -178,7 +220,15 @@ const cityData: CountryWithCities[] = [
         id: 'alicante',
         name: 'Аликанте',
         description: '',
-        images: [
+        images: [alicanteprev
+          
+        ]
+      },
+      {
+        id: 'gibraltar',
+        name: 'Гибралтар',
+        description: '',
+        images: [gibraltarprev
           
         ]
       },
@@ -186,7 +236,7 @@ const cityData: CountryWithCities[] = [
         id: 'valencia',
         name: 'Валенсия',
         description: '',
-        images: [
+        images: [valenciaprev
           
         ]
       },
@@ -194,7 +244,7 @@ const cityData: CountryWithCities[] = [
         id: 'sevilla',
         name: 'Севилья',
         description: '',
-        images: [
+        images: [sevillaprev
           
         ]
       }
@@ -204,10 +254,18 @@ const cityData: CountryWithCities[] = [
     countryId: 'portugal',
     cities: [
       {
-        id: 'sintra-cascais',
-        name: 'Синтра и Кашкайш',
+        id: 'sintra',
+        name: 'Синтра',
         description: '',
-        images: [
+        images: [sintraprev
+          
+        ]
+      },
+      {
+        id: 'cascais',
+        name: 'Кашкайш',
+        description: '',
+        images: [cascaisprev
           
         ]
       },
@@ -215,7 +273,7 @@ const cityData: CountryWithCities[] = [
         id: 'lisbon',
         name: 'Лиссабон',
         description: '',
-        images: [
+        images: [lisbonprev
           
         ]
       }
