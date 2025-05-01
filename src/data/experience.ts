@@ -77,7 +77,7 @@ Also:
   },
   {
     title: 'Farmer',
-    company: 'Freelance',
+    company: 'Traffic Squad',
     period: {
       ru: 'апр. 2023 - окт. 2023 (7 мес.)',
       en: 'Apr 2023 - Oct 2023 (7 months)',

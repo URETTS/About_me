@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import logo from '../../assets/logo/Bykov_Yuriy.png';
+import { Banknote } from 'lucide-react'; 
 
 const Footer = () => {
   const { t, i18n } = useTranslation();
@@ -58,15 +59,32 @@ const Footer = () => {
           <ul className="space-y-2 text-sm">
             {lang === 'ru' ? (
               <>
-                <li><span className="font-semibold">ПриватБанк:</span> 4149 **** **** 1234</li>
+                <li className="flex items-center gap-2">
+  <Banknote className="w-4 h-4 text-green-400" />
+  <span className="font-semibold">Моно банка:</span>
+  <a
+    href="https://send.monobank.ua/jar/3KP1UCG3Es"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="underline text-blue-300 hover:text-blue-400 transition"
+  >
+    Отправить донат
+  </a>
+</li>
+
                 <li><span className="font-semibold">Монобанк:</span> 5375 **** **** 5678</li>
+                <li><span className="font-semibold">ПриватБанк:</span> 4149 **** **** 1234</li>
+                <li><span className="font-semibold">Sence:</span> 5168 **** **** 5678</li>
                 <li><span className="font-semibold">Binance ID (TRC20):</span> 777777</li>
+                <li><span className="font-semibold">Revolut:</span> @username</li>
+                <li><span className="font-semibold">Wise (IBAN):</span> DE** **** **** 1234</li>
               </>
             ) : (
               <>
                 <li><span className="font-semibold">Revolut:</span> @username</li>
                 <li><span className="font-semibold">Wise (IBAN):</span> DE** **** **** 1234</li>
-                <li><span className="font-semibold">Binance ID (TRC20):</span> 777777</li>
+                  <li><span className="font-semibold">Binance ID (TRC20):</span> 777777</li>
+                  <li><span className="font-semibold">Santander (IBAN):</span> DE** **** **** 1234</li>
               </>
             )}
           </ul>

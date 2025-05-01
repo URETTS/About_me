@@ -30,7 +30,10 @@ const CityPage = () => {
     ))}
   </div>
 
-  <p className="text-gray-900 dark:text-gray-700">{city.description}</p>
+  <div
+  className="prose prose-lg text-gray-900 dark:text-gray-700"
+  dangerouslySetInnerHTML={{ __html: city.description }}
+/>
 </div>
 
   );
