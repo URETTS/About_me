@@ -6,14 +6,46 @@ import chifour from '../../assets/images/Cities/chisinau/chifour.jpg';
 import chifive from '../../assets/images/Cities/chisinau/chifive.jpg';
 
 import bychprev from '../../assets/images/Cities/bycharest/bychprev.jpg';
+import bycone from '../../assets/images/Cities/bycharest/bycone.jpg';
+import bectwo from '../../assets/images/Cities/bycharest/bectwo.jpg';
+import bycthree from '../../assets/images/Cities/bycharest/bycthree.jpg';
+import becfour from '../../assets/images/Cities/bycharest/becfour.jpg';
+import bycfive from '../../assets/images/Cities/bycharest/bycfive.jpg';
 
 import zagrebprev from '../../assets/images/Cities/zagreb/zagrebprev.jpg';
+import zgone from '../../assets/images/Cities/zagreb/zgone.jpg';
+import zgtwo from '../../assets/images/Cities/zagreb/zgtwo.jpg';
+import zgthree from '../../assets/images/Cities/zagreb/zgthree.jpg';
+import zgfour from '../../assets/images/Cities/zagreb/zgfour.jpg';
+import zgfive from '../../assets/images/Cities/zagreb/zgfive.jpg';
 
 import pulaprev from '../../assets/images/Cities/pula/pulaprev.jpg';
+import pulaone from '../../assets/images/Cities/pula/pulaone.jpg';
+import putwo from '../../assets/images/Cities/pula/putwo.jpg';
+import puthree from '../../assets/images/Cities/pula/puthree.jpg';
+import pufour from '../../assets/images/Cities/pula/pufour.jpg';
+import pufive from '../../assets/images/Cities/pula/pufive.jpg';
+
 
 import banjoleprev from '../../assets/images/Cities/banjole/banjoleprev.jpg';
+import banone from '../../assets/images/Cities/banjole/banone.jpg';
+import bantwo from '../../assets/images/Cities/banjole/bantwo.jpg';
+import banthree from '../../assets/images/Cities/banjole/banthree.jpg';
+import banfour from '../../assets/images/Cities/banjole/banfour.jpg';
+import banfive from '../../assets/images/Cities/banjole/banfive.jpg';
+import bansix from '../../assets/images/Cities/banjole/bansix.jpg';
+import banseven from '../../assets/images/Cities/banjole/banseven.jpg';
 
 import plitviceprev from '../../assets/images/Cities/plitvice/plitviceprev.jpg';
+import plivone from '../../assets/images/Cities/plitvice/plivone.jpg';
+import plivtwo from '../../assets/images/Cities/plitvice/plivtwo.jpg';
+import plivthree from '../../assets/images/Cities/plitvice/plivthree.jpg';
+import plivfive from '../../assets/images/Cities/plitvice/plivfive.jpg';
+import plivsix from '../../assets/images/Cities/plitvice/plivsix.jpg';
+import plivfour from '../../assets/images/Cities/plitvice/plivfour.jpg';
+import plivseven from '../../assets/images/Cities/plitvice/plivseven.jpg';
+import pliveight from '../../assets/images/Cities/plitvice/pliveight.jpg';
+import plivnine from '../../assets/images/Cities/plitvice/plivnine.jpg';
 
 import ljubljanaprev from '../../assets/images/Cities/ljubljana/ljubljanaprev.jpg';
 
@@ -93,7 +125,7 @@ const cityData: CountryWithCities[] = [
 Впервые за долгое время я снова оказался в Starbucks и Burger King — банально, но для человека, долго живущего с ограничениями, это ощущалось как маленький праздник.
 
 А настоящим сюрпризом стало то, что на автовокзале перед отъездом я случайно встретил девочку, с которой мы когда-то вместе ходили в детский сад! Такой момент будто специально подкинула судьба, чтобы улыбнуться.  `,
-        images: [ bychprev
+        images: [ bychprev,bycone,bectwo,bycthree,becfour,bycfive
         ]
       }
     ]
@@ -108,7 +140,7 @@ const cityData: CountryWithCities[] = [
         Моя жизнь в Хорватии началась с Загреба, где я провёл только один вечер — 8 сентября. Этого времени хватило, чтобы немного погулять по старому городу, почувствовать атмосферу столицы и настроиться на новую страну. А утром следующего дня произошло приятное совпадение: я познакомился с парой путешественников, с которыми потом неожиданно пересёкся снова — но уже в другой стране. Загреб остался в памяти как точка старта и лёгкое касание города, к которому, возможно, стоит вернуться.
 
 `,
-        images: [zagrebprev
+        images: [zagrebprev,zgone,zgtwo,zgthree,zgfour,zgfive
         ]
       },
       {
@@ -118,7 +150,7 @@ const cityData: CountryWithCities[] = [
         Пула стала для меня настоящей находкой. Я приезжал сюда много раз — просто погулять, вдохнуть морской воздух и снова взглянуть на амфитеатр. Этот город сочетает в себе древность и современность: тут легко встретить и туриста с камерой, и капитана собственной яхты. Архитектура, берег, яхты, каменные улицы — всё как-то органично. Каждый визит сюда был как маленький праздник.
 
 `,
-        images: [pulaprev
+        images: [pulaprev,pulaone,putwo,puthree,pufour,pufive
         ]
       },
       {
@@ -126,7 +158,7 @@ const cityData: CountryWithCities[] = [
         name: 'Баньйола',
         description: ` <h2 class="text-xl font-semibold mb-4">Баньйола — деревушка миллионеров у моря</h2>
         Именно в Баньйоле я жил всё это время. Это крошечная деревушка в зелени и тишине, где почти у каждого дома стоит яхта. Сначала я жил тут один — месяц абсолютного спокойствия, прогулок и одиночия у моря. Потом ко мне приехал друг, и жизнь немного оживилась, но атмосфера осталась той же — мягкой, природной и очень чистой. Здесь я научился замедляться и просто дышать.`,
-        images: [ banjoleprev
+        images: [ banjoleprev,banone,bantwo,banthree,banfour,banfive,bansix,banseven
         ]
       },
       {
@@ -134,7 +166,7 @@ const cityData: CountryWithCities[] = [
         name: 'Плитвицкие озёра',
         description: ` <h2 class="text-xl font-semibold mb-4">Плитвицкие озёра — золото осени и водопадов
 </h2>С другом мы арендовали машину и отправились вглубь страны — к Плитвицким озёрам. Это был контраст с морем: пока побережье ещё жило летом, здесь уже наступила полная осень. Жёлтые и красные деревья, водопады, деревянные тропинки — всё выглядело как сказочный парк. Мы провели целый день, просто гуляя, фотографируя и наслаждаясь чистым воздухом. Это место будто создано для перезагрузки. `,
-        images: [plitviceprev
+        images: [plivone,plitviceprev,plivtwo,plivthree,plivfive,plivsix,plivfour,plivseven,pliveight,plivnine
         ]
       }
     ]

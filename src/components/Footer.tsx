@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import logo from '../../assets/logo/Bykov_Yuriy.png';
 import { Banknote } from 'lucide-react'; 
+import SubFooter from './SubFooter';
 
 const Footer = () => {
   const { t, i18n } = useTranslation();
@@ -71,30 +72,36 @@ const Footer = () => {
                 Отправить донат
               </a>
             </li>
-            <li><span className="font-semibold">Монобанк:</span> 5375 **** **** 5678</li>
-            <li><span className="font-semibold">ПриватБанк:</span> 4149 **** **** 1234</li>
-            <li><span className="font-semibold">Sence:</span> 5168 **** **** 5678</li>
-            <li><span className="font-semibold">Binance ID (TRC20):</span> 777777</li>
-            <li><span className="font-semibold">Revolut:</span> @username</li>
+            <li><span className="font-semibold">Монобанк:</span> 4441111057408696</li>
+            <li><span className="font-semibold">ПриватБанк:</span> 5457082518678003</li>
+           {/* <li><span className="font-semibold">Sence:</span> 5168 **** **** 5678</li> */}
+            <li><span className="font-semibold">Binance ID (TRC20):</span> 777969674</li>
+            <li><span className="font-semibold">Revolut:</span> @ispanets</li>
             <li><span className="font-semibold">Wise (IBAN):</span> DE** **** **** 1234</li>
           </>
         ) : (
           <>
-            <li><span className="font-semibold">Revolut:</span> @username</li>
+            <li><span className="font-semibold">Revolut:</span> @ispanets</li>
             <li><span className="font-semibold">Wise (IBAN):</span> DE** **** **** 1234</li>
-            <li><span className="font-semibold">Binance ID (TRC20):</span> 777777</li>
+            <li><span className="font-semibold">Binance ID (TRC20):</span> 777969674</li>
             <li><span className="font-semibold">Santander (IBAN):</span> DE** **** **** 1234</li>
           </>
         )}
       </ul>
     </div>
 
-    {/* Логотип */}
-    <div className="flex flex-col items-center sm:items-start lg:items-end text-center sm:text-left lg:text-right">
-      <img src={logo} alt="Logo" className="w-28 sm:w-32 md:w-40 lg:w-48 mb-2" />
-      <p className="text-sm text-gray-400 mt-2">© {new Date().getFullYear()} Yuriy Bykov</p>
-    </div>
-  </div>
+    {/* Логотип и подпись */}
+<div className="flex flex-col items-start text-left">
+  <img
+    src={logo}
+    alt="Logo"
+    className="w-40 sm:w-48 md:w-56 lg:w-64 mb-2"
+  />
+        </div>
+
+
+      </div>
+       <SubFooter /> 
 </footer>
 
   );
