@@ -1,45 +1,25 @@
 import React from 'react';
-import homePageData from '../components/homePageData'; 
+import homePageData from '../components/homePageData';
 import { useTranslation } from 'react-i18next';
 
-
 const Home: React.FC = () => {
-  const { i18n } = useTranslation(); 
-  const language = i18n.language;  
+  const { i18n } = useTranslation();
+  const language = i18n.language;
 
   return (
     <section
-      className="home-page"
-      style={{
-        backgroundImage: `url(${homePageData.backgroundImage})`,
-        backgroundSize: 'cover',  
-        backgroundPosition: 'center',  
-        width: '100%',  
-        minHeight: '100vh',  
-        display: 'flex',
-        justifyContent: 'center',  
-        alignItems: 'center',  
-        textAlign: 'center',
-        color: 'white',
-        padding: '0',  
-        margin: '0',  
-      }}
+      className="relative w-full min-h-screen bg-cover bg-center"
+      style={{ backgroundImage: `url(${homePageData.backgroundImage})` }}
     >
-      <h1
-        style={{
-          fontSize: '3rem',
-          fontWeight: 'bold',
-          textTransform: 'uppercase',
-          letterSpacing: '2px',
-          background: 'rgba(0, 0, 0, 0.5)',  
-          padding: '20px 40px',
-          borderRadius: '10px',
-          boxShadow: '0 4px 10px rgba(0, 0, 0, 0.6)',
-          animation: 'fadeIn 1.5s ease-out',  
-        }}
-      >
-        {homePageData.welcomeMessage[language]}
-      </h1>
+      {/* Затемняющий слой */}
+      <div className="absolute inset-0 bg-black/60"></div>
+
+      {/* Контент поверх фона */}
+      <div className="relative z-10 flex flex-col items-center justify-center text-center min-h-screen px-4">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-widest text-white bg-black/40 px-6 py-4 rounded-xl shadow-lg animate-fadeIn">
+          {homePageData.welcomeMessage[language]}
+        </h1>
+      </div>
     </section>
   );
 };
