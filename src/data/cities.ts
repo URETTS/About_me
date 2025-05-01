@@ -48,6 +48,11 @@ import pliveight from '../../assets/images/Cities/plitvice/pliveight.jpg';
 import plivnine from '../../assets/images/Cities/plitvice/plivnine.jpg';
 
 import ljubljanaprev from '../../assets/images/Cities/ljubljana/ljubljanaprev.jpg';
+import lubone from '../../assets/images/Cities/ljubljana/lubone.jpg';
+import lubtwo from '../../assets/images/Cities/ljubljana/lubtwo.jpg';
+import lubfour from '../../assets/images/Cities/ljubljana/lubfour.jpg';
+import lubthree from '../../assets/images/Cities/ljubljana/lubthree.jpg';
+import lubfive from '../../assets/images/Cities/ljubljana/lubfive.jpg';
 
 import munichprev from '../../assets/images/Cities/munich/munichprev.jpg';
 
@@ -185,7 +190,7 @@ const cityData: CountryWithCities[] = [
 Я ночевал в современном хостеле, где у каждого была своя капсула — компактная, но очень комфортная. Это был новый для меня опыт, и он отлично вписался в общую атмосферу поездки: простота, уют и чувство комфорта.
 
 Эта короткая остановка в Любляне оставила после себя очень тёплые впечатления — сюда точно хочется вернуться.`,
-        images: [ljubljanaprev
+        images: [ljubljanaprev,lubone,lubtwo,lubfour,lubthree,lubfive
           
         ]
       }

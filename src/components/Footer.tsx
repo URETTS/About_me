@@ -76,12 +76,32 @@ const Footer = () => {
             <li><span className="font-semibold">ПриватБанк:</span> 5457082518678003</li>
            {/* <li><span className="font-semibold">Sence:</span> 5168 **** **** 5678</li> */}
             <li><span className="font-semibold">Binance ID (TRC20):</span> 777969674</li>
-            <li><span className="font-semibold">Revolut:</span> @ispanets</li>
+                <li className="flex items-center gap-2">
+  <span className="font-semibold">💳 Revolut:</span>
+  <a
+    href="https://revolut.me/ispanets"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="underline text-blue-300 hover:text-blue-400 transition font-medium"
+  >
+    @ispanets
+  </a>
+</li>
             <li><span className="font-semibold">Wise (IBAN):</span> DE** **** **** 1234</li>
           </>
         ) : (
           <>
-            <li><span className="font-semibold">Revolut:</span> @ispanets</li>
+<li className="flex items-center gap-2">
+  <span className="font-semibold">💳 Revolut:</span>
+  <a
+    href="https://revolut.me/ispanets"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="underline text-blue-300 hover:text-blue-400 transition font-medium"
+  >
+    @ispanets
+  </a>
+</li>
             <li><span className="font-semibold">Wise (IBAN):</span> DE** **** **** 1234</li>
             <li><span className="font-semibold">Binance ID (TRC20):</span> 777969674</li>
             <li><span className="font-semibold">Santander (IBAN):</span> DE** **** **** 1234</li>

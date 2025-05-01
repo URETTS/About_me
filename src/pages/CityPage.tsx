@@ -2,6 +2,9 @@ import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import cityData from '../data/cities';
 
+import Lightbox from 'yet-another-react-lightbox';
+import 'yet-another-react-lightbox/styles.css';
+
 const CityPage = () => {
   const { countryId, cityId } = useParams();
   const navigate = useNavigate();
@@ -10,6 +13,8 @@ const CityPage = () => {
   const city = country?.cities.find((c) => c.id === cityId);
 
   const [orientations, setOrientations] = useState<string[]>([]);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [lightboxIndex, setLightboxIndex] = useState(0);
 
   useEffect(() => {
     if (!city) return;
@@ -45,23 +50,36 @@ const CityPage = () => {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-  {city.images.map((src, index) => (
-    <div
-      key={index}
-      className="rounded-xl overflow-hidden bg-gray-200 dark:bg-gray-700"
-    >
-      <img
-        src={src}
-        alt={`Изображение ${index + 1}`}
-        className="w-full h-full object-cover"
-      />
-    </div>
-  ))}
-</div>
+        {city.images.map((src, index) => (
+          <div
+            key={index}
+            className="rounded-xl overflow-hidden bg-gray-200 dark:bg-gray-700 cursor-pointer"
+            onClick={() => {
+              setLightboxIndex(index);
+              setLightboxOpen(true);
+            }}
+          >
+            <img
+              src={src}
+              alt={`Изображение ${index + 1}`}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        ))}
+      </div>
 
       <div
         className="prose prose-lg text-gray-900 dark:text-gray-700"
         dangerouslySetInnerHTML={{ __html: city.description }}
+      />
+
+      {/* Lightbox */}
+      <Lightbox
+        open={lightboxOpen}
+        close={() => setLightboxOpen(false)}
+        index={lightboxIndex}
+        slides={city.images.map((src) => ({ src }))}
+        on={{ view: ({ index }) => setLightboxIndex(index) }}
       />
     </div>
   );
