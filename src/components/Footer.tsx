@@ -110,7 +110,7 @@ const Footer = () => {
       </ul>
     </div>
 
-    {/* Логотип и подпись */}
+    {/* Логотип */}
 <div className="flex flex-col items-start text-left">
   <img
     src={logo}
@@ -121,7 +121,9 @@ const Footer = () => {
 
 
       </div>
-       <SubFooter /> 
+       <div className="mt-8 border-t border-gray-700 pt-4">
+  <SubFooter />
+</div>
 </footer>
 
   );

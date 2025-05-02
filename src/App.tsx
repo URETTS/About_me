@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Experience from './pages/Experience';
@@ -9,10 +10,12 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 function App() {
+  const location = useLocation();
+  const isHome = location.pathname === '/';
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="flex-grow container mx-auto p-4">
+      <main className={`${isHome ? '' : 'container mx-auto p-4'} flex-grow`}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

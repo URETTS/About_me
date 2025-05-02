@@ -10,18 +10,18 @@ const Home: React.FC = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      const isMobile = window.innerWidth < 768; // Tailwind sm breakpoint
+      const isMobile = window.innerWidth < 768; 
       setBackgroundImage(isMobile ? homePageData.mobileImage : homePageData.desktopImage);
     };
 
-    handleResize(); // init
-    window.addEventListener('resize', handleResize); // on resize
-    return () => window.removeEventListener('resize', handleResize); // cleanup
+    handleResize(); 
+    window.addEventListener('resize', handleResize); 
+    return () => window.removeEventListener('resize', handleResize); 
   }, []);
 
   return (
     <section
-      className="relative w-full min-h-screen bg-cover bg-center"
+      className="relative w-full h-screen bg-cover bg-center"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="absolute inset-0 bg-black/60"></div>

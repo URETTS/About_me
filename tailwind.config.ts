@@ -9,8 +9,8 @@ const config: Config = {
       },
       keyframes: {
         fadeIn: {
-          '0%': { opacity: '0' }, // Значение должно быть строкой
-          '100%': { opacity: '1' }, // Значение должно быть строкой
+          '0%': { opacity: '0' }, 
+          '100%': { opacity: '1' }, 
         },
       },
     },
