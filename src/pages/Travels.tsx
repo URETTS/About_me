@@ -1,10 +1,16 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import countries from '../data/countries';
 
 const TravelPage = () => {
+  const { t, i18n } = useTranslation();
+  const language = i18n.language.startsWith('ru') ? 'ru' : 'en';
+
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-6">Путешествия</h1>
+      <h1 className="text-3xl font-bold mb-6">
+        {t('travels.title')} {/* В en.json: "travels.title": "Travels", в ru.json: "travels.title": "Путешествия" */}
+      </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {countries.map((country) => (
           <Link
@@ -14,12 +20,12 @@ const TravelPage = () => {
           >
             <img
               src={country.image}
-              alt={country.name}
+              alt={country.name[language]}
               className="w-full h-48 object-cover"
             />
             <div className="p-2 bg-white dark:bg-gray-800">
               <h2 className="text-lg font-semibold text-gray-800 dark:text-white">
-                {country.name}
+                {country.name[language]}
               </h2>
             </div>
           </Link>

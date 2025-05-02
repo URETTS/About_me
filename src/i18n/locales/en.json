@@ -16,5 +16,18 @@
       "revolut": "Revolut: @username",
       "wise": "Wise (IBAN): DE** **** **** 1234",
       "binance": "Binance: username"}
+  },
+  "travels": {
+    "title": "Travels"
+  },
+  "country": {
+    "notFound": "Country not found",
+    "cities": "Cities",
+    "back": "Back"
+  },
+  "city": {
+    "notFound": "City not found",
+    "back": "Back",
+    "image": "Image"
   }
 }
