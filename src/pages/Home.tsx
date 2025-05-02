@@ -5,19 +5,37 @@ import { useTranslation } from 'react-i18next';
 const Home: React.FC = () => {
   const { i18n } = useTranslation();
   const language = i18n.language;
+  const fullText = homePageData.welcomeMessage[language];
 
   const [backgroundImage, setBackgroundImage] = useState(homePageData.desktopImage);
+  const [typedText, setTypedText] = useState('');
 
   useEffect(() => {
     const handleResize = () => {
-      const isMobile = window.innerWidth < 768; 
+      const isMobile = window.innerWidth < 768;
       setBackgroundImage(isMobile ? homePageData.mobileImage : homePageData.desktopImage);
     };
 
-    handleResize(); 
-    window.addEventListener('resize', handleResize); 
-    return () => window.removeEventListener('resize', handleResize); 
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
+
+  useEffect(() => {
+    setTypedText('');
+
+    let index = 0;
+    const interval = setInterval(() => {
+      if (index < fullText.length) {
+        setTypedText(fullText.slice(0, index + 1));
+        index++;
+      } else {
+        clearInterval(interval);
+      }
+    }, 70);
+
+    return () => clearInterval(interval);
+  }, [fullText]);
 
   return (
     <section
@@ -27,8 +45,9 @@ const Home: React.FC = () => {
       <div className="absolute inset-0 bg-black/60"></div>
 
       <div className="relative z-10 flex flex-col items-center justify-center text-center min-h-screen px-4">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-widest text-white bg-black/40 px-6 py-4 rounded-xl shadow-lg animate-fadeIn">
-          {homePageData.welcomeMessage[language]}
+        <h1 className="text-xl sm:text-3xl md:text-5xl lg:text-6xl font-bold tracking-widest text-white px-4 py-4 bg-black/50 rounded-xl shadow-lg max-w-[90%] sm:max-w-[80%]">
+          {typedText}
+          <span className="cursor-blink" />
         </h1>
       </div>
     </section>

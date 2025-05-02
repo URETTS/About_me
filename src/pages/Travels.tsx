@@ -17,7 +17,7 @@ const TravelPage = () => {
               alt={country.name}
               className="w-full h-48 object-cover"
             />
-            <div className="p-4 bg-white dark:bg-gray-800">
+            <div className="p-2 bg-white dark:bg-gray-800">
               <h2 className="text-lg font-semibold text-gray-800 dark:text-white">
                 {country.name}
               </h2>

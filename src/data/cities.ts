@@ -77,14 +77,61 @@ import veeight from '../../assets/images/Cities/venice/veeight.jpg';
 import venine from '../../assets/images/Cities/venice/venine.jpg';
 
 import tbilisiprev from '../../assets/images/Cities/tbilisi/tbilisiprev.jpg';
+import tbone from '../../assets/images/Cities/tbilisi/tbone.jpg';
+import tbtwo from '../../assets/images/Cities/tbilisi/tbtwo.jpg';
+import tbthree from '../../assets/images/Cities/tbilisi/tbthree.jpg';
+import tbfour from '../../assets/images/Cities/tbilisi/tbfour.jpg';
+import  tbfive from '../../assets/images/Cities/tbilisi/tbfive.jpg';
+import tbsix from '../../assets/images/Cities/tbilisi/tbsix.jpg';
+import tbseven from '../../assets/images/Cities/tbilisi/tbseven.jpg';
+import tbeight from '../../assets/images/Cities/tbilisi/tbeight.jpg';
+import tbnine from '../../assets/images/Cities/tbilisi/tbnine.jpg';
+import tbten from '../../assets/images/Cities/tbilisi/tbten.jpg';
+import tbeleven from '../../assets/images/Cities/tbilisi/tbeleven.jpg';
+import tbtwelve from '../../assets/images/Cities/tbilisi/tbtwelve.jpg';
+import tbsto from '../../assets/images/Cities/tbilisi/tbsto.jpg';
 
- import kutaisiprev from '../../assets/images/Cities/kutaisi/kutaisiprev.jpg';
 
- import gudauriprev from '../../assets/images/Cities/gudauri/gudauriprev.jpg';
+import kutaisiprev from '../../assets/images/Cities/kutaisi/kutaisiprev.jpg';
+import kuone from '../../assets/images/Cities/kutaisi/kuone.jpg';
+import kutwo from '../../assets/images/Cities/kutaisi/kutwo.jpg';
+import kuthree from '../../assets/images/Cities/kutaisi/kuthree.jpg';
+import kufour from '../../assets/images/Cities/kutaisi/kufour.jpg';
+import kufive from '../../assets/images/Cities/kutaisi/kufive.jpg';
+import kusix from '../../assets/images/Cities/kutaisi/kusix.jpg';
+import kuseven from '../../assets/images/Cities/kutaisi/kuseven.jpg';
 
- import alazaniprev from '../../assets/images/Cities/alazani/alazaniprev.jpg';
+      
 
- import yerevanprev from '../../assets/images/Cities/yerevan/yerevanprev.jpg';
+import gudauriprev from '../../assets/images/Cities/gudauri/gudauriprev.jpg';
+import guone from '../../assets/images/Cities/gudauri/guone.jpg';
+import gutwo from '../../assets/images/Cities/gudauri/gutwo.jpg';
+import guthree from '../../assets/images/Cities/gudauri/guthree.jpg';
+import gufour from '../../assets/images/Cities/gudauri/gufour.jpg';
+import gufive from '../../assets/images/Cities/gudauri/gufive.jpg';
+import gusix from '../../assets/images/Cities/gudauri/gusix.jpg';
+import guseven from '../../assets/images/Cities/gudauri/guseven.jpg';
+
+import alazaniprev from '../../assets/images/Cities/alazani/alazaniprev.jpg';
+import alone from '../../assets/images/Cities/alazani/alone.jpg';
+import altwo from '../../assets/images/Cities/alazani/altwo.jpg';
+import althree from '../../assets/images/Cities/alazani/althree.jpg';
+import alfour from '../../assets/images/Cities/alazani/alfour.jpg';
+import alfive from '../../assets/images/Cities/alazani/alfive.jpg';
+import fasix from '../../assets/images/Cities/alazani/fasix.jpg';
+import alseven from '../../assets/images/Cities/alazani/alseven.jpg';
+
+import yerevanprev from '../../assets/images/Cities/yerevan/yerevanprev.jpg';
+import erone from '../../assets/images/Cities/yerevan/erone.jpg';
+import ertwo from '../../assets/images/Cities/yerevan/ertwo.jpg';
+import erthree from '../../assets/images/Cities/yerevan/erthree.jpg';
+import erfour from '../../assets/images/Cities/yerevan/erfour.jpg';
+import erfive from '../../assets/images/Cities/yerevan/erfive.jpg';
+import ersix from '../../assets/images/Cities/yerevan/ersix.jpg';
+import erseven from '../../assets/images/Cities/yerevan/erseven.jpg';
+import ereight from '../../assets/images/Cities/yerevan/ereight.jpg';
+import ernine from '../../assets/images/Cities/yerevan/ernine.jpg';
+                  
 
  import malagaprev from '../../assets/images/Cities/malaga/malagaprev.jpg';
 
@@ -279,7 +326,7 @@ const cityData: CountryWithCities[] = [
         description: `<h2 class="text-xl font-semibold mb-4">Тбилиси — душевная столица</h2> Тбилиси удивительно напомнил мне Киев — только со своей уникальной атмосферой и ритмом. Город живой, яркий и особенно красивый ночью, когда его улицы мягко подсвечены. Здесь можно часами гулять по старым кварталам, находить уличные кафе, арт-пространства и просто наблюдать за жизнью.
 
 В Тбилиси особенно приятно просто быть — ничего не делать, просто впитывать его настроение. `,
-        images: [tbilisiprev
+        images: [tbilisiprev,tbone,tbtwo,tbthree,tbfour,tbfive,tbsix,tbseven,tbeight,tbnine,tbten,tbeleven,tbtwelve,tbsto
           
         ]
       },
@@ -290,7 +337,7 @@ const cityData: CountryWithCities[] = [
         description: ` <h2 class="text-xl font-semibold mb-4">Кутаиси — дух прошлого и грузинская реальность</h2>Кутаиси запомнился своей камерной атмосферой. Мы ездили туда на Subaru Forester, чтобы проводить друга в аэропорт, а заодно — исследовать окрестности. Особенно впечатлил заброшенный советский санаторий — настоящее путешествие во времени. Атмосферно, странно, интересно.
 
  `,
-        images: [kutaisiprev
+        images: [kutaisiprev,kuone,kutwo,kuthree,kufour,kufive,kusix,kuseven
           
         ]
       },
@@ -299,7 +346,7 @@ const cityData: CountryWithCities[] = [
         name: 'Гудаури',
         flagColors: ['#FFFFFF', '#D30000' ],
         description: ` <h2 class="text-xl font-semibold mb-4">Гудаури — суровая красота и драйв на оффроуде</h2>Одной из самых запоминающихся поездок стала поездка в Гудаури. Мы отправились туда на Ниве, прокатились по оффроуду, поднимались в горы, останавливались в долинах и любовались видом на Казбек. Машина отлично справлялась с любой дорогой, а грузинская природа — с любой усталостью. `,
-        images: [ gudauriprev
+        images: [ gudauriprev,guone,gutwo,guthree,gufour,gufive, gusix,guseven
           
         ]
       },
@@ -310,7 +357,7 @@ const cityData: CountryWithCities[] = [
         description: ` <h2 class="text-xl font-semibold mb-4">Алазанская долина — винный рай и советский аэродром</h2> Последняя поездка по Грузии — в Алазанскую долину. Мы снова сели в Ниву и поехали навстречу закатам. Проехали по долине, заехали в горный городок, а потом — на заброшенный аэродром Шираки. Там мы катались, гоняли, устраивали настоящие ралли — место нереальное, с духом прошлого и настоящей свободой.
 
 `,
-        images: [ alazaniprev
+        images: [ alazaniprev,alone,altwo,althree,alfour,alfive,fasix,alseven
           
         ]
       }
@@ -326,7 +373,7 @@ const cityData: CountryWithCities[] = [
         description: ` <h2 class="text-xl font-semibold mb-4">Ереван — столица с видом на Арарат и духом прошлого</h2> Ереван — город неоднозначный. Мы гуляли по центру, любовались панорамами, видели Арарат — даже несмотря на тучи, он выглядел впечатляюще. Сам город — типичный постсоветский: массивные здания, широкие улицы, мощёные площади.
 
 Мы побывали возле завода коньяка «Арарат», прошлись по главным улицам, попробовали местную еду и просто впитывали атмосферу. В Ереване много знакомого — он не кажется чужим, особенно если ты говоришь по-русски. Но при этом он не отпускает ощущение, что здесь всё как будто в прошлом — но с дорогими машинами и небюджетными ценами.`,
-        images: [yerevanprev
+        images: [yerevanprev,erone,ertwo,erthree,erfour,erfive,ersix,erseven,ereight,ernine
           
         ]
       }

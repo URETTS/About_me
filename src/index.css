@@ -13,3 +13,24 @@ body,
     overscroll-behavior-y: none;
         overscroll-behavior-x: none;
 }
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.cursor-blink {
+    display: inline-block;
+    width: 2px;
+    height: 1em;
+    background-color: white;
+    margin-left: 4px;
+    animation: blink 1s steps(1, end) infinite;
+}
