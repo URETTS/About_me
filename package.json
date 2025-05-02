@@ -18,6 +18,7 @@
     "yet-another-react-lightbox": "^3.23.0"
   },
   "devDependencies": {
+    "@types/node": "^22.15.3",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^4.0.0",

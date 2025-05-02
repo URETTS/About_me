@@ -13,10 +13,12 @@ import Footer from './components/Footer';
 function App() {
   const location = useLocation();
   const isHome = location.pathname === '/';
+  const isTravels = location.pathname.startsWith('/travels');
+  
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <main className={`${isHome ? '' : 'container mx-auto p-4'} flex-grow`}>
+      <main className={`${isHome || isTravels ? '' : 'container mx-auto p-4'} flex-grow`}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -30,5 +32,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
