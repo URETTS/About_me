@@ -104,7 +104,7 @@ const Footer = () => {
 </li>
             <li><span className="font-semibold">Wise (IBAN):</span> DE** **** **** 1234</li>
             <li><span className="font-semibold">Binance ID (TRC20):</span> 777969674</li>
-            <li><span className="font-semibold">Santander (IBAN):</span> DE** **** **** 1234</li>
+            <li><span className="font-semibold">Santander (IBAN):</span> ES59 0049 5366 1525 1651 8374</li>
           </>
         )}
       </ul>

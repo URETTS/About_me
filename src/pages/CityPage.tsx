@@ -37,6 +37,11 @@ const CityPage = () => {
     return <div className="p-4">Город не найден</div>;
   }
 
+  const flagColors = city.flagColors || ['#000']; // если флаг не задан, используем черный цвет по умолчанию
+
+  // Преобразуем цвета в строку для градиента
+  const borderGradient = `linear-gradient(to right, ${flagColors.join(', ')})`;
+
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
       <div className="flex justify-between items-center mb-4">
@@ -53,7 +58,13 @@ const CityPage = () => {
         {city.images.map((src, index) => (
           <div
             key={index}
-            className="rounded-xl overflow-hidden bg-gray-200 dark:bg-gray-700 cursor-pointer"
+            className="rounded-xl overflow-hidden cursor-pointer"
+            style={{
+              border: '4px solid transparent', 
+              borderImage: borderGradient, 
+              borderImageSlice: 1, 
+              borderRadius: 'inherit', 
+            }}
             onClick={() => {
               setLightboxIndex(index);
               setLightboxOpen(true);
@@ -62,7 +73,7 @@ const CityPage = () => {
             <img
               src={src}
               alt={`Изображение ${index + 1}`}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover " 
             />
           </div>
         ))}
@@ -86,3 +97,4 @@ const CityPage = () => {
 };
 
 export default CityPage;
+
