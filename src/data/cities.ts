@@ -17,6 +17,18 @@ import jdthree from '../../assets/images/Cities/odessa/jdthree.jpg';
 import odfour from '../../assets/images/Cities/odessa/odfour.jpg';
 import odfive from '../../assets/images/Cities/odessa/odfive.jpg';
 
+import carpathiansprev from '../../assets/images/Cities/carpathians/carpathiansprev.jpg';
+import carone from '../../assets/images/Cities/carpathians/carone.jpg';
+import cartwo from '../../assets/images/Cities/carpathians/cartwo.jpg';
+import carthree from '../../assets/images/Cities/carpathians/carthree.jpg';
+import carfour from '../../assets/images/Cities/carpathians/carfour.jpg';
+import carfive from '../../assets/images/Cities/carpathians/carfive.jpg';
+import carssix from '../../assets/images/Cities/carpathians/carssix.jpg';
+import carseven from '../../assets/images/Cities/carpathians/carseven.jpg';
+import careight from '../../assets/images/Cities/carpathians/careight.jpg';
+import carnine from '../../assets/images/Cities/carpathians/carnine.jpg';
+import  carten from '../../assets/images/Cities/carpathians/carten.jpg';
+import careleven from '../../assets/images/Cities/carpathians/careleven.jpg';
 
 import chernigovprev  from '../../assets/images/Cities/chernigov/chernigovprev.jpg';
 import cherone from '../../assets/images/Cities/chernigov/cherone.jpg';
@@ -362,7 +374,7 @@ flagColors: ['#0057B7', '#FFD700'],
 I've been to the Carpathians many times — for skiing and hiking trips with a tent. I’ve visited almost every town in the region. It’s a place where you feel the true power of nature: mountains, forests, fresh air. Each trip is like a small adventure and a reset.`
 }
 ,
-      images: []
+      images: [carpathiansprev,carone,cartwo,carthree,carfour,carfive,carssix,carseven,careight,carnine,carten,careleven]
     },
     {
       id: 'chernihiv',
