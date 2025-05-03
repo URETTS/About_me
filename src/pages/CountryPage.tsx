@@ -37,7 +37,7 @@ const CountryPage = () => {
               <Link
                 key={city.id}
                 to={`/travels/${countryId}/${city.id}`}
-                className="block rounded-xl overflow-hidden shadow-lg bg-white dark:bg-gray-800 hover:shadow-xl transition"
+                className="block rounded-xl overflow-hidden shadow-lg bg-white dark:bg-gray-800 hover:shadow-xl transition transform hover:scale-[1.05]"
               >
                 <img
                   src={city.images[0]}
@@ -58,7 +58,7 @@ const CountryPage = () => {
       <div className="text-center mt-8">
         <button
           onClick={() => navigate('/travels')}
-          className="px-6 py-2 bg-gray-200 dark:bg-gray-700 text-black dark:text-white rounded hover:bg-gray-300 dark:hover:bg-gray-600 transition"
+          className="px-6 py-2 bg-gray-200 dark:bg-gray-700 text-black dark:text-white rounded hover:bg-gray-300 dark:hover:bg-gray-600 transition "
         >
           ← {t('country.back')}
         </button>

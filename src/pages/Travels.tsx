@@ -16,7 +16,7 @@ const TravelPage = () => {
     if (flag) {
       const id = setTimeout(() => {
         setBackgroundImage(flag);
-      }, 1000); // задержка перед показом
+      }, 700); // задержка перед показом
       setTimerId(id);
     }
   };
@@ -53,7 +53,7 @@ const TravelPage = () => {
                 to={`/travels/${country.id}`}
                 onMouseEnter={() => handleMouseEnter(country.id)}
                 onMouseLeave={handleMouseLeave}
-                className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300"
+                className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-[1.05]"
               >
                 <img
                   src={country.image}

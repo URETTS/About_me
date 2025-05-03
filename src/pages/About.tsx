@@ -7,16 +7,44 @@ const About = () => {
   return (
     <div className="max-w-3xl mx-auto px-4 py-10 space-y-12">
       <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="text-center"
-      >
-        <h1 className="text-4xl font-bold mb-2">{t('about.greeting')}</h1>
-        <p className="text-gray-600 dark:text-gray-400 text-lg">
-          {t('about.intro')}
-        </p>
-      </motion.div>
+  initial="hidden"
+  animate="visible"
+  variants={{
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.05,
+      },
+    },
+  }}
+  className="max-w-2xl mx-auto text-center px-4 py-6"
+>
+  <motion.h1
+    initial={{ opacity: 0, y: -10 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6 }}
+    className="text-4xl font-extrabold text-neutral-900  mb-4"
+  >
+    {t('about.greeting')}
+  </motion.h1>
+
+  <motion.div className="flex flex-wrap justify-center gap-1 text-lg md:text-xl font-medium leading-relaxed text-neutral-800 ">
+    {t('about.intro')
+      .split(' ')
+      .map((word, i) => (
+        <motion.span
+          key={i}
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: i * 0.04 }}
+          className="inline-block"
+        >
+          {word}&nbsp;
+        </motion.span>
+      ))}
+  </motion.div>
+</motion.div>
+
 
       <motion.div
         initial={{ opacity: 0, x: -30 }}
@@ -24,7 +52,7 @@ const About = () => {
         transition={{ delay: 0.2 }}
         className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md"
       >
-        <h2 className="text-2xl font-semibold mb-2">{t('about.educationTitle')}</h2>
+        <h2 className="text-2xl font-semibold mb-4 border-b border-gray-300 dark:border-gray-600 pb-1 text-gray-800 dark:text-gray-200">{t('about.educationTitle')}</h2>
         <ul className="text-gray-700 dark:text-gray-300 space-y-2">
           <li>{t('about.eduGoIT')}</li>
           <li>{t('about.eduMaster')}</li>
@@ -39,7 +67,7 @@ const About = () => {
         transition={{ delay: 0.4 }}
         className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md"
       >
-        <h2 className="text-2xl font-semibold mb-2">{t('about.hobbiesTitle')}</h2>
+        <h2 className="text-2xl font-semibold mb-4 border-b border-gray-300 dark:border-gray-600 pb-1 text-gray-800 dark:text-gray-200">{t('about.hobbiesTitle')}</h2>
         <p className="text-gray-700 dark:text-gray-300">
           {t('about.hobbies')}
         </p>
@@ -51,7 +79,7 @@ const About = () => {
         transition={{ delay: 0.6 }}
         className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md"
       >
-        <h2 className="text-2xl font-semibold mb-2">{t('about.sportTitle')}</h2>
+        <h2 className="text-2xl font-semibold mb-4 border-b border-gray-300 dark:border-gray-600 pb-1 text-gray-800 dark:text-gray-200">{t('about.sportTitle')}</h2>
         <p className="text-gray-700 dark:text-gray-300">
           {t('about.sport')}
         </p>
@@ -63,7 +91,7 @@ const About = () => {
         transition={{ delay: 0.7 }}
         className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md"
       >
-        <h2 className="text-2xl font-semibold mb-2">{t('about.goalsTitle')}</h2>
+        <h2 className="text-2xl font-semibold mb-4 border-b border-gray-300 dark:border-gray-600 pb-1 text-gray-800 dark:text-gray-200">{t('about.goalsTitle')}</h2>
         <p className="text-gray-700 dark:text-gray-300">
           {t('about.goals')}
         </p>
