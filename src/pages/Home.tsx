@@ -50,6 +50,11 @@ const Home: React.FC = () => {
           <span className="cursor-blink" />
         </h1>
       </div>
+        <div className="absolute bottom-6 w-full flex justify-center z-20 px-4">
+        <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl bg-black/50 rounded-lg px-4 py-2 shadow-md max-w-[90%] text-center">
+          {homePageData.birthdayNote[language]}
+        </p>
+      </div>
     </section>
   );
 };
