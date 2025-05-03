@@ -7,13 +7,17 @@ const Home: React.FC = () => {
   const language = i18n.language;
   const fullText = homePageData.welcomeMessage[language];
 
-  const [backgroundImage, setBackgroundImage] = useState(homePageData.desktopImage);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [imageIndex, setImageIndex] = useState(0);
+  const [backgroundImage, setBackgroundImage] = useState(
+    isMobile ? homePageData.mobileImages[0] : homePageData.desktopImages[0]
+  );
   const [typedText, setTypedText] = useState('');
 
   useEffect(() => {
     const handleResize = () => {
-      const isMobile = window.innerWidth < 768;
-      setBackgroundImage(isMobile ? homePageData.mobileImage : homePageData.desktopImage);
+      const mobile = window.innerWidth < 768;
+      setIsMobile(mobile);
     };
 
     handleResize();
@@ -22,8 +26,21 @@ const Home: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    setTypedText('');
+    const images = isMobile ? homePageData.mobileImages : homePageData.desktopImages;
+    const interval = setInterval(() => {
+      setImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 10000);
 
+    return () => clearInterval(interval);
+  }, [isMobile]);
+
+  useEffect(() => {
+    const images = isMobile ? homePageData.mobileImages : homePageData.desktopImages;
+    setBackgroundImage(images[imageIndex]);
+  }, [imageIndex, isMobile]);
+
+  useEffect(() => {
+    setTypedText('');
     let index = 0;
     const interval = setInterval(() => {
       if (index < fullText.length) {
@@ -33,13 +50,12 @@ const Home: React.FC = () => {
         clearInterval(interval);
       }
     }, 70);
-
     return () => clearInterval(interval);
   }, [fullText]);
 
   return (
     <section
-      className="relative w-full h-screen bg-cover bg-center"
+      className="relative w-full h-screen bg-cover bg-center transition-all duration-1000"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="absolute inset-0 bg-black/60"></div>
@@ -50,7 +66,8 @@ const Home: React.FC = () => {
           <span className="cursor-blink" />
         </h1>
       </div>
-        <div className="absolute bottom-6 w-full flex justify-center z-20 px-4">
+
+      <div className="absolute bottom-6 w-full flex justify-center z-20 px-4">
         <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl bg-black/50 rounded-lg px-4 py-2 shadow-md max-w-[90%] text-center">
           {homePageData.birthdayNote[language]}
         </p>
@@ -59,4 +76,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default Home; 
