@@ -1,3 +1,4 @@
+import ukraine from '../../assets/images/country_prev/ukrainaprev.jpg';
 import mold from '../../assets/images/country_prev/mold.jpg';
 import rum from '../../assets/images/country_prev/rum.jpg';
 import cro from '../../assets/images/country_prev/cro.jpg';
@@ -9,7 +10,36 @@ import arm from '../../assets/images/country_prev/arm.jpg';
 import esp from '../../assets/images/country_prev/esp.jpg';
 import port from '../../assets/images/country_prev/port.jpg';
 
+
 const countries = [
+  {
+  id: 'ukraine',
+  name: {
+    ru: 'Украина',
+    en: 'Ukraine',
+  },
+  image: ukraine, 
+  description: {
+    ru: `<h2 class="text-xl font-semibold mb-4">Украина — моя родная страна</h2>
+Украина — это страна, в которой я родился и прожил 24 года. Здесь прошло моё детство, юность и первые шаги во взрослой жизни. Это место, с которым связано большинство моих воспоминаний, друзей и событий.
+
+Украина — большая и разнообразная. От шумного Киева до спокойных карпатских деревушек, от бескрайних полей до побережья Чёрного моря — в ней есть всё. Особенно близкими для меня всегда были центральные и южные регионы, где я чувствовал себя как дома.
+
+
+К сожалению, из-за войны мне пришлось покинуть Украину и отправиться в путешествие. Это решение далось нелегко, но именно с этого момента началась новая глава моей жизни — полная перемещений, открытий и переосмыслений.
+
+Для меня Украина — это не просто точка на карте. Это основа, на которой строится всё остальное.`,
+    
+    en: `<h2 class="text-xl font-semibold mb-4">Ukraine — my homeland</h2>
+Ukraine is the country where I was born and lived for 24 years. It's where I spent my childhood, youth, and took my first steps into adult life. Most of my memories, friends, and important moments are connected with this place.
+
+Ukraine is vast and diverse. From the vibrant city of Kyiv to the quiet Carpathian villages, from endless fields to the Black Sea coast — it has it all. I’ve always felt especially at home in the central and southern regions.
+
+Unfortunately, because of the war, I had to leave Ukraine and start a journey. It was a difficult decision, but it marked the beginning of a new chapter in my life — full of movement, discoveries, and reflections.
+
+For me, Ukraine is not just a spot on the map. It’s the foundation on which everything else is built.`
+  }
+},
  {
   id: 'moldova',
   name: {

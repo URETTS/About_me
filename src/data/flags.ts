@@ -8,9 +8,7 @@ import Flag_of_Georgia from '../../assets/flags/Flag_of_Georgia.svg.jpg';
 import Flag_of_Armenia from '../../assets/flags/Flag_of_Armenia.jpg';
 import Flag_of_Spain from '../../assets/flags/Flag_of_Spain.jpg';
 import Flag_of_Portugal from '../../assets/flags/Flag_of_Portugal.jpg';
-
-
-
+import Flag_of_Ukraine from '../../assets/flags/Flag_of_Ukraine.jpg';
 
 
 export const flags = {
@@ -23,5 +21,6 @@ export const flags = {
   georgia:Flag_of_Georgia,
   armenia:Flag_of_Armenia,
   spain:Flag_of_Spain,
-  portugal:Flag_of_Portugal
+  portugal: Flag_of_Portugal,
+  ukraine: Flag_of_Ukraine,
 } as const;

@@ -89,7 +89,6 @@ import tbten from '../../assets/images/Cities/tbilisi/tbten.jpg';
  import tbeleven from '../../assets/images/Cities/tbilisi/tbeleven.jpg';
 import tbsto from '../../assets/images/Cities/tbilisi/tbsto.jpg';
 
-
 import kutaisiprev from '../../assets/images/Cities/kutaisi/kutaisiprev.jpg';
 import kuone from '../../assets/images/Cities/kutaisi/kuone.jpg';
 import kutwo from '../../assets/images/Cities/kutaisi/kutwo.jpg';
@@ -98,8 +97,6 @@ import kufour from '../../assets/images/Cities/kutaisi/kufour.jpg';
 import kufive from '../../assets/images/Cities/kutaisi/kufive.jpg';
 import kusix from '../../assets/images/Cities/kutaisi/kusix.jpg';
 import kuseven from '../../assets/images/Cities/kutaisi/kuseven.jpg';
-
-      
 
 import gudauriprev from '../../assets/images/Cities/gudauri/gudauriprev.jpg';
 import guone from '../../assets/images/Cities/gudauri/guone.jpg';
@@ -129,17 +126,53 @@ import ersix from '../../assets/images/Cities/yerevan/ersix.jpg';
 import erseven from '../../assets/images/Cities/yerevan/erseven.jpg';
 import ereight from '../../assets/images/Cities/yerevan/ereight.jpg';
 import ernine from '../../assets/images/Cities/yerevan/ernine.jpg';
-                  
-
- import malagaprev from '../../assets/images/Cities/malaga/malagaprev.jpg';
-
- import alicanteprev  from '../../assets/images/Cities/alicante/alicanteprev.jpg';
-
-import gibraltarprev from '../../assets/images/Cities/gibraltar/gibraltarprev.jpg';
-
-import valenciaprev from '../../assets/images/Cities/valencia/valenciaprev.jpg';
 
 import sevillaprev from '../../assets/images/Cities/sevilla/sevillaprev.jpg';
+import seone from '../../assets/images/Cities/sevilla/seone.jpg';
+import setwo from '../../assets/images/Cities/sevilla/setwo.jpg';
+import sethree from '../../assets/images/Cities/sevilla/sethree.jpg';
+import sefour from '../../assets/images/Cities/sevilla/sefour.jpg';
+import sefive from '../../assets/images/Cities/sevilla/sefive.jpg';
+import sesix from '../../assets/images/Cities/sevilla/sesix.jpg';
+import seseven from '../../assets/images/Cities/sevilla/seseven.jpg';
+                  
+import malagaprev from '../../assets/images/Cities/malaga/malagaprev.jpg';
+import malone from '../../assets/images/Cities/malaga/malone.jpg';
+import maltwo from '../../assets/images/Cities/malaga/maltwo.jpg';
+import malthree from '../../assets/images/Cities/malaga/malthree.jpg';
+import malfour from '../../assets/images/Cities/malaga/malfour.jpg';
+import malfive from '../../assets/images/Cities/malaga/malfive.jpg';
+import malsix from '../../assets/images/Cities/malaga/malsix.jpg';
+import malseven from '../../assets/images/Cities/malaga/malseven.jpg';
+
+import gibraltarprev from '../../assets/images/Cities/gibraltar/gibraltarprev.jpg';
+import gibone from '../../assets/images/Cities/gibraltar/gibone.jpg';
+import gibtwo from '../../assets/images/Cities/gibraltar/gibtwo.jpg';
+import gibthree from '../../assets/images/Cities/gibraltar/gibthree.jpg';
+import gibfour from '../../assets/images/Cities/gibraltar/gibfour.jpg';
+import gibfive from '../../assets/images/Cities/gibraltar/gibfive.jpg';
+
+import valenciaprev from '../../assets/images/Cities/valencia/valenciaprev.jpg';
+import valone from '../../assets/images/Cities/valencia/valone.jpg';
+import valtwo from '../../assets/images/Cities/valencia/valtwo.jpg';
+import valthree from '../../assets/images/Cities/valencia/valthree.jpg';
+import valfour from '../../assets/images/Cities/valencia/valfour.jpg';
+import valfive from '../../assets/images/Cities/valencia/valfive.jpg';
+import valsix from '../../assets/images/Cities/valencia/valsix.jpg';
+import valseven from '../../assets/images/Cities/valencia/valseven.jpg';
+import valeight from '../../assets/images/Cities/valencia/valeight.jpg';
+import valnine from '../../assets/images/Cities/valencia/valnine.jpg';
+
+import alicanteprev from '../../assets/images/Cities/alicante/alicanteprev.jpg';
+import alione from '../../assets/images/Cities/alicante/alone.jpg';
+import alitwo from '../../assets/images/Cities/alicante/altwo.jpg';
+import alithree from '../../assets/images/Cities/alicante/althree.jpg';
+import alifour from '../../assets/images/Cities/alicante/alfour.jpg';
+import alifive from '../../assets/images/Cities/alicante/alfive.jpg';
+import alisix from '../../assets/images/Cities/alicante/alsix.jpg';
+import aliseven from '../../assets/images/Cities/alicante/alseven.jpg';
+import alieight from '../../assets/images/Cities/alicante/aleight.jpg';
+import alinine from '../../assets/images/Cities/alicante/alnine.jpg';
 
 import barcelonaprev from '../../assets/images/Cities/barcelona/barcelonaprev.jpg';
 
@@ -166,6 +199,102 @@ export interface CountryWithCities {
 }
 
 const cityData: CountryWithCities[] = [
+  {
+  countryId: 'ukraine',
+  cities: [
+    {
+      id: 'kyiv',
+      name: {
+        ru: 'Киев',
+        en: 'Kyiv'
+      },
+      flagColors: ['#0057B7', '#FFD700'],
+      description: {
+        ru: '',
+        en: ''
+      },
+      images: []
+    },
+    {
+      id: 'poltava',
+      name: {
+        ru: 'Полтава',
+        en: 'Poltava'
+      },
+      flagColors: ['#FFD700', '#800080', '#008000'],
+      description: {
+        ru: '',
+        en: ''
+      },
+      images: []
+    },
+    {
+      id: 'odesa',
+      name: {
+        ru: 'Одесса',
+        en: 'Odesa'
+      },
+      flagColors: ['#DA291C', '#FFD700', '#FFFFFF'],
+      description: {
+        ru: '',
+        en: ''
+      },
+      images: []
+    },
+    {
+      id: 'krivyi-rih',
+      name: {
+        ru: 'Кривой Рог',
+        en: 'Kryvyi Rih'
+      },
+      flagColors: ['#006400', '#FFD700', '#FF0000'],
+      description: {
+        ru: '',
+        en: ''
+      },
+      images: []
+    },
+    {
+      id: 'kropyvnytskyi',
+      name: {
+        ru: 'Кропивницкий',
+        en: 'Kropyvnytskyi'
+      },
+      flagColors: ['#FFD700', '#800000', '#000080'],
+      description: {
+        ru: '',
+        en: ''
+      },
+      images: []
+    },
+    {
+      id: 'carpathians',
+      name: {
+        ru: 'Карпаты',
+        en: 'Carpathians'
+      },
+      flagColors: ['#228B22', '#8B4513', '#87CEEB'],
+      description: {
+        ru: '',
+        en: ''
+      },
+      images: []
+    },
+    {
+      id: 'chernihiv',
+      name: {
+        ru: 'Чернигов',
+        en: 'Chernihiv'
+      },
+      flagColors: ['#FFD700', '#0000FF', '#008000'],
+      description: {
+        ru: '',
+        en: ''
+      },
+      images: []
+    }
+  ]
+},
   {
   countryId: 'moldova',
   cities: [
@@ -418,20 +547,6 @@ In Tbilisi, it's especially nice to just be — to do nothing, simply soak in it
         images: [tbilisiprev, tbone, tbtwo, tbthree, tbfour, tbfive, tbsix, tbseven, tbeight, tbten, tbeleven, tbsto]
       },
       {
-        id: 'kutaisi',
-        name: {
-          ru: 'Кутаиси',
-          en: 'Kutaisi',
-        },
-        flagColors: ['#FFFFFF', '#D30000'],
-        description: {
-          ru: `<h2 class="text-xl font-semibold mb-4">Кутаиси — дух прошлого и грузинская реальность</h2>Кутаиси запомнился своей камерной атмосферой. Мы ездили туда на Subaru Forester, чтобы проводить друга в аэропорт, а заодно — исследовать окрестности. Особенно впечатлил заброшенный советский санаторий — настоящее путешествие во времени. Атмосферно, странно, интересно.`,
-
-          en: `<h2 class="text-xl font-semibold mb-4">Kutaisi — spirit of the past and Georgian reality</h2>Kutaisi stood out with its intimate, almost secluded vibe. We drove there in a Subaru Forester to see off a friend at the airport and took the chance to explore the surroundings. What impressed me most was an abandoned Soviet-era sanatorium — a true journey through time. Atmospheric, strange, and fascinating.`
-        },
-        images: [kutaisiprev, kuone, kutwo, kuthree, kufour, kufive, kusix, kuseven]
-      },
-      {
         id: 'gudauri',
         name: {
           ru: 'Гудаури',
@@ -444,6 +559,20 @@ In Tbilisi, it's especially nice to just be — to do nothing, simply soak in it
           en: `<h2 class="text-xl font-semibold mb-4">Gudauri — rugged beauty and off-road thrill</h2>One of the most memorable trips was our journey to Gudauri. We went in a Lada Niva, driving off-road, climbing into the mountains, stopping in valleys, and admiring the view of Mount Kazbek. The car handled any road with ease, and Georgian nature handled any tiredness.`
         },
         images: [gudauriprev, guone, gutwo, guthree, gufour, gufive, gusix, guseven]
+      },
+      {
+        id: 'kutaisi',
+        name: {
+          ru: 'Кутаиси',
+          en: 'Kutaisi',
+        },
+        flagColors: ['#FFFFFF', '#D30000'],
+        description: {
+          ru: `<h2 class="text-xl font-semibold mb-4">Кутаиси — дух прошлого и грузинская реальность</h2>Кутаиси запомнился своей камерной атмосферой. Мы ездили туда на Subaru Forester, чтобы проводить друга в аэропорт, а заодно — исследовать окрестности. Особенно впечатлил заброшенный советский санаторий — настоящее путешествие во времени. Атмосферно, странно, интересно.`,
+
+          en: `<h2 class="text-xl font-semibold mb-4">Kutaisi — spirit of the past and Georgian reality</h2>Kutaisi stood out with its intimate, almost secluded vibe. We drove there in a Subaru Forester to see off a friend at the airport and took the chance to explore the surroundings. What impressed me most was an abandoned Soviet-era sanatorium — a true journey through time. Atmospheric, strange, and fascinating.`
+        },
+        images: [kutaisiprev, kuone, kutwo, kuthree, kufour, kufive, kusix, kuseven]
       },
       {
         id: 'alazani',
@@ -487,6 +616,20 @@ We visited the Ararat brandy factory, walked down the main streets, tasted local
   {
     countryId: 'spain',
     cities: [
+    {
+  id: 'sevilla',
+  name: {
+    ru: 'Севилья',
+    en: 'Seville',
+  },
+  flagColors: ['#AA151B', '#F1BF00'],
+  description: {
+    ru: `<h2 class="text-xl font-semibold mb-4">Севилья — ворота в Андалусию</h2>Севилья стала моим первым городом в Испании. Я прилетел сюда, и хотя у меня было всего несколько часов, город успел запомниться. Очень интересная архитектура, чувствуется дух юга — смесь арабского и европейского. В Севилье уютно, и даже короткая прогулка оставила приятное впечатление. Город живой, яркий, будто весь построен для фотокарточек.`,
+
+    en: `<h2 class="text-xl font-semibold mb-4">Seville — the gateway to Andalusia</h2>Seville was my first city in Spain. I flew here, and although I only had a few hours, the city made a lasting impression. The architecture is fascinating, and the southern spirit — a mix of Arab and European — is palpable. Seville feels cozy, and even a short walk left a pleasant memory. The city is vibrant, colorful, and feels like it was made for postcards.`
+  },
+  images: [sevillaprev,seone,setwo,sethree,sefour,sefive,sesix,seseven]
+},
       {
   id: 'malaga',
   name: {
@@ -503,29 +646,7 @@ We visited the Ararat brandy factory, walked down the main streets, tasted local
 
 We often traveled around the area, rented a car, and explored the coastline. It was a time to rest and reset. Southern Spain turned out to be the perfect place to slow down a little.`
   },
-  images: [malagaprev]
-},
-      {
-  id: 'alicante',
-  name: {
-    ru: 'Аликанте',
-    en: 'Alicante',
-  },
-  flagColors: ['#AA151B', '#F1BF00'],
-  description: {
-    ru: `<h2 class="text-xl font-semibold mb-4">Аликанте — солнечный испанский сюрприз на берегу моря</h2>В Аликанте мы приехали всего на один день, но он оказался очень насыщенным. Именно здесь я вновь встретился с той самой парой, с которой познакомился ещё в Хорватии — удивительное ощущение, когда случайные связи из прошлого оживают в новых местах.
-
-Город оказался невероятно солнечным, тёплым и красивым — в чём-то он напомнил мне Майами. Прогулка по набережной, пальмы, светлая архитектура — всё это создаёт очень расслабляющее настроение. А венчает панораму огромный замок на вершине горы, с которого открывается захватывающий вид на город и море.
-
-Аликанте стал не только ярким эпизодом в поездке, но и удобной точкой пересечения — когда я возвращался из Португалии, то прилетел именно сюда. И снова эти друзья приютили меня на ночь, сделав завершение поездки тёплым и по-домашнему уютным.`,
-
-    en: `<h2 class="text-xl font-semibold mb-4">Alicante — a sunny Spanish surprise by the sea</h2>We only spent one day in Alicante, but it was a packed one. It was here that I met up again with the same couple I had first encountered in Croatia — a surreal feeling when random connections from the past come alive in new places.
-
-The city was incredibly sunny, warm, and beautiful — it actually reminded me a bit of Miami. Walking along the promenade, surrounded by palm trees and bright architecture, made for a relaxing vibe. At the top of it all is a huge castle on a hill, offering a breathtaking view of the city and the sea.
-
-Alicante became not only a vivid stop during the trip but also a convenient connection point — when I came back from Portugal, I flew into this very city. And once again, those friends hosted me for the night, making the end of the journey warm and cozy.`
-  },
-  images: [alicanteprev]
+  images: [malagaprev,malone,maltwo,malthree,malfour,malfive,malsix,malseven]
 },
       {
   id: 'gibraltar',
@@ -543,7 +664,7 @@ Alicante became not only a vivid stop during the trip but also a convenient conn
 
 Gibraltar is all about the Rock, the border, the monkeys, the Union Jacks, and the feeling of being at the edge of Europe. A truly unique place that’s absolutely worth visiting.`
   },
-  images: [gibraltarprev]
+  images: [gibraltarprev,gibone,gibtwo,gibthree,gibfour,gibfive]
 },
       {
   id: 'valencia',
@@ -565,21 +686,29 @@ Valencia itself is a very pleasant city. It feels spacious and light, with lots 
 
 We stayed nearby — in the resort town of Gandía, right on the coast. We rented an apartment with a terrace and a barbecue — the perfect place to watch sunsets and relax after long days. This part of the journey felt especially warm and easy — both in weather and in mood.`
   },
-  images: [valenciaprev]
-},
-      {
-  id: 'sevilla',
+  images: [valenciaprev,valone,valtwo,valthree,valfour,valfive,valsix,valseven,valeight,valnine]
+      },
+{
+  id: 'alicante',
   name: {
-    ru: 'Севилья',
-    en: 'Seville',
+    ru: 'Аликанте',
+    en: 'Alicante',
   },
   flagColors: ['#AA151B', '#F1BF00'],
   description: {
-    ru: `<h2 class="text-xl font-semibold mb-4">Севилья — ворота в Андалусию</h2>Севилья стала моим первым городом в Испании. Я прилетел сюда, и хотя у меня было всего несколько часов, город успел запомниться. Очень интересная архитектура, чувствуется дух юга — смесь арабского и европейского. В Севилье уютно, и даже короткая прогулка оставила приятное впечатление. Город живой, яркий, будто весь построен для фотокарточек.`,
+    ru: `<h2 class="text-xl font-semibold mb-4">Аликанте — солнечный испанский сюрприз на берегу моря</h2>В Аликанте мы приехали всего на один день, но он оказался очень насыщенным. Именно здесь я вновь встретился с той самой парой, с которой познакомился ещё в Хорватии — удивительное ощущение, когда случайные связи из прошлого оживают в новых местах.
 
-    en: `<h2 class="text-xl font-semibold mb-4">Seville — the gateway to Andalusia</h2>Seville was my first city in Spain. I flew here, and although I only had a few hours, the city made a lasting impression. The architecture is fascinating, and the southern spirit — a mix of Arab and European — is palpable. Seville feels cozy, and even a short walk left a pleasant memory. The city is vibrant, colorful, and feels like it was made for postcards.`
+Город оказался невероятно солнечным, тёплым и красивым — в чём-то он напомнил мне Майами. Прогулка по набережной, пальмы, светлая архитектура — всё это создаёт очень расслабляющее настроение. А венчает панораму огромный замок на вершине горы, с которого открывается захватывающий вид на город и море.
+
+Аликанте стал не только ярким эпизодом в поездке, но и удобной точкой пересечения — когда я возвращался из Португалии, то прилетел именно сюда. И снова эти друзья приютили меня на ночь, сделав завершение поездки тёплым и по-домашнему уютным.`,
+
+    en: `<h2 class="text-xl font-semibold mb-4">Alicante — a sunny Spanish surprise by the sea</h2>We only spent one day in Alicante, but it was a packed one. It was here that I met up again with the same couple I had first encountered in Croatia — a surreal feeling when random connections from the past come alive in new places.
+
+The city was incredibly sunny, warm, and beautiful — it actually reminded me a bit of Miami. Walking along the promenade, surrounded by palm trees and bright architecture, made for a relaxing vibe. At the top of it all is a huge castle on a hill, offering a breathtaking view of the city and the sea.
+
+Alicante became not only a vivid stop during the trip but also a convenient connection point — when I came back from Portugal, I flew into this very city. And once again, those friends hosted me for the night, making the end of the journey warm and cozy.`
   },
-  images: [sevillaprev]
+  images: [alicanteprev,alione,alitwo,alithree,alifour,alifive,alisix,aliseven,alieight,alinine]
 },
       {
         id: 'barcelona',
