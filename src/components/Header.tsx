@@ -66,7 +66,7 @@ const Header = () => {
   className="text-sm border-2 border-transparent rounded-full px-3 py-2 bg-gradient-to-r from-teal-500 to-teal-500 text-white font-medium transform transition-all hover:scale-105 hover:shadow-lg hover:border-teal-300 hover:bg-transparent hover:text-teal-600 hover:underline"
   style={{ backgroundSize: '100% 100%' }}
 >
-  {i18n.language === 'ru' ? 'RU' : 'EN'}
+  {i18n.language === 'ru' ? 'EN' : 'RU'}
 </button>
           </li>
         </ul>

@@ -29,5 +29,20 @@
     "notFound": "City not found",
     "back": "Back",
     "image": "Image"
+  },
+  "about": {
+    "greeting": "Hi 👋 I'm Yura",
+    "intro": "I'm 25 years old, born in Kyiv, Ukraine and now living in sunny Valencia, Spain 🇪🇸. I'm a JavaScript developer and speak four languages: Russian, Ukrainian, English, and Spanish. I've visited 20 countries, over 90 cities, and lived in four countries.",
+    "educationTitle": "🎓 Education",
+    "eduGoIT": "GoIT — FullStack Developer, July 2024 – May 2025 Kyiv, Ukraine",
+    "eduMaster": "Master's, NTUU 'KPI', Electronics, Sep 2022 – Jan 2024 Kyiv, Ukraine",
+    "eduBachelor": "Bachelor's, NTUU 'KPI', Electronics, Sep 2018 – Jun 2022 Kyiv, Ukraine",
+    "eduLyceum": "Polytechnic Lyceum of KPI, Sep 2007 – May 2018 Kyiv, Ukraine",
+    "hobbiesTitle": "🎨 Hobbies",
+    "hobbies": "I’m into everything related to driving and cars — I’ve had a couple of car-related projects, and I love being behind the wheel. I also enjoy active leisure, sports, adventure, and anything with a bit of adrenaline. I appreciate meaningful conversations, good vibes, and making the most out of every moment.",
+    "sportTitle": "⚽ Sport",
+    "sport": "Sports have always played a big role in my life. I started with professional swimming, then moved into rowing. I’ve also practiced tennis, and during winter I really enjoy skiing and snowboarding.",
+    "goalsTitle": "🌱 Goals and Plans",
+    "goals": "I want to travel even more — next on my list are Barcelona, Madrid, Paris, Rome, and Finland. I'm always looking for new experiences, people, and moments that inspire. If you’d like to support me — feel free to invite me or even send a little travel fund 🙂"
   }
 }
