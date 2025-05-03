@@ -1,3 +1,38 @@
+import kievprev from '../../assets/images/Cities/kiev/kievprev.jpg';
+
+import poltavaprev from '../../assets/images/Cities/poltava/poltavaprev.jpg';
+import polone from '../../assets/images/Cities/poltava/polone.jpg';
+import poltwo from '../../assets/images/Cities/poltava/poltwo.jpg';
+import polthree from '../../assets/images/Cities/poltava/polthree.jpg';
+import polfour from '../../assets/images/Cities/poltava/polfour.jpg';
+import polfive from '../../assets/images/Cities/poltava/polfive.jpg';
+
+import krprev from '../../assets/images/Cities/krivoy_rog/krprev.jpg';
+import krone from '../../assets/images/Cities/krivoy_rog/krone.jpg';
+
+import odprev from '../../assets/images/Cities/odessa/odprev.jpg';
+import odone from '../../assets/images/Cities/odessa/odone.jpg';
+import odtwo from '../../assets/images/Cities/odessa/odtwo.jpg';
+import jdthree from '../../assets/images/Cities/odessa/jdthree.jpg';
+import odfour from '../../assets/images/Cities/odessa/odfour.jpg';
+import odfive from '../../assets/images/Cities/odessa/odfive.jpg';
+
+
+import chernigovprev  from '../../assets/images/Cities/chernigov/chernigovprev.jpg';
+import cherone from '../../assets/images/Cities/chernigov/cherone.jpg';
+import chertwo from '../../assets/images/Cities/chernigov/chertwo.jpg';
+import cherthree from '../../assets/images/Cities/chernigov/cherthree.jpg';
+import  cherfour from '../../assets/images/Cities/chernigov/cherfour.jpg';
+import cherfive from '../../assets/images/Cities/chernigov/cherfive.jpg';
+
+import kropprev from '../../assets/images/Cities/kropivnitski/kropprev.jpg';
+import cropone from '../../assets/images/Cities/kropivnitski/cropone.jpg';
+import croptwo from '../../assets/images/Cities/kropivnitski/croptwo.jpg';
+import cropthree from '../../assets/images/Cities/kropivnitski/cropthree.jpg';
+import cropfour from '../../assets/images/Cities/kropivnitski/cropfour.jpg';
+import cropfive from '../../assets/images/Cities/kropivnitski/cropfive.jpg';
+
+
 import chisinau from '../../assets/images/Cities/chisinau/chisinau_prev.jpg';
 import chione from '../../assets/images/Cities/chisinau/chione.jpg';
 import chitwo from '../../assets/images/Cities/chisinau/chitwo.jpg';
@@ -177,10 +212,36 @@ import alinine from '../../assets/images/Cities/alicante/alnine.jpg';
 import barcelonaprev from '../../assets/images/Cities/barcelona/barcelonaprev.jpg';
 
 import sintraprev from '../../assets/images/Cities/sintra/sintraprev.jpg';
+import sinone from '../../assets/images/Cities/sintra/sinone.jpg';
+import sintwo from '../../assets/images/Cities/sintra/sintwo.jpg';
+import sinthree from '../../assets/images/Cities/sintra/sinthree.jpg';
+import sinfour from '../../assets/images/Cities/sintra/sinfour.jpg';
+import sinfive from '../../assets/images/Cities/sintra/sinfive.jpg';
+import sinsix from '../../assets/images/Cities/sintra/sinsix.jpg';
+import sinseven from '../../assets/images/Cities/sintra/sinseven.jpg';
+import sineight from '../../assets/images/Cities/sintra/sineight.jpg';
+import sinnine from '../../assets/images/Cities/sintra/sinnine.jpg';
+
 
 import cascaisprev from '../../assets/images/Cities/cascais/cascaisprev.jpg';
+import casone from '../../assets/images/Cities/cascais/casone.jpg';
+import castwo from '../../assets/images/Cities/cascais/castwo.jpg';
+import casthree from '../../assets/images/Cities/cascais/casthree.jpg';
+import casfour from '../../assets/images/Cities/cascais//casfour.jpg';
+import casfive from '../../assets/images/Cities/cascais/casfive.jpg';
+import cassix from '../../assets/images/Cities/cascais/cassix.jpg';
+import casseven from '../../assets/images/Cities/cascais/casseven.jpg';
+import caseight from '../../assets/images/Cities/cascais/caseight.jpg';
+import casnine from '../../assets/images/Cities/cascais/casnine.jpg';
 
 import lisbonprev from '../../assets/images/Cities/lisbon/lisbonprev.jpg';
+import lisone from '../../assets/images/Cities/lisbon/lisone.jpg';
+import listwo from '../../assets/images/Cities/lisbon/listwo.jpg';
+import listhree from '../../assets/images/Cities/lisbon/listhree.jpg';
+import lisfour from '../../assets/images/Cities/lisbon/lisfour.jpg';
+import lisfive from '../../assets/images/Cities/lisbon/lisfive.jpg';
+import lissix from '../../assets/images/Cities/lisbon/lissix.jpg';
+import  lisseven from '../../assets/images/Cities/lisbon/lisseven.jpg';
 
 // import  from '../../assets/images/Cities';
 
@@ -210,10 +271,15 @@ const cityData: CountryWithCities[] = [
       },
       flagColors: ['#0057B7', '#FFD700'],
       description: {
-        ru: '',
-        en: ''
-      },
-      images: []
+  ru: `<h2 class="text-xl font-semibold mb-4">Киев — мой родной город</h2>
+Я родился и вырос в Киеве. Здесь прошло всё моё детство, юность, учёба, здесь живёт моя семья. Город мне хорошо знаком — не только центр, но и окраины, парки, спальные районы. Я также много путешествовал по Киевской области, бывал в разных селах и небольших городах. 
+Киев — это не просто точка на карте, а место, где сосредоточена вся моя жизнь.`,
+  
+  en: `<h2 class="text-xl font-semibold mb-4">Kyiv — my hometown</h2>
+I was born and raised in Kyiv. This is where I spent my childhood, youth, and student years — and where my family lives. I know the city well — not only the center, but also the suburbs, parks, and residential areas. I've also traveled a lot around the Kyiv region, visiting villages and small towns. 
+Kyiv is not just a point on the map — it’s where my whole life is rooted.`
+},
+      images: [kievprev]
     },
     {
       id: 'poltava',
@@ -221,12 +287,16 @@ const cityData: CountryWithCities[] = [
         ru: 'Полтава',
         en: 'Poltava'
       },
-      flagColors: ['#FFD700', '#800080', '#008000'],
+flagColors: ['#0057B7', '#FFD700'],
       description: {
-        ru: '',
-        en: ''
-      },
-      images: []
+  ru: `<h2 class="text-xl font-semibold mb-4">Полтава — короткая, но приятная остановка</h2>
+В Полтаву я ездил на экскурсию на один день — на поезде. Город оставил приятное впечатление: спокойный, зелёный, с чистыми улицами и уютной атмосферой. За короткое время удалось немного погулять и почувствовать его ритм. Хотелось бы как-нибудь вернуться и посмотреть больше.`,
+  
+  en: `<h2 class="text-xl font-semibold mb-4">Poltava — a short but pleasant stop</h2>
+I visited Poltava for a one-day excursion — went there by train. The city made a good impression: calm, green, with clean streets and a cozy atmosphere. Even in a short time, I managed to walk around a bit and feel its rhythm. I’d like to return someday and see more.`
+}
+,
+      images: [poltavaprev,polone,poltwo,polthree,polfour,polfive]
     },
     {
       id: 'odesa',
@@ -234,12 +304,16 @@ const cityData: CountryWithCities[] = [
         ru: 'Одесса',
         en: 'Odesa'
       },
-      flagColors: ['#DA291C', '#FFD700', '#FFFFFF'],
+flagColors: ['#0057B7', '#FFD700'],
       description: {
-        ru: '',
-        en: ''
-      },
-      images: []
+  ru: `<h2 class="text-xl font-semibold mb-4">Одесса — море и хорошее настроение</h2>
+В Одессе я был много раз и каждый раз с удовольствием. Обожаю этот город — за море, атмосферу, еду и ощущение свободы. Всегда можно просто приехать и отлично провести время: погулять по Дерибасовской, посидеть у моря, съесть что-то вкусное. Одесса — один из тех городов, куда хочется возвращаться снова и снова.`,
+  
+  en: `<h2 class="text-xl font-semibold mb-4">Odesa — sea and good vibes</h2>
+I've been to Odesa many times, and I always enjoy it. I love this city — for the sea, the atmosphere, the food, and the feeling of freedom. You can just come and have a great time: walk along Deribasivska Street, sit by the sea, eat something delicious. Odesa is one of those places you always want to come back to.`
+}
+,
+      images: [odprev,odone,odtwo,jdthree,odfour,odfive]
     },
     {
       id: 'krivyi-rih',
@@ -247,12 +321,15 @@ const cityData: CountryWithCities[] = [
         ru: 'Кривой Рог',
         en: 'Kryvyi Rih'
       },
-      flagColors: ['#006400', '#FFD700', '#FF0000'],
+flagColors: ['#0057B7', '#FFD700'],
       description: {
-        ru: '',
-        en: ''
-      },
-      images: []
+  ru: `<h2 class="text-xl font-semibold mb-4">Кривой Рог — индустриальный, но живой</h2>
+Я был в Кривом Роге несколько раз и всегда приятно проводил там время. Несмотря на индустриальный образ, город оказался интересным и совсем не скучным. Есть своя атмосфера, колорит, и в нём чувствуешь жизнь. Каждый визит открывал что-то новое.`,
+  
+  en: `<h2 class="text-xl font-semibold mb-4">Kryvyi Rih — industrial but full of life</h2>
+I've visited Kryvyi Rih several times and always had a good time there. Despite its industrial look, the city turned out to be interesting and far from boring. It has its own atmosphere and character, and you can feel real life there. Each visit showed me something new.`
+},
+      images: [krprev,krone]
     },
     {
       id: 'kropyvnytskyi',
@@ -260,12 +337,15 @@ const cityData: CountryWithCities[] = [
         ru: 'Кропивницкий',
         en: 'Kropyvnytskyi'
       },
-      flagColors: ['#FFD700', '#800000', '#000080'],
+flagColors: ['#0057B7', '#FFD700'],
       description: {
-        ru: '',
-        en: ''
-      },
-      images: []
+  ru: `<h2 class="text-xl font-semibold mb-4">Кропивницкий — еда и архитектура</h2>
+Я ездил в Кропивницкий на два дня. Город удивил интересной архитектурой и атмосферой — тихий, уютный, но со своим характером. Особенно запомнилась вкусная и недорогая еда — местные кафе приятно порадовали. В целом, очень тёплые впечатления.`,
+  
+  en: `<h2 class="text-xl font-semibold mb-4">Kropyvnytskyi — food and architecture</h2>
+I went to Kropyvnytskyi for two days. The city surprised me with its interesting architecture and calm atmosphere — quiet and cozy, but with its own character. What stood out most was the tasty and affordable food — the local cafes were a real highlight. Overall, it left a warm impression.`
+},
+      images: [kropprev,cropone,croptwo,cropthree,cropfour,cropfive]
     },
     {
       id: 'carpathians',
@@ -273,11 +353,15 @@ const cityData: CountryWithCities[] = [
         ru: 'Карпаты',
         en: 'Carpathians'
       },
-      flagColors: ['#228B22', '#8B4513', '#87CEEB'],
+flagColors: ['#0057B7', '#FFD700'],
       description: {
-        ru: '',
-        en: ''
-      },
+  ru: `<h2 class="text-xl font-semibold mb-4">Карпаты — горы, природа и приключения</h2>
+В Карпатах я был много раз — катался на лыжах и ходил в туристический поход с палаткой. Успел побывать почти во всех городах региона. Это место, где чувствуешь настоящую силу природы: горы, леса, чистый воздух. Каждый раз — как маленькое приключение и перезагрузка.`,
+  
+  en: `<h2 class="text-xl font-semibold mb-4">The Carpathians — mountains, nature, and adventure</h2>
+I've been to the Carpathians many times — for skiing and hiking trips with a tent. I’ve visited almost every town in the region. It’s a place where you feel the true power of nature: mountains, forests, fresh air. Each trip is like a small adventure and a reset.`
+}
+,
       images: []
     },
     {
@@ -286,12 +370,15 @@ const cityData: CountryWithCities[] = [
         ru: 'Чернигов',
         en: 'Chernihiv'
       },
-      flagColors: ['#FFD700', '#0000FF', '#008000'],
+flagColors: ['#0057B7', '#FFD700'],
       description: {
-        ru: '',
-        en: ''
-      },
-      images: []
+  ru: `<h2 class="text-xl font-semibold mb-4">Чернигов — древность и чистота</h2>
+Чернигов мне очень понравился. Это один из немногих городов, где ощущается настоящая древнерусская история — и при этом всё очень чисто, ухоженно и приятно. Атмосфера старины здесь не давит, а наоборот — создаёт ощущение спокойствия и глубины. Отличное место для прогулок и размышлений.`,
+  
+  en: `<h2 class="text-xl font-semibold mb-4">Chernihiv — history and cleanliness</h2>
+I really liked Chernihiv. It's one of the few cities where you can truly feel the ancient Rus’ history — and yet it's clean, well-kept, and very pleasant. The historical atmosphere doesn't feel heavy — it brings peace and depth instead. A great place for walking and reflection.`
+},
+      images: [chernigovprev,cherone,chertwo,cherthree,cherfour,cherfive]
     }
   ]
 },
@@ -742,7 +829,7 @@ Alicante became not only a vivid stop during the trip but also a convenient conn
 
     en: `<h2 class="text-xl font-semibold mb-4">Sintra — a town of castles and mists</h2>Sintra feels like a fairy tale from another time. Surrounded by forests, hills, and castles, it offers a truly mystical atmosphere. I visited the Masonic Palace with its mysterious architecture and underground tunnels — a very atmospheric and eerie place. Walking through Sintra is like stepping into the pages of an ancient legend. A small town with immense historical depth and a unique atmosphere.`
   },
-  images: [sintraprev]
+  images: [sintraprev,sinone,sintwo,sinthree,sinfour,sinfive,sinsix,sinseven,sineight,sinnine]
 },
       {
   id: 'cascais',
@@ -756,7 +843,7 @@ Alicante became not only a vivid stop during the trip but also a convenient conn
 
     en: `<h2 class="text-xl font-semibold mb-4">Cascais — gloss, ocean, and sport cars</h2>Cascais is a resort for those who love luxury and the ocean. Everywhere you look, you see expensive cars: Lamborghinis, Ferraris, McLarens. We stopped here on our way to Cape Roca, but the town definitely deserves a visit on its own. Stylish, wealthy, and yet peaceful. I visited the lighthouse on the cliff — from there, breathtaking views unfold. It was a day on the edge between natural beauty and urban gloss.`
   },
-  images: [cascaisprev]
+  images: [cascaisprev,casone,castwo,casthree,casfour,casfive,cassix,casseven,caseight,casnine]
 },
       {
   id: 'lisbon',
@@ -770,7 +857,7 @@ Alicante became not only a vivid stop during the trip but also a convenient conn
 
     en: `<h2 class="text-xl font-semibold mb-4">Lisbon — the sunny city of hills and bridges</h2>Lisbon is an atmosphere of freedom, sun, and antiquity. We walked through narrow streets, climbed hills, and admired the view of the Tagus River. The city reminded me of San Francisco: trams, steep descents, and ascents, and even a bridge resembling the Golden Gate. We visited an ancient castle, which offers a wonderful panorama. Lisbon left a very warm impression — light, lively, and open.`
   },
-  images: [lisbonprev]
+  images: [lisbonprev,lisone,listwo,listhree,lisfour,lisfive,lissix,lisseven]
 }
     ]
   }

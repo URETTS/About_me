@@ -44,7 +44,7 @@ const CountryPage = () => {
                   alt={city.name[language]}
                   className="w-full h-48 object-cover"
                 />
-                <div className="p-4">
+                <div className="p-2">
                   <h3 className="text-xl font-semibold text-white">
                     {city.name[language]}
                   </h3>
