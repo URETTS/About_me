@@ -38,7 +38,7 @@ const CityPage = () => {
   }, [city]);
 
   if (!city) {
-    return <div className="p-4">{t('city.notFound')}</div>; // добавь строку перевода
+    return <div className="p-4">{t('city.notFound')}</div>; 
   }
 
   const flagColors = city.flagColors || ['#000'];
@@ -48,12 +48,6 @@ const CityPage = () => {
     <div className="max-w-4xl mx-auto px-4 py-8">
       <div className="flex justify-between items-center mb-4">
         <h1 className="text-3xl font-bold">{city.name[language]}</h1>
-        <button
-          onClick={() => navigate(`/travels/${countryId}`)}
-          className="px-4 py-2 bg-gray-200 dark:bg-gray-700 text-black dark:text-white rounded hover:bg-gray-300 dark:hover:bg-gray-600 transition"
-        >
-          ← {t('city.back')}
-        </button>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
@@ -93,6 +87,18 @@ const CityPage = () => {
         slides={city.images.map((src) => ({ src }))}
         on={{ view: ({ index }) => setLightboxIndex(index) }}
       />
+<div className="mt-8 flex justify-center">
+  <button
+    onClick={() => navigate(`/travels/${countryId}`)}
+    className="group relative inline-flex items-center gap-2 px-6 py-2 rounded-lg border border-transparent bg-gray-100 dark:bg-gray-800 text-black dark:text-white font-semibold transition-all duration-300 shadow-md hover:shadow-blue-400/50 hover:ring-2 hover:ring-blue-400 focus:outline-none active:scale-95"
+  >
+    <span className="transform transition-transform duration-300 group-hover:-translate-x-1">←</span>
+    <span>{t('city.back')}</span>
+    <span className="absolute inset-0 z-[-1] rounded-lg bg-gradient-to-r from-blue-400 to-purple-500 opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
+  </button>
+</div>
+
+
     </div>
   );
 };
