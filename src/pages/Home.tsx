@@ -29,7 +29,7 @@ const Home: React.FC = () => {
     const images = isMobile ? homePageData.mobileImages : homePageData.desktopImages;
     const interval = setInterval(() => {
       setImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 10000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [isMobile]);
