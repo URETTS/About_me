@@ -44,11 +44,11 @@ const CountryPage = () => {
                   alt={city.name[language]}
                   className="w-full h-48 object-cover"
                 />
-                <div className="p-2">
-                  <h3 className="text-xl font-semibold text-white">
-                    {city.name[language]}
-                  </h3>
-                </div>
+               <div className="p-2 bg-white dark:bg-gray-800 border-2 border-gray-300 dark:border-none shadow-lg dark:shadow-none rounded-b-xl">
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+    {city.name[language]}
+  </h3>
+</div>
               </Link>
             ))}
           </div>
@@ -56,15 +56,16 @@ const CountryPage = () => {
       )}
 
       <div className="text-center mt-8">
-        <button
+      <button
   onClick={() => navigate('/travels')}
-  className="group relative inline-flex items-center gap-2 px-6 py-2 rounded-lg border border-transparent bg-gray-100 dark:bg-gray-800 text-black dark:text-white font-semibold transition-all duration-300 shadow-md hover:shadow-blue-400/50 hover:ring-2 hover:ring-blue-400 focus:outline-none active:scale-95"
+  className="group relative inline-flex items-center gap-2 px-6 py-2 rounded-lg border-2 border-gray-400 dark:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white font-semibold transition-all duration-300 shadow-md hover:shadow-blue-400/50 hover:ring-2 hover:ring-blue-400 focus:outline-none active:scale-95"
 >
   <span className="transform transition-transform duration-300 group-hover:-translate-x-1">←</span>
   <span>{t('country.back')}</span>
-
   <span className="absolute inset-0 z-[-1] rounded-lg bg-gradient-to-r from-blue-400 to-purple-500 opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
 </button>
+
+
 
       </div>
     </div>
