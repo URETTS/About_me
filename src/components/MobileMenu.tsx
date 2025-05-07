@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { X } from 'lucide-react'; 
 
@@ -10,11 +10,19 @@ interface MobileMenuProps {
 
 const MobileMenu = ({ isOpen, closeMenu }: MobileMenuProps) => {
   const { t, i18n } = useTranslation();
+  const location = useLocation();
 
   const toggleLang = () => {
     const newLang = i18n.language === 'ru' ? 'en' : 'ru';
     i18n.changeLanguage(newLang);
   };
+
+  const navItems = [
+    { to: '/', label: t('nav.home') },
+    { to: '/about', label: t('nav.about') },
+    { to: '/experience', label: t('nav.experience') },
+    { to: '/travels', label: t('nav.travels') },
+  ];
 
   return (
     <AnimatePresence>
@@ -38,16 +46,31 @@ const MobileMenu = ({ isOpen, closeMenu }: MobileMenuProps) => {
             {/* Кнопка закрытия */}
             <button
               onClick={closeMenu}
-              className="absolute top-4 right-4 text-gray-500 hover:text-red-500 transition"
+              className="absolute top-4 right-4 p-2 rounded-full border-2 border-gray-300 hover:border-blue-500 hover:text-blue-500 transition"
               aria-label="Закрыть меню"
             >
               <X size={24} />
             </button>
 
-            <Link to="/" onClick={closeMenu} className="text-lg font-semibold hover:text-blue-500 transition">{t('nav.home')}</Link>
-            <Link to="/about" onClick={closeMenu} className="text-lg font-semibold hover:text-blue-500 transition">{t('nav.about')}</Link>
-            <Link to="/experience" onClick={closeMenu} className="text-lg font-semibold hover:text-blue-500 transition">{t('nav.experience')}</Link>
-            <Link to="/travels" onClick={closeMenu} className="text-lg font-semibold hover:text-blue-500 transition">{t('nav.travels')}</Link>
+            {navItems.map(({ to, label }) =>
+              location.pathname === to ? (
+                <span
+                  key={to}
+                  className="text-lg font-semibold text-blue-500 cursor-default"
+                >
+                  {label}
+                </span>
+              ) : (
+                <Link
+                  key={to}
+                  to={to}
+                  onClick={closeMenu}
+                  className="text-lg font-semibold hover:text-blue-500 transition"
+                >
+                  {label}
+                </Link>
+              )
+            )}
 
             <button
               onClick={() => {

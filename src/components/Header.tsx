@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import logo from '../../assets/logo/Bykov_Yuriy.png';
 import MobileMenu from './MobileMenu';
 
 const Header = () => {
   const { t, i18n } = useTranslation();
+  const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleLang = () => {
@@ -25,54 +26,41 @@ const Header = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <ul className="hidden md:flex space-x-6 items-center">
-  <li>
-    <Link
-      to="/"
-      className="text-xl sm:text-2xl font-semibold text-white gradient-underline transition-all duration-300 hover:text-teal-400"
-    >
-      {t('nav.home')}
-    </Link>
-  </li>
-  <li>
-    <Link
-      to="/about"
-      className="text-xl sm:text-2xl font-semibold text-white gradient-underline transition-all duration-300 hover:text-teal-400"
-    >
-      {t('nav.about')}
-    </Link>
-  </li>
-  <li>
-    <Link
-      to="/experience"
-      className="text-xl sm:text-2xl font-semibold text-white gradient-underline transition-all duration-300 hover:text-teal-400"
-    >
-      {t('nav.experience')}
-    </Link>
-  </li>
-  <li>
-    <Link
-      to="/travels"
-      className="text-xl sm:text-2xl font-semibold text-white gradient-underline transition-all duration-300 hover:text-teal-400"
-    >
-      {t('nav.travels')}
-    </Link>
-  </li>
-  <li>
-    <button
-      onClick={toggleLang}
-      className="text-sm border-2 border-teal-500 rounded-full px-3 py-2 text-teal-500 font-medium transform transition-all hover:scale-105 hover:shadow-lg hover:bg-teal-500 hover:text-white"
-    >
-      {i18n.language === 'ru' ? 'EN' : 'RU'}
-    </button>
-  </li>
-</ul>
+        <ul className="hidden lg:flex space-x-6 items-center">
+          {[{ to: '/', label: t('nav.home') },
+            { to: '/about', label: t('nav.about') },
+            { to: '/experience', label: t('nav.experience') },
+            { to: '/travels', label: t('nav.travels') }].map(({ to, label }) => (
+              <li key={to}>
+                {location.pathname === to ? (
+                  <span className="text-xl sm:text-2xl font-semibold text-teal-400 cursor-default">
+                    {label}
+                  </span>
+                ) : (
+                  <Link
+                    to={to}
+                    className="text-xl sm:text-2xl font-semibold text-white gradient-underline transition-all duration-300 hover:text-teal-400"
+                  >
+                    {label}
+                  </Link>
+                )}
+              </li>
+            ))}
 
+          <li>
+            <button
+              onClick={toggleLang}
+              className="text-sm border-2 border-teal-500 rounded-full px-3 py-2 text-teal-500 font-medium transform transition-all hover:scale-105 hover:shadow-lg hover:bg-teal-500 hover:text-white"
+            >
+              {i18n.language === 'ru' ? 'EN' : 'RU'}
+            </button>
+          </li>
+        </ul>
 
         {/* Mobile Burger */}
         <button
           onClick={() => setIsMenuOpen((prev) => !prev)}
-          className="md:hidden focus:outline-none"
+          className="lg:hidden focus:outline-none"
         >
           {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
