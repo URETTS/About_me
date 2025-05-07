@@ -20,17 +20,16 @@ const Header = () => {
         <Link to="/" className="flex items-center space-x-2">
           <img src={logo} alt="Logo" className="h-10 w-auto" />
           <span className="text-3xl sm:text-4xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
- My life
-</span>
+            My life
+          </span>
         </Link>
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex space-x-6 items-center">
-          <ul className="hidden md:flex space-x-6 items-center">
   <li>
     <Link
       to="/"
-      className="text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-cyan-500 to-sky-500 hover:underline transition"
+      className="text-xl sm:text-2xl font-semibold text-white gradient-underline transition-all duration-300 hover:text-teal-400"
     >
       {t('nav.home')}
     </Link>
@@ -38,7 +37,7 @@ const Header = () => {
   <li>
     <Link
       to="/about"
-      className="text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:underline transition"
+      className="text-xl sm:text-2xl font-semibold text-white gradient-underline transition-all duration-300 hover:text-teal-400"
     >
       {t('nav.about')}
     </Link>
@@ -46,7 +45,7 @@ const Header = () => {
   <li>
     <Link
       to="/experience"
-      className="text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-500 to-rose-500 hover:underline transition"
+      className="text-xl sm:text-2xl font-semibold text-white gradient-underline transition-all duration-300 hover:text-teal-400"
     >
       {t('nav.experience')}
     </Link>
@@ -54,22 +53,21 @@ const Header = () => {
   <li>
     <Link
       to="/travels"
-      className="text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-lime-500 to-teal-500 hover:underline transition"
+      className="text-xl sm:text-2xl font-semibold text-white gradient-underline transition-all duration-300 hover:text-teal-400"
     >
       {t('nav.travels')}
     </Link>
   </li>
+  <li>
+    <button
+      onClick={toggleLang}
+      className="text-sm border-2 border-teal-500 rounded-full px-3 py-2 text-teal-500 font-medium transform transition-all hover:scale-105 hover:shadow-lg hover:bg-teal-500 hover:text-white"
+    >
+      {i18n.language === 'ru' ? 'EN' : 'RU'}
+    </button>
+  </li>
 </ul>
-          <li>
-           <button
-  onClick={toggleLang}
-  className="text-sm border-2 border-transparent rounded-full px-3 py-2 bg-gradient-to-r from-teal-500 to-teal-500 text-white font-medium transform transition-all hover:scale-105 hover:shadow-lg hover:border-teal-300 hover:bg-transparent hover:text-teal-600 hover:underline"
-  style={{ backgroundSize: '100% 100%' }}
->
-  {i18n.language === 'ru' ? 'EN' : 'RU'}
-</button>
-          </li>
-        </ul>
+
 
         {/* Mobile Burger */}
         <button
