@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 const Home: React.FC = () => {
   const { i18n } = useTranslation();
   const language = i18n.language;
-  const fullText = homePageData.welcomeMessage[language];
+  const fullText = homePageData.welcomeMessage[language] || '';
 
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [imageIndex, setImageIndex] = useState(0);
@@ -40,17 +40,23 @@ const Home: React.FC = () => {
   }, [imageIndex, isMobile]);
 
   useEffect(() => {
+    if (!fullText) return;
+
     setTypedText('');
     let index = 0;
-    const interval = setInterval(() => {
-      if (index < fullText.length) {
-        setTypedText(fullText.slice(0, index + 1));
-        index++;
-      } else {
-        clearInterval(interval);
-      }
-    }, 70);
-    return () => clearInterval(interval);
+
+    const timeout = setTimeout(() => {
+      const interval = setInterval(() => {
+        if (index < fullText.length) {
+          setTypedText(fullText.slice(0, index + 1));
+          index++;
+        } else {
+          clearInterval(interval);
+        }
+      }, 70);
+    }, 200); // Лёгкая задержка на инициализацию (особенно для WebView)
+
+    return () => clearTimeout(timeout);
   }, [fullText]);
 
   return (
@@ -69,11 +75,11 @@ const Home: React.FC = () => {
 
       <div className="absolute bottom-6 w-full flex justify-center z-20 px-4">
         <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl bg-black/50 rounded-lg px-4 py-2 shadow-md max-w-[90%] text-center">
-          {homePageData.birthdayNote[language]}
+          {homePageData.birthdayNote[language] || ''}
         </p>
       </div>
     </section>
   );
 };
 
-export default Home; 
+export default Home;

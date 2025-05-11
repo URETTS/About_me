@@ -15,7 +15,7 @@ const Footer = () => {
     <div>
       <h2 className="text-lg sm:text-xl font-bold mb-4">{t('footer.contact')}</h2>
       <ul className="space-y-2 text-sm sm:text-base">
-        <li>📞 Phone UA: +380981120777</li>
+        <li>📞 Phone UA: +380667787678</li>
         <li>📞 Phone ESP: +34650450256</li>
         <li>
           ✉️ Email: <a href="mailto:yurka.b2000@gmail.com" className="underline">yurka.b2000@gmail.com</a>
@@ -87,7 +87,7 @@ const Footer = () => {
     @ispanets
   </a>
 </li>
-            <li><span className="font-semibold">Wise (IBAN):</span> DE** **** **** 1234</li>
+            {/* <li><span className="font-semibold">Wise (IBAN):</span> DE** **** **** 1234</li> */}
           </>
         ) : (
           <>
@@ -102,9 +102,9 @@ const Footer = () => {
     @ispanets
   </a>
 </li>
-            <li><span className="font-semibold">Wise (IBAN):</span> DE** **** **** 1234</li>
+            {/* <li><span className="font-semibold">Wise (IBAN):</span> DE** **** **** 1234</li> */}
             <li><span className="font-semibold">Binance ID (TRC20):</span> 777969674</li>
-            <li><span className="font-semibold">Santander (IBAN):</span> ES59 0049 5366 1525 1651 8374</li>
+            <li><span className="font-semibold">Santander ESP (IBAN):</span> ES59 0049 5366 1525 1651 8374</li>
           </>
         )}
       </ul>

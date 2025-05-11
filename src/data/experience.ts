@@ -76,7 +76,7 @@ Also:
     },
   },
   {
-    title: 'Farmer',
+    title: 'Google Play Account Setup Specialist',
     company: 'Traffic Squad',
     period: {
       ru: 'апр. 2023 - окт. 2023 (7 мес.)',
@@ -103,8 +103,8 @@ Also:
       en: 'Kyiv',
     },
     description: {
-      en: '',
-      ru: '',
+      en: 'Managed daily operations and led a small team.',
+      ru: 'Управлял ежедневными процессами и небольшой командой.',
     },
   },
   {
@@ -119,8 +119,8 @@ Also:
       en: 'Kyiv',
     },
     description: {
-      en: '',
-      ru: '',
+      en: 'Provided customer consultations and boosted sales.',
+      ru: 'Консультировал клиентов и увеличивал продажи.',
     },
   },
 ];
