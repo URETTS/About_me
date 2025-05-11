@@ -33,7 +33,7 @@ const TravelPage = () => {
       <div
         className={`absolute inset-0 transition-opacity duration-1000 pointer-events-none z-0 ${
           backgroundImage ? 'opacity-100' : 'opacity-0'
-        }`}
+        } hidden sm:block`}
         style={{
           backgroundImage: backgroundImage ? `url(${backgroundImage})` : 'none',
           backgroundSize: 'cover',
