@@ -3,12 +3,9 @@ import hero2 from '../../assets/images/hero/hero2.jpg';
 import hero3 from '../../assets/images/hero/hero3.jpg';
 import hero4 from '../../assets/images/hero/hero4.jpg';
 
-
-
 import heroMob1 from '../../assets/images/hero/hero_mob.jpg';
 import heroMob2 from '../../assets/images/hero/hero_mob2.jpg';
 import hero_mob3 from '../../assets/images/hero/hero_mob3.jpg';
-
 
 export interface HomePageData {
   desktopImages: string[];

@@ -1,4 +1,11 @@
 import kievprev from '../../assets/images/Cities/kiev/kievprev.jpg';
+import kievone from '../../assets/images/Cities/kiev/kievone.jpg';
+import kievtwo from '../../assets/images/Cities/kiev/kievtwo.jpg';
+import kievthree from '../../assets/images/Cities/kiev/kievthree.jpg';
+import kievfour from '../../assets/images/Cities/kiev/kievfour.jpg';
+import kievfive from '../../assets/images/Cities/kiev/kievfive.jpg';
+import kievsix from '../../assets/images/Cities/kiev/kievsix.jpg';
+import kievseven from '../../assets/images/Cities/kiev/kievseven.jpg';
 
 import poltavaprev from '../../assets/images/Cities/poltava/poltavaprev.jpg';
 import polone from '../../assets/images/Cities/poltava/polone.jpg';
@@ -291,7 +298,7 @@ const cityData: CountryWithCities[] = [
 I was born and raised in Kyiv. This is where I spent my childhood, youth, and student years — and where my family lives. I know the city well — not only the center, but also the suburbs, parks, and residential areas. I've also traveled a lot around the Kyiv region, visiting villages and small towns. 
 Kyiv is not just a point on the map — it’s where my whole life is rooted.`
 },
-      images: [kievprev]
+      images: [kievprev,kievone,kievtwo,kievthree,kievfour,kievfive,kievsix,kievseven]
     },
     {
       id: 'poltava',

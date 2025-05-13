@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import homePageData from '../components/homePageData';
+import homePageData from '../components/HomeBg';
 import { useTranslation } from 'react-i18next';
 
 const Home: React.FC = () => {

@@ -74,7 +74,6 @@ const Footer = () => {
             </li>
             <li><span className="font-semibold">Монобанк:</span> 4441111057408696</li>
             <li><span className="font-semibold">ПриватБанк:</span> 5457082518678003</li>
-           {/* <li><span className="font-semibold">Sence:</span> 5168 **** **** 5678</li> */}
             <li><span className="font-semibold">Binance ID (TRC20):</span> 777969674</li>
                 <li className="flex items-center gap-2">
   <span className="font-semibold">💳 Revolut:</span>

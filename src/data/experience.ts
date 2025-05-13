@@ -11,6 +11,23 @@ export interface ExperienceItem {
 
 const experienceData: ExperienceItem[] = [
   {
+    title: 'Front-end developer',
+    company: 'Self-employed',
+    period: {
+      ru: 'май 2025 -сейчас ',
+      en: 'May 2025 - now',
+    },
+    location: {
+      ru: 'Удалённо, Испания',
+      en: 'Remote, Spain',
+    },
+    skills: 'HTML5, CSS3, JS, TS, React',
+    description: {
+      ru: 'Разрабатываю адаптивные и интерактивные веб-интерфейсы, работаю с современными технологиями фронтенда и создаю проекты с нуля под индивидуальные запросы.',
+      en: 'Build responsive, interactive web interfaces using modern front-end technologies. Develop custom projects from scratch tailored to client needs.',
+    },
+  },
+  {
     title: 'QA Engineer',
     company: 'Qappi (formerly AlphaGuilty)',
     period: {
@@ -23,8 +40,8 @@ const experienceData: ExperienceItem[] = [
     },
     skills: 'CSS, Manual Testing, PostgreSQL, Figma, Jira, Postman API, HTML, SQL, Chrome DevTools, Documentation',
     description: {
-      en: 'Performed manual testing of a crypto platform under development. Tested core functionality and reported issues to the development team.',
       ru: 'Ручное тестирование криптовалютной платформы, находящейся на стадии разработки. Тестировал основную функциональность и сообщал о проблемах команде разработчиков.',
+      en: 'Performed manual testing of a crypto platform under development. Tested core functionality and reported issues to the development team.',
     },
   },
   {
@@ -39,24 +56,24 @@ const experienceData: ExperienceItem[] = [
       en: 'Remote, Kyiv',
     },
     description: {
-      en: `Created technical specifications, website structure, and content. 
-Also: 
-• Searching and purchasing domains; 
-• Purchasing supplies and replenishing them; 
-• Managing and monitoring spreadsheets; 
-• Creating profiles in anti-detect browsers; 
-• Paying for software and services; 
-• Collecting statistics; 
-• Landing page certification with Google and communication regarding any issues.`,
       ru: `Создание технических заданий, структура сайтов, тексты. 
 Также:
-• Поиск и покупка доменов;
-• Закупка расходников и пополнение;
-• Ведение таблиц учёта;
-• Профили в антидетект-браузерах;
-• Оплата софта и сервисов;
-• Сбор статистики;
-• Сертификация лендингов в Google и общение по вопросам.`,
+ поиск и покупка доменов,
+ закупка расходников и пополнение,
+ ведение таблиц учёта,
+ профили в антидетект-браузерах,
+ оплата софта и сервисов,
+ сбор статистики,
+ сертификация лендингов в Google и общение по вопросам.`,
+      en: `Created technical specifications, website structure, and content. 
+Also: 
+ searching and purchasing domains,
+ purchasing supplies and replenishing them,
+ managing and monitoring spreadsheets,
+ creating profiles in anti-detect browsers, 
+ paying for software and services, 
+ collecting statistics, 
+ landing page certification with Google and communication regarding any issues.`,
     },
   },
   {
@@ -71,8 +88,8 @@ Also:
       en: 'Kyiv',
     },
     description: {
-      en: 'Testing applications for Google Play Market. Analyzing functionality, finding bugs, writing bug reports, interacting with developers.',
       ru: 'Тестирование приложений для Google Play Market. Анализ функциональности, поиск багов, составление баг-репортов, взаимодействие с разработчиками.',
+      en: 'Testing applications for Google Play Market. Analyzing functionality, finding bugs, writing bug reports, interacting with developers.',
     },
   },
   {
@@ -87,8 +104,8 @@ Also:
       en: 'Kyiv',
     },
     description: {
-      en: 'Working with Google accounts, Google Play Console, spreadsheets, proxies, anti-detect browsers. Testing, farming, analyzing, finding weaknesses in accounts.',
       ru: 'Работа с Google аккаунтами, Google Play Console, таблицами, прокси, антидетект-браузерами. Тестирование, фарминг, анализ, слабые места в аккаунтах.',
+      en: 'Working with Google accounts, Google Play Console, spreadsheets, proxies, anti-detect browsers. Testing, farming, analyzing, finding weaknesses in accounts.',
     },
   },
   {
@@ -103,8 +120,8 @@ Also:
       en: 'Kyiv',
     },
     description: {
-      en: 'Managed daily operations and led a small team.',
       ru: 'Управлял ежедневными процессами и небольшой командой.',
+      en: 'Managed daily operations and led a small team.',
     },
   },
   {
@@ -119,8 +136,8 @@ Also:
       en: 'Kyiv',
     },
     description: {
-      en: 'Provided customer consultations and boosted sales.',
       ru: 'Консультировал клиентов и увеличивал продажи.',
+      en: 'Provided customer consultations and boosted sales.',
     },
   },
 ];
