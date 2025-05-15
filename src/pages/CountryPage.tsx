@@ -2,6 +2,7 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import countries from '../data/countries';
 import cityData from '../data/cities';
+import { ArrowLeft } from 'lucide-react';
 
 const CountryPage = () => {
   const { t, i18n } = useTranslation();
@@ -60,7 +61,7 @@ const CountryPage = () => {
   onClick={() => navigate('/travels')}
   className="group relative inline-flex items-center gap-2 px-6 py-2 rounded-lg border-2 border-gray-400 dark:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white font-semibold transition-all duration-300 shadow-md hover:shadow-blue-400/50 hover:ring-2 hover:ring-blue-400 focus:outline-none active:scale-95"
 >
-  <span className="transform transition-transform duration-300 group-hover:-translate-x-1">←</span>
+  <ArrowLeft className="w-5 h-5 transition-transform duration-300 group-hover:-translate-x-1" />
   <span>{t('country.back')}</span>
   <span className="absolute inset-0 z-[-1] rounded-lg bg-gradient-to-r from-blue-400 to-purple-500 opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
 </button>
