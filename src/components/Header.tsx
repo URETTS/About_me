@@ -9,10 +9,19 @@ const Header = () => {
   const { t, i18n } = useTranslation();
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isLangDisabled, setIsLangDisabled] = useState(false);
+
+  
 
   const toggleLang = () => {
+    if (isLangDisabled) return;
+    setIsLangDisabled(true);
     const newLang = i18n.language === 'ru' ? 'en' : 'ru';
     i18n.changeLanguage(newLang);
+
+    setTimeout(() => {
+      setIsLangDisabled(false); 
+    }, 5000);
   };
 
   return (
@@ -50,6 +59,7 @@ const Header = () => {
           <li>
             <button
               onClick={toggleLang}
+              disabled={isLangDisabled}
               className="text-sm border-2 border-teal-500 rounded-full px-3 py-2 text-teal-500 font-medium transform transition-all hover:scale-105 hover:shadow-lg hover:bg-teal-500 hover:text-white"
             >
               {i18n.language === 'ru' ? 'EN' : 'RU'}
