@@ -51,5 +51,10 @@
   "cookie": {
     "text": "We use cookies to improve your experience. By continuing to use the site, you agree to this.",
     "button": "Got it"
+  },
+  "notFound": {
+    "title": "PAGE NOT FOUND",
+    "description": "We’re not sure what went wrong, but we’ll fix it soon! Maybe this page doesn’t exist!",
+    "button": "Back to Home"
   }
 }

@@ -1,9 +1,11 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import catImage from '../../assets/404/okak-cat-enhanced.jpg';
 
 function NotFoundPage() {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   return (
     <div className="w-full bg-black m-0 p-0 overflow-hidden flex flex-col md:flex-row min-h-[100vh]">
@@ -15,17 +17,17 @@ function NotFoundPage() {
         className="w-full md:w-1/2 flex flex-col justify-center items-center px-8 py-12"
       >
         <h1 className="text-5xl md:text-6xl font-bold mb-4 text-center text-white">
-          СТРАНИЦА НЕ НAЙДЕНА
+          {t('notFound.title')}
         </h1>
         <p className="text-lg text-gray-300 mb-6 text-center">
-          Пока не знаем в чём проблема, но мы скоро это поправим!
+          {t('notFound.description')}
         </p>
         <p className="text-[120px] font-bold text-gray-700 mb-8 select-none">404</p>
         <button
           onClick={() => navigate('/')}
           className="bg-white text-black rounded-xl px-6 py-2 hover:bg-gray-200 transition"
         >
-          На главную
+          {t('notFound.button')}
         </button>
       </motion.div>
 
