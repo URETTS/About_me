@@ -8,6 +8,7 @@ import CountryPage from './pages/CountryPage';
 import CityPage from './pages/CityPage';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import CookieBanner from './components/CookieBanner';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <Route path="/travels/:countryId/:cityId" element={<CityPage />} />
         </Routes>
       </main>
+      <CookieBanner /> 
       <Footer />
     </div>
   );
