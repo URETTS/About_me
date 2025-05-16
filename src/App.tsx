@@ -9,6 +9,8 @@ import CityPage from './pages/CityPage';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import CookieBanner from './components/CookieBanner';
+import Murchyk from './components/Murchyk';
+
 
 
 function App() {
@@ -27,6 +29,7 @@ function App() {
           <Route path="/travels" element={<Travels />} />
           <Route path="/travels/:countryId" element={<CountryPage />} />
           <Route path="/travels/:countryId/:cityId" element={<CityPage />} />
+          <Route path="/murchyk" element={<Murchyk />} />
         </Routes>
       </main>
       <CookieBanner /> 

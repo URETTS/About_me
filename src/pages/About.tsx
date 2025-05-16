@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   const { t } = useTranslation();
@@ -92,6 +93,28 @@ const About = () => {
           {t('about.sport')}
         </p>
       </motion.div>
+
+      {/* Кот */}
+      <motion.div
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.6 }}
+  className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow-md border border-gray-200 dark:border-gray-600"
+>
+  <h2 className="text-2xl font-semibold mb-4 border-b border-gray-300 dark:border-gray-600 pb-1 text-gray-800 dark:text-gray-200">
+    {t('about.catTitle')}
+  </h2>
+  <p className="text-gray-700 dark:text-gray-300 mb-4">
+    {t('about.cat')}
+  </p>
+  <Link
+    to="/murchyk"
+    className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 dark:bg-blue-500 dark:hover:bg-blue-600"
+  >
+    {t('about.catLinkText')}
+  </Link>
+</motion.div>
+
 
       {/* Цели */}
       <motion.div
