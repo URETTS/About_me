@@ -14,3 +14,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     </BrowserRouter>
   </React.StrictMode>
 );
+
+const loader = document.getElementById('initial-loader');
+if (loader) {
+  loader.remove();
+}

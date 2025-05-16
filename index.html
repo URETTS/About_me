@@ -10,6 +10,8 @@
 
     <title>My Life</title>
 
+    <link rel="stylesheet" href="/initial-loader.css" />
+    
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CGXKQWNED6"></script>
     <script>
@@ -22,6 +24,10 @@
     </script>
   </head>
   <body>
+    <div id="initial-loader">
+      <div class="spinner"></div>
+      <p class="loading-text">Loading, please wait...</p>
+    </div>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

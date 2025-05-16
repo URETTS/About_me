@@ -90,7 +90,7 @@ const Footer = () => {
           </>
         ) : (
           <>
-<li className="flex flex-col items-center sm:flex-row sm:items-center gap-2 text-center sm:text-left">
+ <li className="flex justify-center sm:justify-start items-center gap-2 text-center sm:text-left">
   <span className="font-semibold">💳 Revolut:</span>
   <a
     href="https://revolut.me/ispanets"
