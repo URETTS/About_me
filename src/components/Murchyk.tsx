@@ -4,6 +4,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
 import murchykData from '../data/murchykData'
+import pawImg from '../../assets/Murchyk/paw.png';
+import meowSound from '../../assets/Sound/732519__lukey1028__senior-cat-meow.mp3';
+import murchykImg from '../../assets/Murchyk/murchyk.jpg';
 
 
 const Murchyk = () => {
@@ -15,7 +18,7 @@ const Murchyk = () => {
   useEffect(() => {
     const createPaw = (x: number, y: number) => {
       const paw = document.createElement('img');
-      paw.src = '../../assets/Murchyk/paw.png'; 
+      paw.src = pawImg;
       paw.style.position = 'fixed';
       paw.style.left = `${x}px`;
       paw.style.top = `${y}px`;
@@ -60,19 +63,19 @@ const Murchyk = () => {
 
   // Мурлыканье
   const playPurr = () => {
-    const audio = new Audio('../../assets/Sound/732519__lukey1028__senior-cat-meow.mp3');
+    const audio = new Audio(meowSound);
     audio.play();
   };
 
   return (
     <div className="relative">
       <section className="text-center py-10">
-        <img
-          src="../../assets/Murchyk/murchyk.jpg"
-          alt="Murchyk"
-          className="w-48 h-48 mx-auto rounded-full shadow-lg cursor-pointer transition hover:scale-105"
-          onMouseEnter={playPurr}
-        />
+      <img
+  src={murchykImg}
+  alt="Murchyk"
+  className="w-48 h-48 mx-auto rounded-full shadow-lg cursor-pointer transition hover:scale-105"
+  onMouseEnter={playPurr}
+/>
         <div className="text-center mt-6">
   <h1 className="text-4xl font-bold text-orange-800 inline-flex items-center gap-2 justify-center">
     {lang === 'ru' ? 'Мурчик' : 'Murchyk'}
