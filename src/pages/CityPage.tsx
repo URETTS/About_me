@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import cityData from '../data/cities';
 import { ArrowLeft } from 'lucide-react';
+import NotFoundPage from './NotFoundPage';
 
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
@@ -39,7 +40,7 @@ const CityPage = () => {
   }, [city]);
 
   if (!city) {
-    return <div className="p-4">{t('city.notFound')}</div>; 
+    return <NotFoundPage />;
   }
 
   const flagColors = city.flagColors || ['#000'];

@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next';
 import countries from '../data/countries';
 import cityData from '../data/cities';
 import { ArrowLeft } from 'lucide-react';
+import NotFoundPage from './NotFoundPage';
+
 
 const CountryPage = () => {
   const { t, i18n } = useTranslation();
@@ -14,7 +16,7 @@ const CountryPage = () => {
   const countryCities = cityData.find((c) => c.countryId === countryId)?.cities || [];
 
   if (!country) {
-    return <div className="p-4">{t('country.notFound')}</div>; 
+    return <NotFoundPage />;
   }
 
   return (
