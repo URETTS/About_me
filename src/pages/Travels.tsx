@@ -46,6 +46,7 @@ const TravelPage = () => {
       <div className="relative z-10 backdrop-blur-sm  min-h-screen">
         <div className="max-w-6xl mx-auto px-4 py-8">
           <h1 className="text-3xl font-bold mb-6">{t('travels.title')}</h1>
+          <h3 className="text-xl font-bold mb-6">2024-2025</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {countries.map((country) => (
               <Link

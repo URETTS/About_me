@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import CookieBanner from './components/CookieBanner';
 import Murchyk from './components/Murchyk';
 import NotFound from './pages/NotFoundPage';
+import ScrollToTop from './components/ScrollToTop'
 
 
 
@@ -21,8 +22,9 @@ function App() {
   
   return (
     <div className={`flex flex-col min-h-screen`}>
-       <Header />
-       <main className={`${
+      <Header />
+      <ScrollToTop />
+       <main className={`mt-16 ${
           isNotFound
             ? ''
             : isHome || isTravels

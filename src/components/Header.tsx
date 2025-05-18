@@ -23,9 +23,9 @@ const Header = () => {
       setIsLangDisabled(false); 
     }, 5000);
   };
-
+ 
   return (
-    <header className="bg-gray-800 text-white p-4 sticky top-0 z-50">
+    <header className="fixed top-0 left-0 w-full z-50 bg-gray-800 p-4 text-white">
       <nav className="flex justify-between items-center max-w-6xl mx-auto">
         <Link to="/" className="flex items-center space-x-2">
           <img src={logo} alt="Logo" className="h-10 w-auto" />
