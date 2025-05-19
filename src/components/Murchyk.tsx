@@ -10,7 +10,9 @@ import murchykImg from '../../assets/Murchyk/murchyk.jpg';
 
 const Murchyk = () => {
   const { i18n } = useTranslation();
-  const lang = (i18n.language as 'ru' | 'en') || 'en';
+
+  const langCode = i18n.language.split('-')[0];
+  const lang = ['ru', 'en'].includes(langCode) ? langCode as 'ru' | 'en' : 'en';
   const data = murchykData[lang];
 
   // Лапка за курсором

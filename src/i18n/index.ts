@@ -13,9 +13,15 @@ i18n
       en: { translation: en },
       ru: { translation: ru },
     },
+    supportedLngs: ['en', 'ru'], 
     fallbackLng: 'ru',
+    nonExplicitSupportedLngs: true, 
     interpolation: {
       escapeValue: false,
+    },
+    detection: {
+      order: ['localStorage', 'navigator', 'htmlTag', 'cookie'],
+      caches: ['localStorage'],
     },
   });
 

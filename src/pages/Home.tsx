@@ -4,7 +4,10 @@ import { useTranslation } from 'react-i18next';
 
 const Home: React.FC = () => {
   const { i18n } = useTranslation();
-  const language = i18n.language;
+
+  const langCode = i18n.language.split('-')[0];
+  const language = ['ru', 'en'].includes(langCode) ? (langCode as 'ru' | 'en') : 'en';
+  
   const fullText = homePageData.welcomeMessage[language] || '';
 
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
