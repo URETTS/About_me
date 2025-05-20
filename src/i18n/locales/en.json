@@ -2,8 +2,9 @@
   "nav": {
     "home": "Home",
     "about": "About Me",
-    "experience": " Work experience",
-    "travels": "Travels"
+    "experience": " Work Experience",
+    "travels": "Travels",
+    "support": "Tip Jar"
   },
   "footer": {
      "contact": "Contact Me",
@@ -56,5 +57,11 @@
     "title": "PAGE NOT FOUND",
     "description": "We’re not sure what went wrong, but we’ll fix it soon! Maybe this page doesn’t exist!",
     "button": "Back to Home"
-  }
+  },
+  "support": {
+  "title": "Support me",
+  "description": "If you enjoy my content or want to support my travels and projects — any help is truly appreciated 💛",
+  "thanks": "Thank you for any form of support. It really helps me continue."
+}
+
 }

@@ -39,7 +39,8 @@ const Header = () => {
           {[{ to: '/', label: t('nav.home') },
             { to: '/about', label: t('nav.about') },
             { to: '/experience', label: t('nav.experience') },
-            { to: '/travels', label: t('nav.travels') }].map(({ to, label }) => (
+            { to: '/travels', label: t('nav.travels') },
+            { to: '/support', label: t('nav.support') }].map(({ to, label }) => (
               <li key={to}>
                 {location.pathname === to ? (
                   <span className="text-xl sm:text-2xl font-semibold text-teal-400 cursor-default">

@@ -11,6 +11,7 @@ import CookieBanner from './components/CookieBanner';
 import Murchyk from './components/Murchyk';
 import NotFound from './pages/NotFoundPage';
 import ScrollToTop from './components/ScrollToTop'
+import Support from './components/Support';
 
 
 
@@ -36,6 +37,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/travels" element={<Travels />} />
+          <Route path="/support" element={<Support />} />
           <Route path="/travels/:countryId" element={<CountryPage />} />
           <Route path="/travels/:countryId/:cityId" element={<CityPage />} />
           <Route path="/murchyk" element={<Murchyk />} />

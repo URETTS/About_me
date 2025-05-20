@@ -22,6 +22,7 @@ const MobileMenu = ({ isOpen, closeMenu }: MobileMenuProps) => {
     { to: '/about', label: t('nav.about') },
     { to: '/experience', label: t('nav.experience') },
     { to: '/travels', label: t('nav.travels') },
+    { to: '/support', label: t('nav.support') },
   ];
 
   return (

@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import logo from '../../assets/logo/Bykov_Yuriy.png';
-import { Banknote } from 'lucide-react'; 
+import { Banknote, Coffee } from 'lucide-react'; 
 import SubFooter from './SubFooter';
 
 const Footer = () => {
@@ -72,9 +72,21 @@ const Footer = () => {
                 Отправить донат
               </a>
             </li>
-            <li><span className="font-semibold">Монобанк:</span> 4441111057408696</li>
+                {/* <li><span className="font-semibold">Монобанк:</span> 4441111057408696</li> */}
             <li><span className="font-semibold">ПриватБанк:</span> 5457082518678003</li>
-            <li><span className="font-semibold">Binance ID (TRC20):</span> 777969674</li>
+                <li><span className="font-semibold">Binance ID (TRC20):</span> 777969674</li>
+                <li className="flex justify-center sm:justify-start items-center gap-2 text-center sm:text-left">
+                <Coffee className="w-4 h-4 text-green-400" />
+  <span className="font-semibold">Buy Me a Coffee:</span>
+  <a
+    href="https://buymeacoffee.com/ispanets"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="underline text-blue-300 hover:text-blue-400 transition font-medium"
+  >
+    @ispanets
+                    </a>
+</li>
             <li className="flex justify-center sm:justify-start items-center gap-2 text-center sm:text-left">
   <span className="font-semibold">💳 Revolut:</span>
   <a
@@ -100,10 +112,23 @@ const Footer = () => {
   >
     @ispanets
   </a>
+                  </li>
+                  <li className="flex justify-center sm:justify-start items-center gap-2 text-center sm:text-left">
+                <Coffee className="w-4 h-4 text-green-400" />
+  <span className="font-semibold">Buy Me a Coffee:</span>
+  <a
+    href="https://buymeacoffee.com/ispanets"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="underline text-blue-300 hover:text-blue-400 transition font-medium"
+  >
+    @ispanets
+                    </a>
 </li>
             {/* <li><span className="font-semibold">Wise (IBAN):</span> DE** **** **** 1234</li> */}
             <li><span className="font-semibold">Binance ID (TRC20):</span> 777969674</li>
-            <li><span className="font-semibold">Santander ESP (IBAN):</span> ES59 0049 5366 1525 1651 8374</li>
+                  {/* <li><span className="font-semibold">Santander ESP (IBAN):</span> ES59 0049 5366 1525 1651 8374</li> */}
+                  <li><span className="font-semibold">PayPal:</span> yurka.b2000@gmail.com </li>    
           </>
         )}
       </ul>
