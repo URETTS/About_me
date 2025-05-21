@@ -8,6 +8,10 @@ import gavaimur from '../../assets/Murchyk/gavaimur.jpg';
 import mursleep2 from '../../assets/Murchyk/mursleep2.jpg';
 import murlove from '../../assets/Murchyk/murlove.jpg';
 import mur_flover from '../../assets/Murchyk/mur_flover.jpg';
+import moneymurchik from '../../assets/Murchyk/moneymurchik.jpg'
+import kingMurchik from '../../assets/Murchyk/kingMurchik.jpg'
+import murchikFace from '../../assets/Murchyk/murchikFace.jpg'
+import murchikface2 from '../../assets/Murchyk/murchikface2.jpg'
 // import  from '../../assets/Murchyk'
 
 export interface MurchykFact {
@@ -50,6 +54,11 @@ const murchykData: MurchykData = {
       { image: mursleep2, label: 'Curled up' },
       { image: murlove, label: '❤️❤️❤️' },
       { image: mur_flover, label: 'The Hunter' },
+      { image: moneymurchik, label: 'Money Cat' },
+{ image: kingMurchik, label: 'King' },
+{ image: murchikFace, label: 'Sassy Face' },
+{ image: murchikface2, label: 'Cute Face' },
+
     ],
   },
   ru: {
@@ -72,6 +81,10 @@ const murchykData: MurchykData = {
       { image: mursleep2, label: 'Клубочек' },
       { image: murlove, label: '❤️❤️❤️' },
       { image: mur_flover, label: 'Охотник' },
+      { image: moneymurchik, label: 'Денежный кот' },
+      { image: kingMurchik, label: 'Король' },
+      { image: murchikFace, label: 'Наглая мордочка' },
+      { image: murchikface2, label: 'Симпотная мордочка' },
     ],
   },
 };
