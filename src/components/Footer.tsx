@@ -79,7 +79,7 @@ const Footer = () => {
                 <Coffee className="w-4 h-4 text-green-400" />
   <span className="font-semibold">Buy Me a Coffee:</span>
   <a
-    href="https://buymeacoffee.com/ispanets"
+    href="https://buymeacoffee.com"
     target="_blank"
     rel="noopener noreferrer"
     className="underline text-blue-300 hover:text-blue-400 transition font-medium"
@@ -117,7 +117,7 @@ const Footer = () => {
                 <Coffee className="w-4 h-4 text-green-400" />
   <span className="font-semibold">Buy Me a Coffee:</span>
   <a
-    href="https://buymeacoffee.com/ispanets"
+    href="https://buymeacoffee.com"
     target="_blank"
     rel="noopener noreferrer"
     className="underline text-blue-300 hover:text-blue-400 transition font-medium"

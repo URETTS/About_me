@@ -827,6 +827,19 @@ Alicante became not only a vivid stop during the trip but also a convenient conn
           ru: ` <h2 class="text-xl font-semibold mb-4"></h2> `,
           en:` <h2 class="text-xl font-semibold mb-4"></h2> `
         },
+        images: [ barcelonaprev]
+      },
+      {
+        id: 'madrid',
+        name: {
+    ru: 'Мадрид',
+    en: 'Madrid',
+  },
+        flagColors: ['#AA151B', '#F1BF00' ],
+        description: {
+          ru: ` <h2 class="text-xl font-semibold mb-4"></h2> `,
+          en:` <h2 class="text-xl font-semibold mb-4"></h2> `
+        },
         images: [ barcelonaprev
       
         ]

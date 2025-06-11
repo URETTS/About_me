@@ -72,14 +72,17 @@ const Sponsor = () => {
               icon={<Coffee className="w-5 h-5 text-green-400" />}
               title="Buy Me a Coffee"
               lines={[
+                <>
+                Nickname:{' '}
                 <a
-                  href="https://buymeacoffee.com/ispanets"
+                  href="https://buymeacoffee.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-300 underline hover:text-blue-400"
                 >
                 @ispanets
-                </a>,
+                  </a>
+                  </>
               ]}
                       />
                       <Card
@@ -112,15 +115,18 @@ const Sponsor = () => {
                           <Card
               icon={<Coffee className="w-5 h-5 text-green-400" />}
               title="Buy Me a Coffee"
-              lines={[
+                lines={[
+                  <>
+                    Nickname:{' '}
                 <a
-                  href="https://buymeacoffee.com/ispanets"
+                  href="https://buymeacoffee.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-300 underline hover:text-blue-400"
                 >
                 @ispanets
-                </a>,
+                    </a>
+                    </>
               ]}
             />
             <Card
