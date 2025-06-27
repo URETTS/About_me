@@ -8,7 +8,12 @@ import NotFoundPage from './NotFoundPage';
 
 const CountryPage = () => {
   const { t, i18n } = useTranslation();
-  const language = i18n.language.startsWith('ru') ? 'ru' : 'en';
+  const language = i18n.language.startsWith('ru')
+  ? 'ru'
+  : i18n.language.startsWith('es')
+  ? 'es'
+  : 'en';
+
 
   const { countryId } = useParams();
   const navigate = useNavigate();

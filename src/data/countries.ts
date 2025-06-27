@@ -17,6 +17,7 @@ const countries = [
   name: {
     ru: 'Украина',
     en: 'Ukraine',
+    es: 'Ucrania',
   },
   image: ukraine, 
   description: {
@@ -37,7 +38,17 @@ Ukraine is vast and diverse. From the vibrant city of Kyiv to the quiet Carpathi
 
 Unfortunately, because of the war, I had to leave Ukraine and start a journey. It was a difficult decision, but it marked the beginning of a new chapter in my life — full of movement, discoveries, and reflections.
 
-For me, Ukraine is not just a spot on the map. It’s the foundation on which everything else is built.`
+For me, Ukraine is not just a spot on the map. It’s the foundation on which everything else is built.`,
+    
+es: `<h2 class="text-xl font-semibold mb-4">Ucrania — mi tierra natal</h2>
+Ucrania es el país donde nací y viví durante 24 años. Aquí pasé mi infancia, juventud y di mis primeros pasos en la vida adulta. La mayoría de mis recuerdos, amigos y momentos importantes están ligados a este lugar.
+
+Ucrania es grande y diversa. Desde la bulliciosa ciudad de Kyiv hasta los tranquilos pueblos de los Cárpatos, desde vastos campos hasta la costa del Mar Negro — lo tiene todo. Siempre me he sentido especialmente en casa en las regiones central y sur.
+
+Desafortunadamente, debido a la guerra, tuve que dejar Ucrania y comenzar un viaje. Fue una decisión difícil, pero marcó el comienzo de un nuevo capítulo en mi vida — lleno de movimientos, descubrimientos y reflexiones.
+
+Para mí, Ucrania no es solo un punto en el mapa. Es la base sobre la cual se construye todo lo demás.`
+    
   }
 },
  {
@@ -45,6 +56,7 @@ For me, Ukraine is not just a spot on the map. It’s the foundation on which ev
   name: {
     ru: 'Молдова',
     en: 'Moldova',
+    es: 'Moldavia',
   },
   image: mold,
   description: {
@@ -60,7 +72,13 @@ Moldova was the first country where my journey began. I arrived on August 30, an
 
 Despite its modest size, Moldova is a country with a rich history and culture. It produces some of the best wines in Eastern Europe — the wineries of Cricova and Milestii Mici are famous worldwide. In fact, Milestii Mici is even listed in the Guinness World Records as the largest underground winery in the world — over 200 kilometers of tunnels!
 
-I spent a week here — until September 6 — and this time was memorable for its lightness and a sense of inner freedom.`
+I spent a week here — until September 6 — and this time was memorable for its lightness and a sense of inner freedom.`,
+es: `<h2 class="text-xl font-semibold mb-4">Moldavia — el comienzo de mi gran viaje</h2>
+Moldavia fue el primer país donde comenzó mi viaje. Llegué el 30 de agosto, y desde los primeros días sentí cuán cercana y familiar es esta tierra para un ucraniano. La atmósfera cálida, la ausencia de barreras lingüísticas y la apertura de la gente hicieron que mi estancia fuera realmente cómoda.
+
+A pesar de su modesto tamaño, Moldavia es un país con una rica historia y cultura. Produce algunos de los mejores vinos de Europa del Este — las bodegas Cricova y Milestii Mici son famosas en todo el mundo. De hecho, Milestii Mici está inscrita en el Libro Guinness de los Récords como la bodega subterránea más grande del mundo — ¡más de 200 kilómetros de túneles!
+
+Pasé una semana aquí — hasta el 6 de septiembre — y este tiempo fue memorable por su ligereza y sensación de libertad interior.`
   }
 },
   {
@@ -68,6 +86,7 @@ I spent a week here — until September 6 — and this time was memorable for it
   name: {
     ru: 'Румыния',
     en: 'Romania',
+    es: 'Rumania',
   },
   image: rum,
   description: {
@@ -83,7 +102,14 @@ I entered Romania on the night of September 6, crossing the border from Moldova 
 
 I stayed in Romania for only one day, but it was enough to feel the atmosphere of the country. A fascinating mix of Balkan spirit and European polish. This is a country of ancient castles, mountain landscapes, and rich culture, known for its Dracula legends, the Carpathian Mountains, and unique cuisine.
 
-Fun fact: Romania is home to the narrowest street in Eastern Europe (Strada Sforii in Brașov), and also boasts one of the largest IT sectors on the continent. A remarkable blend of old and new.`
+Fun fact: Romania is home to the narrowest street in Eastern Europe (Strada Sforii in Brașov), and also boasts one of the largest IT sectors on the continent. A remarkable blend of old and new.` ,
+es: `<h2 class="text-xl font-semibold mb-4">Rumania — un país de sorpresas y encuentros inesperados</h2>
+Entré a Rumania la noche del 6 de septiembre, cruzando la frontera desde Moldavia — y de inmediato se convirtió en una aventura. Me bajaron inesperadamente del autobús y me dejaron en la aduana para la revisión de documentos. Pasé la mitad de la noche esperando la confirmación del cruce legal de la frontera, lo que, debo admitir, añadió algo de adrenalina al viaje. Por la mañana ya estaba en Bucarest.
+
+Estuve en Rumania solo un día, pero fue suficiente para sentir la atmósfera del país. Una fascinante mezcla del espíritu balcánico y el pulido europeo. Es un país de castillos antiguos, paisajes montañosos y rica cultura, conocido por sus leyendas de Drácula, los Montes Cárpatos y su cocina única.
+
+Dato curioso: Rumania es hogar de la calle más estrecha de Europa del Este (Strada Sforii en Brașov), y también cuenta con uno de los sectores de tecnología más grandes del continente. Una mezcla notable de lo antiguo y lo nuevo.`
+
   }
 }
 ,
@@ -92,6 +118,7 @@ Fun fact: Romania is home to the narrowest street in Eastern Europe (Strada Sfor
   name: {
     ru: 'Хорватия',
     en: 'Croatia',
+    es: 'Croacia',
   },
   image: cro,
   description: {
@@ -107,7 +134,13 @@ I arrived in Croatia on September 8 and stayed for almost two and a half months,
 
 Croatia instantly captivates with its nature: endless pines, the transparent Adriatic Sea, cozy villages, ancient towns, and a gentle pace of life. The people are friendly, the food is simple and tasty, and the sunsets feel like a movie.
 
-Fun fact: Croatia is home to one of the best-preserved Roman amphitheaters in the world — the Pula Arena. It also has the town of Hum, officially recognized as the smallest town on the planet, with only about 30 residents.`
+Fun fact: Croatia is home to one of the best-preserved Roman amphitheaters in the world — the Pula Arena. It also has the town of Hum, officially recognized as the smallest town on the planet, with only about 30 residents.` ,
+es: `<h2 class="text-xl font-semibold mb-4">Croacia — tierra de calma marina y horizontes azulados</h2> 
+Llegué a Croacia el 8 de septiembre y me quedé casi dos meses y medio, hasta el 18 de noviembre. Fue el tramo más largo y probablemente el más pacífico de mi viaje. Aquí todo parece desacelerarse — el ruido se desvanece, el tiempo se estira suavemente, y cada día comienza con sol y el olor al mar. Viví en el pueblo de Banjole cerca de Pula — un lugar donde cada casa parece una postal, y casi cada patio tiene su propio yate.
+
+Croacia cautiva instantáneamente con su naturaleza: pinos interminables, el transparente Mar Adriático, pueblos acogedores, ciudades antiguas y un ritmo de vida suave. La gente es amable, la comida es simple y sabrosa, y las puestas de sol parecen sacadas de una película.
+
+Dato curioso: Croacia alberga uno de los anfiteatros romanos mejor conservados del mundo — la Arena de Pula. También cuenta con la ciudad de Hum, reconocida oficialmente como la ciudad más pequeña del planeta, con solo unos 30 habitantes.`
   }
 },
   {
@@ -115,6 +148,7 @@ Fun fact: Croatia is home to one of the best-preserved Roman amphitheaters in th
   name: {
     ru: 'Словения',
     en: 'Slovenia',
+    es: 'Eslovenia',
   },
   image: slo,
   description: {
@@ -130,7 +164,13 @@ Slovenia is a small but very cozy and well-kept country, often called “the gre
 
 Despite its compact size, Slovenia combines Alpine severity, Mediterranean lightness, and Slavic hospitality. I arrived here by bus on September 20 and spent two very eventful days, leaving on the 21st. It was a short but memorable stop.
 
-Fun fact: Slovenia is one of the greenest countries in Europe. Over 60% of its territory is covered by forests, and in 2016, Ljubljana was awarded the title of “European Green Capital” for its eco-consciousness and sustainable growth.`
+Fun fact: Slovenia is one of the greenest countries in Europe. Over 60% of its territory is covered by forests, and in 2016, Ljubljana was awarded the title of “European Green Capital” for its eco-consciousness and sustainable growth.`,
+es: `<h2 class="text-xl font-semibold mb-4">Eslovenia — el corazón verde de Europa</h2> 
+Eslovenia es un país pequeño pero muy acogedor y bien cuidado, a menudo llamado “el corazón verde de Europa.” Situado entre los Alpes, el Adriático y los Balcanes, sorprende por su armonía natural y alta calidad de vida. Aquí, la ecología no es una moda, sino un modo de vida. El aire es puro, los lagos de montaña son prístinos, las carreteras están bien mantenidas, y hay un fuerte enfoque en el desarrollo sostenible.
+
+A pesar de su tamaño compacto, Eslovenia combina la severidad alpina, la ligereza mediterránea y la hospitalidad eslava. Llegué en autobús el 20 de septiembre y pasé dos días muy intensos, y me fui el 21. Fue una parada corta pero memorable.
+
+Dato curioso: Eslovenia es uno de los países más verdes de Europa. Más del 60% de su territorio está cubierto de bosques, y en 2016, Ljubljana recibió el título de “Capital Verde de Europa” por su conciencia ecológica y crecimiento sostenible.`
   }
 },
   {
@@ -138,6 +178,7 @@ Fun fact: Slovenia is one of the greenest countries in Europe. Over 60% of its t
   name: {
     ru: 'Германия',
     en: 'Germany',
+    es: 'Alemania',
   },
   image: ge,
   description: {
@@ -157,7 +198,15 @@ After the warm and sunny Croatia, cold Munich greeted me with a real autumn weat
 
 Germany is a country of clear organization, architectural rigor, and a high standard of living. Everything works, everything is by the book, everything is on schedule.
 
-Fun fact: Germany is home to more than 1,500 types of beer and over 300 types of bread. The Oktoberfest, which I visited in Munich, is considered the largest folk festival in the world.`
+Fun fact: Germany is home to more than 1,500 types of beer and over 300 types of bread. The Oktoberfest, which I visited in Munich, is considered the largest folk festival in the world.` ,
+es: `<h2 class="text-xl font-semibold mb-4">Alemania — un regreso inesperado y un encuentro cálido</h2> 
+Había estado en Alemania antes, pero solo de paso. Esta vez vine con un objetivo específico: obtener un pasaporte internacional. El viaje duró solo unos días, del 3 al 6 de octubre, pero estuvo lleno de eventos y emociones.
+
+Después de la cálida y soleada Croacia, Múnich frío me recibió con un verdadero contraste otoñal. Sin embargo, aquí tuvo lugar uno de los encuentros más cálidos en mucho tiempo: finalmente me reuní con un amigo a quien no veía desde el inicio de la guerra en Ucrania. Fue un momento poderoso y emotivo.
+
+Alemania es un país de organización clara, rigor arquitectónico y un alto nivel de vida. Todo funciona, todo está según las reglas, todo está en horario.
+
+Dato curioso: Alemania es hogar de más de 1,500 tipos de cerveza y más de 300 tipos de pan. El Oktoberfest, que visité en Múnich, se considera el festival popular más grande del mundo.`
   }
 },
   {
@@ -165,6 +214,7 @@ Fun fact: Germany is home to more than 1,500 types of beer and over 300 types of
   name: {
     ru: 'Италия',
     en: 'Italy',
+    es: 'Italia',
   },
   image: it,
   description: {
@@ -179,7 +229,13 @@ Italy became a transition point for me — the time to end one chapter and begin
 
 Italy greeted me not as a tourist, but as a traveler on a journey — tired yet inspired. Though the trip was short, it left a lasting impression.
 
-Fun fact: Italy has more UNESCO World Heritage sites than any other country — a total of 59. And Venice, of course, is one of them.`
+Fun fact: Italy has more UNESCO World Heritage sites than any other country — a total of 59. And Venice, of course, is one of them.` ,
+es: `<h2 class="text-xl font-semibold mb-4">Italia — un acorde de despedida antes de un nuevo capítulo</h2> 
+Italia se convirtió para mí en un punto de transición — un momento para cerrar un capítulo y comenzar otro. Mi estancia en la UE estaba llegando a su fin, y decidí dirigirme hacia Georgia. La opción más conveniente fue un vuelo desde Venecia, y hubiera sido un verdadero crimen no quedarme en esta ciudad al menos una noche.
+
+Italia me recibió no como un turista, sino como un viajero en camino — cansado pero inspirado. Aunque el viaje fue corto, dejó una huella profunda.
+
+Dato curioso: Italia tiene más sitios declarados Patrimonio de la Humanidad por la UNESCO que cualquier otro país — un total de 59. Y Venecia, por supuesto, es uno de ellos.`
   }
 }
 ,
@@ -188,6 +244,7 @@ Fun fact: Italy has more UNESCO World Heritage sites than any other country — 
   name: {
     ru: 'Грузия',
     en: 'Georgia',
+    es: 'Georgia',
   },
   image: georgia,
   description: {
@@ -199,7 +256,11 @@ Fun fact: Italy has more UNESCO World Heritage sites than any other country — 
     en: `<h2 class="text-xl font-semibold mb-4">Georgia — the warm soul of the Caucasus and my second home for a while</h2> 
 Georgia became for me not just a country on the map, but a true home for almost three months. At first, I stayed in a boutique hotel, but later moved in with friends — and that’s when the real Georgian life began. We traveled in a Niva, ate incredibly delicious, hearty, and inexpensive food, and discovered the hidden beauty of the country and its incredibly hospitable people.
 
-Georgia is a country of contrasts and characters: mountains and valleys, ancient fortresses and Soviet ruins, noisy bazaars and the silence of highland roads. There is always a special sense of freedom and warmth here — both in nature and in the people.`
+Georgia is a country of contrasts and characters: mountains and valleys, ancient fortresses and Soviet ruins, noisy bazaars and the silence of highland roads. There is always a special sense of freedom and warmth here — both in nature and in the people.`,
+es: `<h2 class="text-xl font-semibold mb-4">Georgia — el alma cálida del Cáucaso y mi segundo hogar por un tiempo</h2> 
+Georgia se convirtió para mí no solo en un país en el mapa, sino en un verdadero hogar durante casi tres meses. Al principio me alojé en un hotel boutique, pero luego me mudé con amigos — y fue entonces cuando comenzó la verdadera vida georgiana. Viajamos en una Niva, comimos comida increíblemente deliciosa, abundante y económica, y descubrimos la belleza oculta del país y su gente increíblemente hospitalaria.
+
+Georgia es un país de contrastes y caracteres: montañas y valles, fortalezas antiguas y ruinas soviéticas, bazares ruidosos y el silencio de los caminos montañosos. Siempre se siente una libertad y calidez especial aquí — tanto en la naturaleza como en la gente.`
   }
 },
   {
@@ -207,6 +268,7 @@ Georgia is a country of contrasts and characters: mountains and valleys, ancient
   name: {
     ru: 'Армения',
     en: 'Armenia',
+    es: 'Armenia',
   },
   image: arm,
   description: {
@@ -218,7 +280,11 @@ Georgia is a country of contrasts and characters: mountains and valleys, ancient
     en: `<h2 class="text-xl font-semibold mb-4">Armenia — a country of Nivas, G-wagons, and contrasts</h2> 
 The trip to Armenia was short, but unforgettable. We went for the weekend — just to see what it's like. And we saw a country of contrasts: poor neighborhoods sit side by side with G-wagons, the city is full of expensive cars, and at the same time, there’s the spirit of the Soviet past.
 
-Armenia turned out to be unexpectedly expensive. The prices for food, accommodation, and even transportation surprised us — especially compared to neighboring Georgia. But the atmosphere of the country is special. People speak Russian here, and in the center, you can even find a Black Star Burger.`
+Armenia turned out to be unexpectedly expensive. The prices for food, accommodation, and even transportation surprised us — especially compared to neighboring Georgia. But the atmosphere of the country is special. People speak Russian here, and in the center, you can even find a Black Star Burger.`,
+es: `<h2 class="text-xl font-semibold mb-4">Armenia — un país de Nivas, G-Wagons y contrastes</h2> 
+El viaje a Armenia fue corto, pero inolvidable. Fuimos un fin de semana — solo para ver cómo es. Y vimos un país de contrastes: barrios pobres junto a G-Wagons, la ciudad está llena de autos caros, y al mismo tiempo, hay un espíritu del pasado soviético.
+
+Armenia resultó ser inesperadamente cara. Los precios de la comida, el alojamiento e incluso el transporte nos sorprendieron — especialmente en comparación con la vecina Georgia. Pero la atmósfera del país es especial. Aquí se habla ruso, y en el centro incluso se puede encontrar un Black Star Burger.`
   }
 },
   {
@@ -226,6 +292,7 @@ Armenia turned out to be unexpectedly expensive. The prices for food, accommodat
   name: {
     ru: 'Испания',
     en: 'Spain',
+    es: 'España',
   },
   image: esp,
   description: {
@@ -237,7 +304,11 @@ Armenia turned out to be unexpectedly expensive. The prices for food, accommodat
     en: `<h2 class="text-xl font-semibold mb-4">Spain — a country of sun, oranges, and ham</h2> 
 I arrived in Spain after a long winter in Georgia — on February 8. And immediately I felt the difference: the sun, the warmth, people walking in T-shirts, and the air smells of oranges. Spain is a country where food becomes an art, and life itself is a leisurely celebration.
 
-Here, everything is about taste: juicy fruits, endless ham, cozy cafes. Spaniards are friendly, the streets are bathed in light, and even in winter, you can catch the summer mood. It’s one of those places where you want to stay longer.`
+Here, everything is about taste: juicy fruits, endless ham, cozy cafes. Spaniards are friendly, the streets are bathed in light, and even in winter, you can catch the summer mood. It’s one of those places where you want to stay longer.`,
+es: `<h2 class="text-xl font-semibold mb-4">España — tierra de sol, naranjas y jamón</h2> 
+Llegué a España después de un largo invierno en Georgia — el 8 de febrero. Y de inmediato sentí la diferencia: sol, calor, gente paseando en camisetas y el aire con aroma a naranjas. España es un país donde la comida se convierte en arte y la vida es una celebración pausada.
+
+Aquí todo gira en torno al sabor: frutas jugosas, jamón sin fin, cafés acogedores. Los españoles son amables, las calles están bañadas de luz, y hasta en invierno se puede atrapar el ánimo veraniego. Es uno de esos lugares donde quieres quedarte más tiempo.`
   }
 }
 ,
@@ -246,6 +317,7 @@ Here, everything is about taste: juicy fruits, endless ham, cozy cafes. Spaniard
   name: {
     ru: 'Португалия',
     en: 'Portugal',
+    es: 'Portugal',
   },
   image: port,
   description: {
@@ -265,7 +337,15 @@ The next day, March 30, we took a car and headed to Cabo da Roca — the western
 
 The next day, we dedicated to Sintra — a city of castles and mists. The atmosphere there was magical. What stood out the most was the Masonic palace with its mysterious underground chambers and architecture that seemed from another era.
 
-The trip ended in Lisbon. I spent the day strolling through its hills, narrow streets, and waterfront. The city reminded me of San Francisco — the same steep climbs, bridges, and the spirit of freedom. We visited the castle, enjoyed the city’s panoramic views, and with that, my Portuguese adventure came to an end.`
+The trip ended in Lisbon. I spent the day strolling through its hills, narrow streets, and waterfront. The city reminded me of San Francisco — the same steep climbs, bridges, and the spirit of freedom. We visited the castle, enjoyed the city’s panoramic views, and with that, my Portuguese adventure came to an end.` ,
+es: `<h2 class="text-xl font-semibold mb-4">Portugal — tierra de océano, sol y castillos</h2>
+Llegué a Portugal la noche del 29 de marzo. Me recibieron amigos, y desde ese momento comenzó un viaje brillante, aunque corto, por uno de los países más atmosféricos de Europa.
+
+Al día siguiente, el 30 de marzo, tomamos un coche y nos dirigimos a Cabo da Roca — el punto más occidental de Europa continental. Se siente como el borde del mundo: acantilados, viento, océano y vistas impresionantes. En el camino llegué a Cascais — un pueblo costero muy elegante y caro, lleno de superdeportivos: Lamborghinis, Ferraris, McLarens, Maseratis — parecía un mundo de glamour y lujo. También visité un faro en un acantilado junto al océano.
+
+El día siguiente lo dedicamos a Sintra — ciudad de castillos y nieblas. La atmósfera era mágica. Lo que más destacó fue el palacio masónico con sus misteriosas cámaras subterráneas y arquitectura que parecía de otra época.
+
+El viaje terminó en Lisboa. Pasé el día paseando por sus colinas, calles estrechas y el malecón. La ciudad me recordó a San Francisco — las mismas pendientes empinadas, puentes y el espíritu de libertad. Visitamos el castillo, disfrutamos de las vistas panorámicas de la ciudad y con eso terminó mi aventura portuguesa.`
   }
 }
 ,

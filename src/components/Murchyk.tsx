@@ -12,7 +12,8 @@ const Murchyk = () => {
   const { i18n } = useTranslation();
 
   const langCode = i18n.language.split('-')[0];
-  const lang = ['ru', 'en'].includes(langCode) ? langCode as 'ru' | 'en' : 'en';
+const lang = ['ru', 'en', 'es'].includes(langCode) ? langCode as 'ru' | 'en' | 'es' : 'en';
+
   const data = murchykData[lang];
 
   // Лапка за курсором
@@ -123,16 +124,22 @@ const Murchyk = () => {
             <span className="animate-pulse text-red-500 text-3xl">❤️</span>
           </h1>
           <p className="text-xl text-gray-800 italic mt-2">
-            {lang === 'ru'
-              ? 'Пушистый комочек радости '
-              : 'Fluffy little bundle of joy '}
-          </p>
+  {lang === 'ru'
+    ? 'Пушистый комочек радости'
+    : lang === 'es'
+    ? 'Bola de alegría peluda'
+    : 'Fluffy little bundle of joy'}
+</p>
         </div>
       </section>
 
       <section className="container mx-auto px-4 mb-12">
         <h2 className="text-3xl font-bold text-orange-800 mb-6 text-center">
-          {lang === 'ru' ? 'Факты о Мурчике' : 'Fun Facts about Murchyk'}
+        {lang === 'ru'
+    ? 'Факты о Мурчике'
+    : lang === 'es'
+    ? 'Datos curiosos sobre Murchyk'
+    : 'Fun Facts about Murchyk'}
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -154,7 +161,11 @@ const Murchyk = () => {
 
       <section className="container mx-auto px-4 mb-12">
         <h2 className="text-3xl font-bold text-orange-800 mb-6 text-center">
-          {lang === 'ru' ? 'Жизнь Мурчика' : "Murchyk’s Life"}
+        {lang === 'ru'
+    ? 'Жизнь Мурчика'
+    : lang === 'es'
+    ? 'La vida de Murchyk'
+    : "Murchyk’s Life"}
         </h2>
 
         <Swiper

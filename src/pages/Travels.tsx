@@ -6,7 +6,10 @@ import { flags } from '../data/flags';
 
 const TravelPage = () => {
   const { t, i18n } = useTranslation();
-  const language = i18n.language.startsWith('ru') ? 'ru' : 'en';
+  const langCode = i18n.language.split('-')[0];
+const language = ['ru', 'en', 'es'].includes(langCode) ? langCode as 'ru' | 'en' | 'es' : 'en';
+
+
 
   const [backgroundImage, setBackgroundImage] = useState<string | null>(null);
   const [timerId, setTimerId] = useState<ReturnType<typeof setTimeout> | null>(null);

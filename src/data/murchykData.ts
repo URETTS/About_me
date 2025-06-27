@@ -31,6 +31,7 @@ export interface MurchykLocaleData {
 export interface MurchykData {
   en: MurchykLocaleData;
   ru: MurchykLocaleData;
+  es: MurchykLocaleData;
 }
 
 const murchykData: MurchykData = {
@@ -87,6 +88,32 @@ const murchykData: MurchykData = {
       { image: murchikface2, label: 'Симпотная мордочка' },
     ],
   },
+  es: {
+    facts: [
+      { text: 'No le gusta estar solo' },
+      { text: 'Duerme 12 horas al día' },
+      { text: 'Pasatiempo: sentarse en la nevera' },
+      { text: 'Muy curioso' },
+      { text: 'Le encanta comer flores' },
+      { text: 'Murchyk fue rescatado de la calle' }
+    ],
+    lifeSlider: [
+      { image: BabyMurchyk, label: 'Pequeño Murchyk' },
+      { image: Murbaby2, label: 'Primera vez en casa' },
+      { image: Mursofa, label: 'Escondido en el sofá' },
+      { image: mursleep, label: 'Dulces sueños' },
+      { image: murblanket, label: 'Envuelto en una manta' },
+      { image: murface, label: 'Nada impresionado' },
+      { image: gavaimur, label: 'Murchyk Hawaiano' },
+      { image: mursleep2, label: 'Hecho bolita' },
+      { image: murlove, label: '❤️❤️❤️' },
+      { image: mur_flover, label: 'El Cazador' },
+      { image: moneymurchik, label: 'Gato del Dinero' },
+      { image: kingMurchik, label: 'Rey' },
+      { image: murchikFace, label: 'Carita atrevida' },
+      { image: murchikface2, label: 'Carita linda' }
+    ]
+  }
 };
 
 export default murchykData;

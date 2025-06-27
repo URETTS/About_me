@@ -20,10 +20,12 @@ const homePageData: HomePageData = {
   welcomeMessage: {
     en: 'Welcome to my personal website!',
     ru: 'Добро пожаловать на мой личный сайт!',
+    es: '¡Bienvenido a mi sitio personal!',
   },
   birthdayNote: {
     en: 'This website is dedicated to my 25th birthday',
     ru: 'Этот сайт посвящён моему 25-летию',
+    es: 'Este sitio web está dedicado a mi 25º cumpleaños',
   }
 };
 

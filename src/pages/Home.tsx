@@ -6,7 +6,7 @@ const Home: React.FC = () => {
   const { i18n } = useTranslation();
 
   const langCode = i18n.language.split('-')[0];
-  const language = ['ru', 'en'].includes(langCode) ? (langCode as 'ru' | 'en') : 'en';
+  const language = ['ru', 'en', 'es'].includes(langCode) ? (langCode as 'ru' | 'en' | 'es') : 'en';
   
   const fullText = homePageData.welcomeMessage[language] || '';
 

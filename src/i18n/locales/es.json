@@ -1,0 +1,68 @@
+{
+    "nav": {
+      "home": "Inicio",
+      "about": "Sobre mí",
+      "experience": "Experiencia laboral",
+      "travels": "Viajes",
+      "support": "Apóyame"
+    },
+    "footer": {
+      "contact": "Contáctame",
+      "support": "Apóyame",
+      "socials": "Redes sociales",
+      "phone": "Teléfono",
+      "telegram": "Telegram",
+      "instagram": "Instagram",
+      "donate": {
+        "revolut": "Revolut: @username",
+        "wise": "Wise (IBAN): DE** **** **** 1234",
+        "binance": "Binance: username"
+      }
+    },
+    "travels": {
+      "title": "Viajes"
+    },
+    "country": {
+      "notFound": "País no encontrado",
+      "cities": "Ciudades",
+      "back": "Atrás"
+    },
+    "city": {
+      "notFound": "Ciudad no encontrada",
+      "back": "Atrás",
+      "image": "Imagen"
+    },
+    "about": {
+      "greeting": "Hola 👋 Soy Yura",
+      "intro": "Tengo 25 años, nací en Kyiv, Ucrania y ahora vivo en la soleada Valencia, España ☀️. Soy desarrollador JavaScript y hablo cuatro idiomas: ruso, ucraniano, inglés y español. He visitado 20 países, más de 90 ciudades y he vivido en cuatro países.",
+      "educationTitle": "🎓 Educación",
+      "eduGoIT": "GoIT — FullStack Developer, julio 2024 – mayo 2025 Kyiv, Ucrania",
+      "eduMaster": "Máster, NTUU 'KPI', Electrónica, septiembre 2022 – enero 2024 Kyiv, Ucrania",
+      "eduBachelor": "Grado, NTUU 'KPI', Electrónica, septiembre 2018 – junio 2022 Kyiv, Ucrania",
+      "eduLyceum": "Liceo Politécnico de KPI, septiembre 2007 – mayo 2018 Kyiv, Ucrania",
+      "hobbiesTitle": "🎨 Aficiones",
+      "hobbies": "Me encanta todo lo relacionado con la conducción y los coches — he tenido algunos proyectos relacionados con coches y me encanta estar al volante. También disfruto del ocio activo, deportes, aventuras y todo lo que conlleva un poco de adrenalina. Valoro las conversaciones significativas, las buenas vibras y aprovechar cada momento.",
+      "sportTitle": "⚽ Deporte",
+      "sport": "El deporte siempre ha jugado un papel importante en mi vida. Comencé con la natación profesional, luego pasé al remo. También he practicado tenis, y en invierno disfruto mucho del esquí y el snowboard.",
+      "catTitle": "🐱 Gato",
+      "cat": "Tengo un gato. Se llama Murchyk. Es muy lindo.",
+      "catLinkText": "Haz clic aquí para visitar la página de Murchyk",
+      "goalsTitle": "🌱 Metas y planes",
+      "goals": "Quiero viajar aún más — lo siguiente en mi lista son Barcelona, Madrid, París, Roma y Finlandia. Siempre estoy buscando nuevas experiencias, personas y momentos que me inspiren. Si quieres apoyarme — siéntete libre de invitarme o incluso enviar una pequeña ayuda para mis viajes 🙂"
+    },
+    "cookie": {
+      "text": "Usamos cookies para mejorar tu experiencia. Al continuar usando el sitio, aceptas esto.",
+      "button": "Entendido"
+    },
+    "notFound": {
+      "title": "PÁGINA NO ENCONTRADA",
+      "description": "No estamos seguros de qué salió mal, ¡pero lo solucionaremos pronto! ¡Tal vez esta página no existe!",
+      "button": "Volver al inicio"
+    },
+    "support": {
+      "title": "Apóyame",
+      "description": "Si te gusta mi contenido o quieres apoyar mis viajes y proyectos — cualquier ayuda es muy apreciada 💛",
+      "thanks": "Gracias por cualquier forma de apoyo. Realmente me ayuda a seguir adelante."
+    }
+  }
+  

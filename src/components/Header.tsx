@@ -4,6 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import logo from '../../assets/logo/Bykov_Yuriy.png';
 import MobileMenu from './MobileMenu';
+import LanguageDropdown from './LanguageDropdown';
 
 const Header = () => {
   const { t, i18n } = useTranslation();
@@ -11,19 +12,15 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLangDisabled, setIsLangDisabled] = useState(false);
 
-  
-
-  const toggleLang = () => {
-    if (isLangDisabled) return;
+  const changeLang = (lng: string) => {
+    if (isLangDisabled || i18n.language === lng) return;
     setIsLangDisabled(true);
-    const newLang = i18n.language === 'ru' ? 'en' : 'ru';
-    i18n.changeLanguage(newLang);
-
+    i18n.changeLanguage(lng);
     setTimeout(() => {
-      setIsLangDisabled(false); 
-    }, 5000);
+      setIsLangDisabled(false);
+    }, 3000); // задержка 5 секунд
   };
- 
+
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-gray-800 p-4 text-white">
       <nav className="flex justify-between items-center max-w-6xl mx-auto">
@@ -58,13 +55,7 @@ const Header = () => {
             ))}
 
           <li>
-            <button
-              onClick={toggleLang}
-              disabled={isLangDisabled}
-              className="text-sm border-2 border-teal-500 rounded-full px-3 py-2 text-teal-500 font-medium transform transition-all hover:scale-105 hover:shadow-lg hover:bg-teal-500 hover:text-white"
-            >
-              {i18n.language === 'ru' ? 'EN' : 'RU'}
-            </button>
+            <LanguageDropdown changeLang={changeLang} isLangDisabled={isLangDisabled} />
           </li>
         </ul>
 
