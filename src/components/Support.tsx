@@ -161,7 +161,15 @@ const Sponsor = () => {
   <blockquote className="italic text-emerald-600 text-base sm:text-lg max-w-xl mx-auto">
     “{t('support.thanks')}”
   </blockquote>
-  <div className="mt-2 text-sm text-gray-500">— {lang === 'ru' ? 'С благодарностью от меня ❤️' : 'With all my gratitude ❤️'}</div>
+  <div className="mt-2 text-sm text-gray-500">
+  — {
+    lang === 'ru'
+      ? 'С благодарностью от меня ❤️'
+      : lang === 'es'
+      ? 'Con toda mi gratitud ❤️'
+      : 'With all my gratitude ❤️'
+  }
+</div>
 </div>
     </section>
   );

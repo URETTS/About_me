@@ -18,7 +18,7 @@ const Header = () => {
     i18n.changeLanguage(lng);
     setTimeout(() => {
       setIsLangDisabled(false);
-    }, 3000); // задержка 5 секунд
+    }, 3000); 
   };
 
   return (
