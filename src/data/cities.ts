@@ -228,7 +228,29 @@ import aliseven from '../../assets/images/Cities/alicante/alseven.jpg';
 import alieight from '../../assets/images/Cities/alicante/aleight.jpg';
 import alinine from '../../assets/images/Cities/alicante/alnine.jpg';
 
-// import  from '../../assets/images/Cities';
+import madrid_prev from '../../assets/images/Cities/madrid/madrid_prev.jpg';
+import madrid1 from '../../assets/images/Cities/madrid/madrid1.jpg';
+import madrid2 from '../../assets/images/Cities/madrid/madrid2.jpg';
+import madrid3 from '../../assets/images/Cities/madrid/madrid3.jpg';
+import madrid4 from '../../assets/images/Cities/madrid/madrid4.jpg';
+import madrid5 from '../../assets/images/Cities/madrid/madrid5.jpg';
+import madrid6 from '../../assets/images/Cities/madrid/madrid6.jpg';
+import madrid7 from '../../assets/images/Cities/madrid/madrid7.jpg';
+import madrid8 from '../../assets/images/Cities/madrid/madrid8.jpg';
+import madrid9 from '../../assets/images/Cities/madrid/madrid9.jpg';
+import madrid10 from '../../assets/images/Cities/madrid/madrid10.jpg';
+import madrid11 from '../../assets/images/Cities/madrid/madrid11.jpg';
+import madrid12 from '../../assets/images/Cities/madrid/madrid12.jpg';
+import madrid13 from '../../assets/images/Cities/madrid/madrid13.jpg';
+import madrid14 from '../../assets/images/Cities/madrid/madrid14.jpg';
+import madrid15 from '../../assets/images/Cities/madrid/madrid15.jpg';
+import madrid16 from '../../assets/images/Cities/madrid/madrid16.jpg';
+import madrid17 from '../../assets/images/Cities/madrid/madrid17.jpg';
+import madrid18 from '../../assets/images/Cities/madrid/madrid18.jpg';
+import madrid19 from '../../assets/images/Cities/madrid/madrid19.jpg';
+import madrid20 from '../../assets/images/Cities/madrid/madrid20.jpg';
+import madrid21 from '../../assets/images/Cities/madrid/madrid21.jpg';
+
 
 import barcelonaprev from '../../assets/images/Cities/barcelona/barcelonaprev.jpg';
 
@@ -263,6 +285,7 @@ import lisfour from '../../assets/images/Cities/lisbon/lisfour.jpg';
 import lisfive from '../../assets/images/Cities/lisbon/lisfive.jpg';
 import lissix from '../../assets/images/Cities/lisbon/lissix.jpg';
 import  lisseven from '../../assets/images/Cities/lisbon/lisseven.jpg';
+import { V } from 'framer-motion/dist/types.d-DDSxwf0n';
 
 // import  from '../../assets/images/Cities';
 // import barcelonaprev from '../../assets/images/Cities/barcelona/barcelonaprev.jpg'; карточка coming soon
@@ -974,7 +997,7 @@ Alicante se convirtió no solo en una parada destacada del viaje, sino también 
       También llamó la atención la notable presencia de representantes de la comunidad LGBT en las calles. Todo indica que Madrid es uno de los principales centros de la cultura LGBT en España.
     `
         },
-        images: [
+        images: [ madrid_prev,madrid1,madrid2,madrid3,madrid4,madrid5,madrid6,madrid7,madrid8,madrid9,madrid10,madrid11,madrid12,madrid13,madrid14,madrid15,madrid16,madrid17,madrid18,madrid19,madrid20,madrid21
       
         ]
       },
