@@ -228,6 +228,8 @@ import aliseven from '../../assets/images/Cities/alicante/alseven.jpg';
 import alieight from '../../assets/images/Cities/alicante/aleight.jpg';
 import alinine from '../../assets/images/Cities/alicante/alnine.jpg';
 
+// import  from '../../assets/images/Cities';
+
 import barcelonaprev from '../../assets/images/Cities/barcelona/barcelonaprev.jpg';
 
 import sintraprev from '../../assets/images/Cities/sintra/sintraprev.jpg';
@@ -941,9 +943,36 @@ Alicante se convirtió no solo en una parada destacada del viaje, sino también 
   },
         flagColors: ['#AA151B', '#F1BF00' ],
         description: {
-          ru: ` <h2 class="text-xl font-semibold mb-4"></h2> `,
-          en: ` <h2 class="text-xl font-semibold mb-4"></h2> `,
-          es: ` <h2 class="text-xl font-semibold mb-4"></h2> `
+          ru: `
+      <h2 class="text-xl font-semibold mb-4">Мадрид — жаркая столица Испании</h2>
+      В июне 2025 года я провёл два дня в Мадриде. Добрался туда на скоростном поезде из Валенсии — 300 км/ч, и всего через 2 часа оказался в самом центре города.
+
+      Мадрид впечатлил архитектурой, величественными зданиями, уютными улочками и зелёными парками. Город выглядит живым и насыщенным — исторические фасады сочетаются с современными площадями, повсюду чувствуется движение и ритм большого мегаполиса.
+
+      Погода была по-настоящему экстремальной: температура достигала +42 °C, и прогулки под солнцем давались нелегко. Но даже жара не мешала наслаждаться атмосферой и красотой города.
+
+      Также бросилось в глаза большое количество представителей ЛГБТ-сообщества в городском пространстве. Судя по всему, Мадрид является одним из центров ЛГБТ-культуры в Испании.
+    `,
+    en: `
+      <h2 class="text-xl font-semibold mb-4">Madrid — The Scorching Capital of Spain</h2>
+      In June 2025, I spent two days in Madrid. I arrived on a high-speed train from Valencia, traveling at 300 km/h — in just two hours I was already in the heart of the capital.
+
+      Madrid impressed me with its architecture, grand buildings, cozy streets, and well-kept parks. The city feels vibrant and full of life — historic facades blend with modern squares, and there's a constant rhythm to everything happening around.
+
+      The weather was extremely hot, reaching +42 °C, which made walking around quite challenging. Still, the atmosphere and visual beauty of the city made up for the heat.
+
+      Another thing that stood out was the large visible presence of LGBT individuals throughout the city. It seems Madrid is one of the major LGBT cultural centers in Spain.
+    `,
+    es: `
+      <h2 class="text-xl font-semibold mb-4">Madrid — La calurosa capital de España</h2>
+      En junio de 2025 pasé dos días en Madrid. Llegué en un tren de alta velocidad desde Valencia, viajando a 300 km/h — en solo dos horas ya estaba en pleno centro de la capital.
+
+      Madrid me impresionó por su arquitectura, edificios majestuosos, calles acogedoras y parques cuidados. Es una ciudad vibrante y llena de movimiento, donde lo antiguo y lo moderno conviven de forma natural.
+
+      El clima fue extremadamente caluroso, con temperaturas que alcanzaron los 42 °C, lo que hizo que pasear fuera agotador. Aun así, la belleza y la energía de la ciudad compensaron el calor.
+
+      También llamó la atención la notable presencia de representantes de la comunidad LGBT en las calles. Todo indica que Madrid es uno de los principales centros de la cultura LGBT en España.
+    `
         },
         images: [
       
