@@ -3,11 +3,12 @@ import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { X } from 'lucide-react';
 import { useState, useRef, useEffect } from 'react';
+import Flag from 'react-world-flags';
 
 const languages = [
-  { code: 'ru', label: 'Русский', flag: '🇷🇺' },
-  { code: 'en', label: 'English', flag: '🇬🇧' },
-  { code: 'es', label: 'Español', flag: '🇪🇸' },
+  { code: 'ru', label: 'Русский', iso: 'RU' },
+  { code: 'en', label: 'English', iso: 'GB' },
+  { code: 'es', label: 'Español', iso: 'ES' },
 ];
 
 interface MobileMenuProps {
@@ -120,7 +121,9 @@ const MobileMenu = ({ isOpen, closeMenu }: MobileMenuProps) => {
                 aria-haspopup="true"
                 aria-expanded={isLangOpen}
               >
-                <span className="mr-2 text-xl">{currentLang.flag}</span>
+                <span className="mr-2">
+  <Flag code={currentLang.iso} style={{ width: 24, height: 16, borderRadius: 2 }} />
+</span>
                 <span>{currentLang.code.toUpperCase()}</span>
                 <svg
                   className={`ml-2 h-6 w-6 transition-transform duration-200 ${isLangOpen ? 'rotate-180' : ''}`}
@@ -137,29 +140,32 @@ const MobileMenu = ({ isOpen, closeMenu }: MobileMenuProps) => {
               {isLangOpen && (
                 <div className="absolute right-0 mt-2 w-full rounded-md border border-blue-500 bg-gray-800 shadow-lg z-50">
                   <ul className="py-1">
-                    {languages.map(({ code, label, flag }) => (
-                      <li key={code}>
-                        <button
-                          onClick={() => changeLang(code)}
-                          disabled={isLangDisabled || i18n.language === code}
-                          className={`
-                            flex items-center w-full px-4 py-2 text-sm rounded-md
-                            ${
-                              i18n.language === code
-                                ? 'bg-blue-600 text-white cursor-default'
-                                : 'text-blue-300 hover:bg-blue-500 hover:text-white cursor-pointer'
-                            }
-                            transition-colors
-                            disabled:opacity-50 disabled:cursor-not-allowed
-                            select-none
-                          `}
-                          type="button"
-                        >
-                          <span className="mr-2 text-xl">{flag}</span>
-                          <span>{label}</span>
-                        </button>
-                      </li>
-                    ))}
+                  {languages.map(({ code, label, iso }) => (
+  <li key={code}>
+    <button
+      onClick={() => changeLang(code)}
+      disabled={isLangDisabled || i18n.language === code}
+      className={`
+        flex items-center w-full px-4 py-2 text-sm rounded-md
+        ${
+          i18n.language === code
+            ? 'bg-blue-600 text-white cursor-default'
+            : 'text-blue-300 hover:bg-blue-500 hover:text-white cursor-pointer'
+        }
+        transition-colors
+        disabled:opacity-50 disabled:cursor-not-allowed
+        select-none
+      `}
+      type="button"
+    >
+      <span className="mr-2">
+        <Flag code={iso} style={{ width: 24, height: 16, borderRadius: 2 }} />
+      </span>
+      <span>{label}</span>
+    </button>
+  </li>
+))}
+
                   </ul>
                 </div>
               )}

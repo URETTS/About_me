@@ -1,10 +1,11 @@
 import { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import Flag from 'react-world-flags';
 
 const languages = [
-  { code: 'ru', label: 'Русский', flag: '🇷🇺' },
-  { code: 'en', label: 'English', flag: '🇬🇧' },
-  { code: 'es', label: 'Español', flag: '🇪🇸' },
+  { code: 'ru', label: 'Русский', iso: 'RU' },
+  { code: 'en', label: 'English', iso: 'GB' }, 
+  { code: 'es', label: 'Español', iso: 'ES' },
 ];
 
 interface LanguageDropdownProps {
@@ -17,7 +18,6 @@ const LanguageDropdown: React.FC<LanguageDropdownProps> = ({ changeLang, isLangD
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
-  // Закрытие при клике вне
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
@@ -55,7 +55,9 @@ const LanguageDropdown: React.FC<LanguageDropdownProps> = ({ changeLang, isLangD
         aria-haspopup="true"
         aria-expanded={isOpen}
       >
-        <span className="mr-2 text-lg">{currentLang.flag}</span>
+        <span className="mr-2">
+          <Flag code={currentLang.iso} style={{ width: 24, height: 16, borderRadius: 2 }} />
+        </span>
         <span>{currentLang.code.toUpperCase()}</span>
         <svg
           className={`ml-2 h-6 w-6 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
@@ -72,7 +74,7 @@ const LanguageDropdown: React.FC<LanguageDropdownProps> = ({ changeLang, isLangD
       {isOpen && (
         <div className="absolute right-0 mt-2 w-40 rounded-md border border-teal-500 bg-gray-800 shadow-lg z-50">
           <ul className="py-1">
-            {languages.map(({ code, label, flag }) => (
+            {languages.map(({ code, label, iso }) => (
               <li key={code}>
                 <button
                   onClick={() => onSelect(code)}
@@ -90,7 +92,9 @@ const LanguageDropdown: React.FC<LanguageDropdownProps> = ({ changeLang, isLangD
                   `}
                   type="button"
                 >
-                  <span className="mr-2 text-lg">{flag}</span>
+                  <span className="mr-2">
+                    <Flag code={iso} style={{ width: 24, height: 16, borderRadius: 2 }} />
+                  </span>
                   <span>{label}</span>
                 </button>
               </li>
