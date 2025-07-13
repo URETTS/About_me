@@ -91,7 +91,7 @@ const CityPage = () => {
       />
 <div className="mt-8 flex justify-center">
 <button
-  onClick={() => navigate('/travels')}
+  onClick={() => navigate(`/travels/${countryId}`)}
   className="group relative inline-flex items-center gap-2 px-6 py-2 rounded-lg border-2 border-gray-400 dark:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white font-semibold transition-all duration-300 shadow-md hover:shadow-blue-400/50 hover:ring-2 hover:ring-blue-400 focus:outline-none active:scale-95"
 >
   <ArrowLeft className="w-5 h-5 transition-transform duration-300 group-hover:-translate-x-1" />

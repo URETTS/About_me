@@ -1,3 +1,5 @@
+import noneprev from '../../assets/images/Cities/barcelona/barcelonaprev.jpg';
+
 import kievprev from '../../assets/images/Cities/kiev/kievprev.jpg';
 import kievone from '../../assets/images/Cities/kiev/kievone.jpg';
 import kievtwo from '../../assets/images/Cities/kiev/kievtwo.jpg';
@@ -251,8 +253,38 @@ import madrid19 from '../../assets/images/Cities/madrid/madrid19.jpg';
 import madrid20 from '../../assets/images/Cities/madrid/madrid20.jpg';
 import madrid21 from '../../assets/images/Cities/madrid/madrid21.jpg';
 
-
-import barcelonaprev from '../../assets/images/Cities/barcelona/barcelonaprev.jpg';
+import barcelonaprevorig from '../../assets/images/Cities/barcelona/barcelonaprevorig.jpg';
+import bar1 from '../../assets/images/Cities/barcelona/bar1.jpg';
+import bars2 from '../../assets/images/Cities/barcelona/bars2.jpg';
+import bars3 from '../../assets/images/Cities/barcelona/bars3.jpg';
+import bars4 from '../../assets/images/Cities/barcelona/bars4.jpg';
+import bars5 from '../../assets/images/Cities/barcelona/bars5.jpg';
+import bars6 from '../../assets/images/Cities/barcelona/bars6.jpg';
+import bars7 from '../../assets/images/Cities/barcelona/bars7.jpg';
+import bars8 from '../../assets/images/Cities/barcelona/bars8.jpg';
+import bars9 from '../../assets/images/Cities/barcelona/bars9.jpg';
+import bars10 from '../../assets/images/Cities/barcelona/bars10.jpg';
+import bars11 from '../../assets/images/Cities/barcelona/bars11.jpg';
+import bars12 from '../../assets/images/Cities/barcelona/bars12.jpg';
+import bars13 from '../../assets/images/Cities/barcelona/bars13.jpg';
+import bars14 from '../../assets/images/Cities/barcelona/bars14.jpg';
+import bars15 from '../../assets/images/Cities/barcelona/bars15.jpg';
+import bars16 from '../../assets/images/Cities/barcelona/bars16.jpg';
+import bars17 from '../../assets/images/Cities/barcelona/bars17.jpg';
+import bars18 from '../../assets/images/Cities/barcelona/bars18.jpg';
+import bars19 from '../../assets/images/Cities/barcelona/bars19.jpg';
+import bars20 from '../../assets/images/Cities/barcelona/bars20.jpg';
+import bars21 from '../../assets/images/Cities/barcelona/bars21.jpg';
+import bars22 from '../../assets/images/Cities/barcelona/bars22.jpg';
+import bars23 from '../../assets/images/Cities/barcelona/bars23.jpg';
+import bars24 from '../../assets/images/Cities/barcelona/bars24.jpg';
+import bars25 from '../../assets/images/Cities/barcelona/bars25.jpg';
+import bars26 from '../../assets/images/Cities/barcelona/bars26.jpg';
+import bars27 from '../../assets/images/Cities/barcelona/bars27.jpg';
+import bars28 from '../../assets/images/Cities/barcelona/bars28.jpg';
+import bars29 from '../../assets/images/Cities/barcelona/bars29.jpg';
+import bars30 from '../../assets/images/Cities/barcelona/bars30.jpg';
+import bars31 from '../../assets/images/Cities/barcelona/bars31.jpg';
 
 import sintraprev from '../../assets/images/Cities/sintra/sintraprev.jpg';
 import sinone from '../../assets/images/Cities/sintra/sinone.jpg';
@@ -264,7 +296,6 @@ import sinsix from '../../assets/images/Cities/sintra/sinsix.jpg';
 import sinseven from '../../assets/images/Cities/sintra/sinseven.jpg';
 import sineight from '../../assets/images/Cities/sintra/sineight.jpg';
 import sinnine from '../../assets/images/Cities/sintra/sinnine.jpg';
-
 
 import cascaisprev from '../../assets/images/Cities/cascais/cascaisprev.jpg';
 import casone from '../../assets/images/Cities/cascais/casone.jpg';
@@ -288,7 +319,7 @@ import  lisseven from '../../assets/images/Cities/lisbon/lisseven.jpg';
 import { V } from 'framer-motion/dist/types.d-DDSxwf0n';
 
 // import  from '../../assets/images/Cities';
-// import barcelonaprev from '../../assets/images/Cities/barcelona/barcelonaprev.jpg'; карточка coming soon
+// import noneprev from '../../assets/images/Cities/barcelona/barcelonaprev.jpg'; карточка coming soon
 
 export interface City {
   id: string;
@@ -1010,12 +1041,92 @@ Alicante se convirtió no solo en una parada destacada del viaje, sino también 
   },
         flagColors: ['#AA151B', '#F1BF00' ],
         description: {
+          ru: `
+            <h2 class="text-xl font-semibold mb-4">Барселона — город Гауди, моря и свободы</h2>
+            В июле 2025 года я провёл один день в Барселоне. Благодаря молодёжной программе в Испании, билет в одну сторону на двухэтажном автобусе обошёлся всего в 3,5 евро.
+        
+            Барселона поразила меня своей архитектурой, в первую очередь творениями Антонио Гауди: Саграда Фамилия, Дом Бальо и Парк Гуэль выглядят как из другого мира. Город сочетается из готических кварталов, широких бульваров и средиземноморского побережья.
+        
+            Основные достопримечательности находятся на значительном расстоянии друг от друга, поэтому одного дня было мало. Я прогулялся по Ла Рамбла, заглянул на Площадь Каталонии, посетил Готический квартал, а также поднялся на канатной дороге от пляжа к замку Монжуик, откуда открывается панорама города и порта.
+        
+            Несмотря на репутацию города как криминального, я чувствовал себя абсолютно безопасно, даже гуляя ночью. Атмосфера Барселоны оказалась открытой, творческой и очень дружелюбной.
+        
+            Город оставил сильное впечатление, и я точно захочу вернуться — гулять, исследовать и вдохновляться.
+          `,
+        
+          en: `
+            <h2 class="text-xl font-semibold mb-4">Barcelona — The City of Gaudí, Sea and Freedom</h2>
+            In July 2025, I spent a day in Barcelona. Thanks to a youth program in Spain, a one-way ticket on a double-decker bus cost me only €3.5.
+        
+            Barcelona amazed me with its architecture, especially the works of Antoni Gaudí — Sagrada Família, Casa Batlló, and Park Güell felt like something out of a dream. The city blends Gothic quarters, wide boulevards, and the Mediterranean coastline.
+        
+            The main attractions are quite far apart, so one day was definitely not enough. I walked along La Rambla, visited Plaza Catalunya, explored the Gothic Quarter, and took the cable car from the beach to Montjuïc Castle, where I enjoyed a panoramic view of the city and the port.
+        
+            Although I had heard that Barcelona can be dangerous, I felt completely safe, even at night. The city's vibe felt open, artistic, and very welcoming.
+        
+            Barcelona left a strong impression, and I will definitely come back — to walk, explore, and be inspired.
+          `,
+        
+          es: `
+            <h2 class="text-xl font-semibold mb-4">Barcelona — La ciudad de Gaudí, el mar y la libertad</h2>
+            En julio de 2025 pasé un día en Barcelona. Gracias a un programa juvenil en España, el billete de ida en un autobús de dos pisos me costó solo 3,5 €.
+        
+            Barcelona me sorprendió con su arquitectura, especialmente las obras de Antoni Gaudí — la Sagrada Familia, la Casa Batlló y el Parque Güell parecen sacadas de un sueño. La ciudad combina barrios góticos, amplios bulevares y la costa mediterránea.
+        
+            Las principales atracciones están bastante alejadas unas de otras, por lo que un solo día no fue suficiente. Caminé por La Rambla, visité la Plaza Cataluña, recorrí el Barrio Gótico y subí en teleférico desde la playa hasta el Castillo de Montjuïc, donde disfruté de una vista panorámica de la ciudad y el puerto.
+        
+            Aunque había oído que Barcelona puede ser peligrosa, me sentí totalmente seguro, incluso por la noche. La atmósfera de la ciudad fue abierta, artística y muy acogedora.
+        
+            Barcelona me dejó una impresión muy fuerte, y sin duda volveré — a caminar, descubrir y dejarme inspirar.
+          `
+        },
+        images: [barcelonaprevorig,bar1,bars2,bars3,bars4,bars5,bars6,bars7,bars8,bars9,bars10,bars11,bars12,bars13,bars14,bars15,bars16,bars17,bars18,bars19,bars20,bars21,bars22,bars23,bars24,bars25, bars26,bars27,bars28,bars29,bars30,bars31]
+      },
+      {
+        id: 'murcia',
+        name: {
+          ru: 'Мурсия',
+          en: 'Murcia',
+          es: 'Murcia'
+        },
+        flagColors: ['#AA151B', '#F1BF00'], 
+        description: {
           ru: ` <h2 class="text-xl font-semibold mb-4"></h2> `,
           en: ` <h2 class="text-xl font-semibold mb-4"></h2> `,
           es: ` <h2 class="text-xl font-semibold mb-4"></h2> `
         },
-        images: [ barcelonaprev]
+        images: [noneprev] 
       },
+{
+        id: 'zaragoza',
+        name: {
+    ru: 'Сарагоса',
+          en: 'Zaragoza',
+    es: 'Zaragoza'
+  },
+        flagColors: ['#AA151B', '#F1BF00' ],
+        description: {
+          ru: ` <h2 class="text-xl font-semibold mb-4"></h2> `,
+          en: ` <h2 class="text-xl font-semibold mb-4"></h2> `,
+          es: ` <h2 class="text-xl font-semibold mb-4"></h2> `
+        },
+        images: [ noneprev]
+      },
+      {
+        id: 'bilbao',
+        name: {
+          ru: 'Бильбао',
+          en: 'Bilbao',
+          es: 'Bilbao'
+        },
+        flagColors: ['#AA151B', '#F1BF00'], 
+        description: {
+          ru: ` <h2 class="text-xl font-semibold mb-4"></h2> `,
+          en: ` <h2 class="text-xl font-semibold mb-4"></h2> `,
+          es: ` <h2 class="text-xl font-semibold mb-4"></h2> `
+        },
+        images: [noneprev] 
+      }
     ]
   },
   {
