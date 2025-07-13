@@ -61,7 +61,9 @@
   "support": {
   "title": "Support me",
   "description": "If you enjoy my content or want to support my travels and projects — any help is truly appreciated 💛",
-  "thanks": "Thank you for any form of support. It really helps me continue."
+  "thanks": "Thank you for any form of support. It really helps me continue.",
+  "message": "If you like what I do, you can support me financially",
+      "button": "Support"
 }
 
 }

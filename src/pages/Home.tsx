@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import homePageData from '../components/HomeBg';
 import { useTranslation } from 'react-i18next';
+import SupportModal from '../components/SupportModal';
+import { AnimatePresence } from 'framer-motion';
 
 const Home: React.FC = () => {
   const { i18n } = useTranslation();
@@ -77,6 +79,15 @@ const Home: React.FC = () => {
     };
   }, [fullText, i18n.language]);
 
+  const [showSupport, setShowSupport] = useState(false);
+
+useEffect(() => {
+  const timer = setTimeout(() => {
+    setShowSupport(true);
+  }, 2700); 
+  return () => clearTimeout(timer);
+}, []);
+
   return (
     <section className="relative w-full h-screen overflow-hidden">
       {/* current background */}
@@ -109,6 +120,11 @@ const Home: React.FC = () => {
           {homePageData.birthdayNote[language] || ''}
         </p>
       </div>
+      
+      <AnimatePresence>
+  {showSupport && <SupportModal onClose={() => setShowSupport(false)} />}
+</AnimatePresence>
+
     </section>
   );
 };

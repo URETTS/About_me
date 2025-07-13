@@ -62,7 +62,9 @@
     "support": {
       "title": "Apóyame",
       "description": "Si te gusta mi contenido o quieres apoyar mis viajes y proyectos — cualquier ayuda es muy apreciada 💛",
-      "thanks": "Gracias por cualquier forma de apoyo. Realmente me ayuda a seguir adelante."
+      "thanks": "Gracias por cualquier forma de apoyo. Realmente me ayuda a seguir adelante.",
+        "message": "Si te gusta lo que hago, puedes apoyarme económicamente",
+      "button": "Apoyar"
     }
   }
   
